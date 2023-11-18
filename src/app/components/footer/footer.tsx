@@ -21,7 +21,7 @@ export default function Footer() {
             </div>
             <hr className="bg-white"/>
             <p className="flex justify-center p-5">
-                &copy; {new Date().getFullYear()}
+                &copy; {new Date().getFullYear()} GreenField Dev.
             </p>
         </footer>
     )
