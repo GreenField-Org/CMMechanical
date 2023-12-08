@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Suspense } from "react";
+import Socials from "../socials/socials";
 
 export default function Footer() {
   return (
@@ -27,7 +28,7 @@ export default function Footer() {
             FAQ
           </Link>
         </div>
-        <div>Socials</div>
+        <Socials />
       </div>
       <hr className="bg-primary" />
       <p className="flex justify-center p-5">
