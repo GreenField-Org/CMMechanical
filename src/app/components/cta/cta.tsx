@@ -1,4 +1,11 @@
+"use client";
+
+import { useRouter } from "next/navigation";
+import Button from "../button/button";
+
 export default function Cta() {
+  const router = useRouter();
+
   return (
     <div className="flex w-[375px] lg:w-[1440px] flex-col items-start gap-12 px-5 py-16 lg:gap-20 lg:px-16 lg:py-28">
       <div className="flex flex-col justify-center items-start gap-6 self-stretch lg:gap-20">
@@ -13,7 +20,12 @@ export default function Cta() {
           </div>
         </div>
         <div className="flex items-start gap-4">
-          <button>Contact</button>
+          <Button buttonText="Contact" variant="primary" />
+          <Button
+            buttonText="Learn More"
+            variant="secondary"
+            onClick={() => router.push("/about")}
+          />
         </div>
       </div>
     </div>
