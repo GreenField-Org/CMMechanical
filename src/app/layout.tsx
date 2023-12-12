@@ -1,27 +1,32 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
-import Footer from './components/footer/footer'
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import Footer from "./components/footer/footer";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'C&M Mechanical Heating and Cooling',
-  description: 'C&M Mechanical HVAC provides services for all types of heating systems and cooling systems.',
-  keywords: 'HVAC, installation, air conditioning, heating, ductless, mitsubishi',
-}
+  title: {
+    template: "%s | C&M Mechanical Heating and Cooling",
+    default: "C&M Mechanical Heating and Cooling",
+  },
+  description:
+    "C&M Mechanical HVAC provides services for all types of heating systems and cooling systems.",
+  keywords:
+    "HVAC, installation, air conditioning, heating, ductless, mitsubishi, NYSERDA, american standard dealer",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
       <body className={inter.className}>
         {children}
-        <Footer />  
+        <Footer />
       </body>
     </html>
-  )
+  );
 }
