@@ -1,10 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import {
-  ChevronBackOutline,
-  ChevronForwardCircleOutline,
-  ChevronForwardOutline,
-} from "react-ionicons";
+import { ChevronBackOutline, ChevronForwardOutline } from "react-ionicons";
 
 export default function Carousel() {
   const maxScrollWidth = useRef(0);
@@ -120,6 +116,7 @@ export default function Carousel() {
             ref={carousel}
             className="carousel-container relative flex gap-1 overflow-hidden scroll-smooth snap-x snap-mandatory touch-pan-x z-0"
           >
+            {/* replace with testimonial component */}
             {data.resources.map((resource, index) => {
               return (
                 <div
