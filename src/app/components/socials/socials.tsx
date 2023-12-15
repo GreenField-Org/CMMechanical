@@ -4,10 +4,13 @@ import { LogoFacebook } from "react-ionicons";
 
 export default function Socials() {
   return (
-    <div>
-      <Link href="https://www.facebook.com/CMMechanicalHVAC">
+    <div className="flex justify-center">
+      <Link
+        href="https://www.facebook.com/CMMechanicalHVAC"
+        className="shadow-2xl shadow-primary w-[50px] rounded-full"
+      >
         <LogoFacebook
-          color={"#fff"}
+          color={"#25368A"}
           title={"facebook"}
           height="50px"
           width="50px"
