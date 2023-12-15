@@ -29,14 +29,14 @@ export default function Navbar() {
               >
                 {nav ? (
                   <CloseOutline
-                    color={"#fff"}
+                    color={"#25368A"}
                     title={"close"}
                     height="25px"
                     width="25px"
                   />
                 ) : (
                   <ReorderThreeOutline
-                    color={"#fff"}
+                    color={"#25368A"}
                     title={"open"}
                     height="25px"
                     width="25px"
