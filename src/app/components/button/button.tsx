@@ -13,7 +13,7 @@ export default function Button({
 }: ButtonProps) {
   return (
     <button
-      className={`flex justify-center items-center gap-2 border shadow-2xl shadow-primary px-6 py-3 border-solid border-primary ${
+      className={`flex justify-center items-center gap-2 border shadow-lg shadow-primary px-6 py-3 border-solid border-primary ${
         variant === "primary" ? "bg-primary text-white" : "bg-none"
       } rounded-2xl hover:bg-secondary ${fullwidth ? "w-full" : ""}`}
       onClick={onClick}
