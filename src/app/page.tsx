@@ -6,6 +6,7 @@ import Button from "./components/button/button";
 import Container from "./components/container/container";
 import { ConstructOutline } from "react-ionicons";
 import Testimonial from "./components/testimonial/testimonial";
+import Section from "./components/section/section";
 
 export default function Home() {
   return (
@@ -32,7 +33,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+      <Section>
         <div className="flex flex-col lg:flex-row items-start gap-12 self-stretch lg:items-center lg:gap-20">
           <div className="flex flex-col items-start gap-2 self-stretch lg:gap-6 lg:flex-[1_0_0]">
             <div className="flex flex-col items-start gap-6 self-stretch lg:gap-8">
@@ -89,8 +90,8 @@ export default function Home() {
             />
           </div>
         </div>
-      </div>
-      <div className="flex w-[374px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+      </Section>
+      <Section>
         <Container>
           <div className="flex flex-col items-start gap-2 self-stretch lg:gap-6 lg:flex-[1_0_0]">
             <div className="flex flex-col items-start gap-5 self-stretch lg:gap-6">
@@ -118,8 +119,8 @@ export default function Home() {
             />
           </div>
         </Container>
-      </div>
-      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+      </Section>
+      <Section>
         <Container>
           <div className="flex flex-col items-start gap-2 self-stretch lg:gap-6 lg:flex-[1_0_0]">
             <div className="flex flex-col items-start gap-3 self-stretch lg:gap-4">
@@ -143,8 +144,8 @@ export default function Home() {
           </div>
           <div className="h-[348px] self-stretch lg:h-[640px] lg:flex-[1_0_0]"></div>
         </Container>
-      </div>
-      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+      </Section>
+      <Section>
         <Container>
           <div className="flex flex-col items-start gap-10 self-stretch lg:gap-10 lg:flex-[1_0_0]">
             <div className="flex justify-center items-start gap-8 self-stretch">
@@ -189,7 +190,7 @@ export default function Home() {
           </div>
           <div className="h-[348px] self-stretch lg:h-[640px] lg:flex-[1_0_0]"></div>
         </Container>
-      </div>
+      </Section>
       {/* Testimonials */}
       <Cta />
     </main>
