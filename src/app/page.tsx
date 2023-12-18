@@ -84,8 +84,8 @@ export default function Home() {
             {/*Image*/}
             <img
               src={"https://picsum.photos/seed/picsum/200/300"}
-              width={500}
-              height={300}
+              width={200}
+              height={200}
               alt="test image"
             />
           </div>
@@ -113,8 +113,8 @@ export default function Home() {
           <div className="h-[348px] self-stretch lg:h-[640px] lg:flex-[1_0_0]">
             <img
               src={"https://picsum.photos/seed/picsum/200/300"}
-              width={500}
-              height={300}
+              width={200}
+              height={200}
               alt="test image"
             />
           </div>
