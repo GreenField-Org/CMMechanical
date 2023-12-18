@@ -3,6 +3,9 @@ import Cta from "./components/cta/cta";
 import Faq from "./components/faq/faq";
 import Carousel from "./components/carousel/carousel";
 import Button from "./components/button/button";
+import Container from "./components/container/container";
+import { ConstructOutline } from "react-ionicons";
+import Testimonial from "./components/testimonial/testimonial";
 
 export default function Home() {
   return (
@@ -87,8 +90,107 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Carousel />
-      <Faq description={"this is a test"} href="/about" />
+      <div className="flex w-[374px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+        <Container>
+          <div className="flex flex-col items-start gap-2 self-stretch lg:gap-6 lg:flex-[1_0_0]">
+            <div className="flex flex-col items-start gap-5 self-stretch lg:gap-6">
+              <div className="flex flex-col items-start gap-5 self-stretch lg:gap-6">
+                <h2 className="self-stretch text-4xl not-italic font-bold leading-[120%] lg:text-5xl">
+                  {"Cooling Services for a Comfortable Home"}
+                </h2>
+                <p className="self-stretch text-base not-italic font-normal leading-[150%] lg:text-lg">
+                  {
+                    "Stay cool all summer long with our reliable and efficient cooling services. Our team of experts is dedicated to providing top-notch installation, repair, and maintenance services for all your cooling needs."
+                  }
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center gap-6 pt-4">
+              <Button buttonText="Learn More" variant="primary" />
+            </div>
+          </div>
+          <div className="h-[348px] self-stretch lg:h-[640px] lg:flex-[1_0_0]">
+            <img
+              src={"https://picsum.photos/seed/picsum/200/300"}
+              width={500}
+              height={300}
+              alt="test image"
+            />
+          </div>
+        </Container>
+      </div>
+      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+        <Container>
+          <div className="flex flex-col items-start gap-2 self-stretch lg:gap-6 lg:flex-[1_0_0]">
+            <div className="flex flex-col items-start gap-3 self-stretch lg:gap-4">
+              <p className="text-center text-base not-italic font-semibold leading-[150%]">
+                {"Efficient"}
+              </p>
+              <div className="flex flex-col items-start gap-5 self-stretch lg:gap-6">
+                <h2 className="self-stretch text-4xl not-italic font-bold leading-[120%] lg:text-5xl">
+                  {"Ductless Services for Optimal Home Comfort"}
+                </h2>
+                <p className="self-stretch text-base not-italic font-normal leading-[150%] lg:text-lg">
+                  {
+                    "Experience the ultimate comfort and energy efficiency with our top-of-the-line ductless services. Our expert technicians will install, repair, and maintain your ductless system, ensuring optimal performance and cost savings."
+                  }
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center gap-6 pt-4">
+              <Button buttonText="Learn More" variant="secondary" />
+            </div>
+          </div>
+          <div className="h-[348px] self-stretch lg:h-[640px] lg:flex-[1_0_0]"></div>
+        </Container>
+      </div>
+      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+        <Container>
+          <div className="flex flex-col items-start gap-10 self-stretch lg:gap-10 lg:flex-[1_0_0]">
+            <div className="flex justify-center items-start gap-8 self-stretch">
+              <div className="w-0.5 h-[166px] lg:h-[130px]"></div>
+              <div className="flex flex-col justify-center items-start gap-3 flex-[1_0_0] lg:gap-4">
+                <h4 className="self-stretch text-2xl not-italic font-bold leading-[140%] lg:text-[32px] lg:leading-[130%]">
+                  {"Discover Our Products"}
+                </h4>
+                <p className="self-stretch text-base not-italic font-normal leading-[150%]">
+                  {
+                    "We offer a wide range of high-quality Mitsubishi heating, cooling, and ductless products. Our products are designed to provide efficient and reliable solutions for your home."
+                  }
+                </p>
+              </div>
+            </div>
+            <div className="flex justify-center items-start gap-8 self-stretch">
+              <div className="w-0.5 h-[166px] lg:h-[130px]"></div>
+              <div className="flex flex-col justify-center items-start gap-3 flex-[1_0_0] lg:gap-4">
+                <h4 className="self-stretch text-2xl not-italic font-bold leading-[140%] lg:text-[32px] lg:leading-[130%]">
+                  {"Join the NYSERTA Program"}
+                </h4>
+                <p className="self-stretch text-base not-italic font-normal leading-[150%]">
+                  {
+                    "We are proud to be part of the NYCERTA program, which promotes energy efficiency and sustainability. By working with us, you can contribute to a greener future for your community."
+                  }
+                </p>
+              </div>
+            </div>
+            <div className="flex justify-center items-start gap-8 self-stretch">
+              <div className="w-0.5 h-[166px] lg:h-[130px]"></div>
+              <div className="flex flex-col justify-center items-start gap-3 flex-[1_0_0] lg:gap-4">
+                <h4 className="self-stretch text-2xl not-italic font-bold leading-[140%] lg:text-[32px] lg:leading-[130%]">
+                  {"Frequently Asked Questions"}
+                </h4>
+                <p className="self-stretch text-base not-italic font-normal leading-[150%]">
+                  {
+                    "Have questions? Check out our FAQ section to find answers to common inquiries about our services, products, and more."
+                  }
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="h-[348px] self-stretch lg:h-[640px] lg:flex-[1_0_0]"></div>
+        </Container>
+      </div>
+      {/* Testimonials */}
       <Cta />
     </main>
   );
