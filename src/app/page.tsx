@@ -29,6 +29,64 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+        <div className="flex flex-col lg:flex-row items-start gap-12 self-stretch lg:items-center lg:gap-20">
+          <div className="flex flex-col items-start gap-2 self-stretch lg:gap-6 lg:flex-[1_0_0]">
+            <div className="flex flex-col items-start gap-6 self-stretch lg:gap-8">
+              <div className="flex flex-col items-start gap-3 self-stretch lg:gap-4">
+                <p className="text-center text-base not-italic font-semibold leading-[150%]">
+                  {"Efficient"}
+                </p>
+                <div className="flex flex-col items-start gap-5 self-stretch lg:gap-6">
+                  <h2 className="self-stretch text-4xl not-italic font-bold leading-[120%] lg:text-5xl">
+                    {"Expert Heating Services for Your Home"}
+                  </h2>
+                  <p className="self-stretch text-base not-italic font-normal leading-[150%] lg:text-lg">
+                    {
+                      "Stay warm and comfortable with our top-notch heating services. We specialize in providing efficient heating solutions tailored to your needs."
+                    }
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-col items-start gap-6 self-stretch px-0 py-2 lg:flex-row">
+                {/*list*/}
+                <div className="flex flex-col items-start gap-3 self-stretch lg:gap-4 lg:flex-[1_0_0]">
+                  <h6 className="self-stretch text-lg not-italic font-bold leading-[140%] lg:text-xl">
+                    {"Reliable Solutions"}
+                  </h6>
+                  <p className="self-stretch text-base not-italic font-normal leading-[150%]">
+                    {
+                      "Our team of experts will ensure your home is cozy and warm throughout the winter."
+                    }
+                  </p>
+                </div>
+                <div className="flex flex-col items-start gap-3 self-stretch lg:gap-4 lg:flex-[1_0_0]">
+                  <h6 className="self-stretch text-lg not-italic font-bold leading-[140%] lg:text-xl">
+                    {"Flexible Options"}
+                  </h6>
+                  <p className="self-stretch text-base not-italic font-normal leading-[150%]">
+                    {
+                      "Choose from a wide range of heating systems that suit your budget and preferences."
+                    }
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex items-center gap-6 pt-4">
+              <Button buttonText="Learn More" variant="secondary" />
+            </div>
+          </div>
+          <div className="h-[348px] self-stretch lg:h-[640px] lg:flex-[1_0_0]">
+            {/*Image*/}
+            <img
+              src={"https://picsum.photos/seed/picsum/200/300"}
+              width={500}
+              height={300}
+              alt="test image"
+            />
+          </div>
+        </div>
+      </div>
       <Carousel />
       <Faq description={"this is a test"} href="/about" />
       <Cta />
