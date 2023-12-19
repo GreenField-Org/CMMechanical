@@ -1,10 +1,15 @@
 interface ContainerProps {
   children: React.ReactNode;
+  center?: boolean;
 }
 
-export default function Container({ children }: ContainerProps) {
+export default function Container({ children, center }: ContainerProps) {
   return (
-    <div className="flex flex-col items-start gap-12 self-stretch lg:flex-row lg:gap-20">
+    <div
+      className={`flex flex-col ${
+        center ? "item-center" : "items-start"
+      } gap-12 self-stretch lg:flex-row lg:gap-20`}
+    >
       {children}
     </div>
   );

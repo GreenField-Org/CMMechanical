@@ -7,7 +7,7 @@ export default function Socials() {
     <div className="flex justify-center">
       <Link
         href="https://www.facebook.com/CMMechanicalHVAC"
-        className="shadow-2xl shadow-primary w-[50px] rounded-full"
+        className="hover:drop-shadow-2xl w-[50px] rounded-full"
       >
         <LogoFacebook
           color={"#25368A"}
