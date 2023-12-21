@@ -20,6 +20,9 @@ export default function Footer() {
           <Link className="hover:text-tertiary" href="/services">
             Services
           </Link>
+          <Link className="hover:text-tertiary" href="/financing">
+            Financing
+          </Link>
           <Link className="hover:text-tertiary" href="/contact">
             Contact
           </Link>
