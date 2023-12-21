@@ -64,9 +64,10 @@ export default function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-tertiary">
-                  Services
-                </Link>
+                <Link href="/financing">Financing</Link>
+              </li>
+              <li>
+                <Link href="/services">Services</Link>
               </li>
               <li>
                 <Link href="/products" className="hover:text-tertiary">
