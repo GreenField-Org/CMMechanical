@@ -54,10 +54,14 @@ export default function Navbar() {
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <li>
-                <Link href="/">Home</Link>
+                <Link href="/" className="hover:text-tertiary">
+                  Home
+                </Link>
               </li>
               <li>
-                <Link href="/about">About</Link>
+                <Link href="/about" className="hover:text-tertiary">
+                  About
+                </Link>
               </li>
               <li>
                 <Link href="/financing">Financing</Link>
@@ -66,10 +70,14 @@ export default function Navbar() {
                 <Link href="/services">Services</Link>
               </li>
               <li>
-                <Link href="/products">Products</Link>
+                <Link href="/products" className="hover:text-tertiary">
+                  Products
+                </Link>
               </li>
               <li>
-                <Link href="/contact">Contact</Link>
+                <Link href="/contact" className="hover:text-tertiary">
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
