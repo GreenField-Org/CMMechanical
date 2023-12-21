@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <>
       <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
         <Container>
           <div className="flex flex-col items-start gap-3 self-stretch lg:gap-4">
@@ -185,6 +185,6 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
-    </main>
+    </>
   );
 }

@@ -10,7 +10,7 @@ import Section from "./components/section/section";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <>
       <div className="flex w-[375px] h-[812px] flex-col items-center lg:w-[1440px] lg:h-[824px]">
         <div className="flex-[1_0_0] self-stretch">
           <video src="https://picsum.photos/200/300"></video>
@@ -193,6 +193,6 @@ export default function Home() {
       </Section>
       {/* Testimonials */}
       <Cta />
-    </main>
+    </>
   );
 }
