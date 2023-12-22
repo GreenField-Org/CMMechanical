@@ -126,13 +126,13 @@ export default function AboutPage() {
         </Container>
       </div>
       <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
-        <div className="flex flex-col items-start gap-5 lg:gap-6 lg:w-[560px] self-stretch">
-          <div className="flex flex-col items-start gap-4 self-stretch">
+        <div className="flex flex-col items-start gap-5  self-stretch lg:flex-row lg:gap-20">
+          <div className="flex flex-col items-start gap-4 self-stretch lg:flex-[1_0_0]">
             <h3 className="self-stretch text-[32px] lg:text-5xl not-italic font-bold leading-[120%]">
               {"Discover the Hassle-Free Process of Working with Us"}
             </h3>
           </div>
-          <div className="flex flex-col items-start gap-6 self-stretch">
+          <div className="flex flex-col items-start gap-6 self-stretch lg:flex-[1_0_0]">
             <p className="self-stretch text-base lg:text-lg not-italic font-normal leading-[150%]">
               {
                 "At our family-owned HVAC business, we make it easy for you to get the heating, cooling, and ductless services you need. From the initial consultation to the installation and ongoing maintenance, we are with you every step of the way."
