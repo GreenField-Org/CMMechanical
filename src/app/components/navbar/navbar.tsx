@@ -31,15 +31,15 @@ export default function Navbar() {
                   <CloseOutline
                     color={"#25368A"}
                     title={"close"}
-                    height="25px"
-                    width="25px"
+                    height="30px"
+                    width="30px"
                   />
                 ) : (
                   <ReorderThreeOutline
                     color={"#25368A"}
                     title={"open"}
-                    height="25px"
-                    width="25px"
+                    height="30px"
+                    width="30px"
                   />
                 )}
               </button>
