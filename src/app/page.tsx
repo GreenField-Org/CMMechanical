@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <div className="flex w-[375px] h-[812px] flex-col items-center lg:w-[1440px] lg:h-[824px]">
-        <div className="flex-[1_0_0] self-stretch">
+        <div className="flex-[1_0_0] self-stretch bg-slate-800">
           <video src="https://picsum.photos/200/300"></video>
         </div>
         <div className="flex flex-col lg:flex-row items-start gap-5 self-stretch px-5 py-12 lg:gap-20 lg:px-16 lg:py-20">
@@ -80,7 +80,7 @@ export default function Home() {
               <Button buttonText="Learn More" variant="secondary" />
             </div>
           </div>
-          <div className="h-[348px] self-stretch lg:h-[640px] lg:flex-[1_0_0]">
+          <div className="h-[348px] self-stretch lg:h-[640px] lg:flex-[1_0_0] bg-slate-800">
             {/*Image*/}
             <img
               src={"https://picsum.photos/seed/picsum/200/300"}
@@ -110,7 +110,7 @@ export default function Home() {
               <Button buttonText="Learn More" variant="primary" />
             </div>
           </div>
-          <div className="h-[348px] self-stretch lg:h-[640px] lg:flex-[1_0_0]">
+          <div className="h-[348px] self-stretch lg:h-[640px] lg:flex-[1_0_0] bg-slate-800">
             <img
               src={"https://picsum.photos/seed/picsum/200/300"}
               width={200}
@@ -149,7 +149,7 @@ export default function Home() {
         <Container>
           <div className="flex flex-col items-start gap-10 self-stretch lg:gap-10 lg:flex-[1_0_0]">
             <div className="flex justify-center items-start gap-8 self-stretch">
-              <div className="w-0.5 h-[166px] lg:h-[130px]"></div>
+              <div className="w-0.5 h-[166px] lg:h-[130px] bg-slate-800"></div>
               <div className="flex flex-col justify-center items-start gap-3 flex-[1_0_0] lg:gap-4">
                 <h4 className="self-stretch text-2xl not-italic font-bold leading-[140%] lg:text-[32px] lg:leading-[130%]">
                   {"Discover Our Products"}
