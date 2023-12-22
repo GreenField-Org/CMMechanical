@@ -31,15 +31,15 @@ export default function Navbar() {
                   <CloseOutline
                     color={"#25368A"}
                     title={"close"}
-                    height="25px"
-                    width="25px"
+                    height="30px"
+                    width="30px"
                   />
                 ) : (
                   <ReorderThreeOutline
                     color={"#25368A"}
                     title={"open"}
-                    height="25px"
-                    width="25px"
+                    height="30px"
+                    width="30px"
                   />
                 )}
               </button>
@@ -54,19 +54,30 @@ export default function Navbar() {
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <li>
-                <Link href="/">Home</Link>
+                <Link href="/" className="hover:text-tertiary">
+                  Home
+                </Link>
               </li>
               <li>
-                <Link href="/about">About</Link>
+                <Link href="/about" className="hover:text-tertiary">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link href="/financing">Financing</Link>
               </li>
               <li>
                 <Link href="/services">Services</Link>
               </li>
               <li>
-                <Link href="/products">Products</Link>
+                <Link href="/products" className="hover:text-tertiary">
+                  Products
+                </Link>
               </li>
               <li>
-                <Link href="/contact">Contact</Link>
+                <Link href="/contact" className="hover:text-tertiary">
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
