@@ -4,45 +4,21 @@ import { useRouter } from "next/navigation";
 import Button from "../button/button";
 import { useState } from "react";
 import Accordion from "../accordion/accordion";
+import Link from "next/link";
 
 interface FaqProps {
+  title?: string;
   description: string;
   href?: string;
+  faqs: Array<{ title: string; data: string; key: number; isOpen: boolean }>;
 }
 
-export default function Faq({ description, href }: FaqProps) {
+export default function Faq({ title, description, href, faqs }: FaqProps) {
   const router = useRouter();
-  const [accordions, setAccordion] = useState([
-    {
-      key: 1,
-      title: "What is GeeksforGeeks?",
-      data: `GeeksforGeeks is a one stop solution  
-                      for all computer science students.`,
-      isOpen: false,
-    },
-    {
-      key: 2,
-      title: "What GeeksforGeeks offer us?",
-      data: `GeeksforGeeks offers Free Tutorials,  
-                      Millions of Articles, Live, Online and  
-                      Classroom Courses,Frequent Coding Competitions,  
-                      Webinars by Industry Experts, Internship  
-                      opportunities and Job Opportunities.`,
-      isOpen: false,
-    },
-    {
-      key: 3,
-      title: "Which is the best portal to study Computer Science?",
-      data: `GeeksforGeeks is the best Computer Science portal  
-                      for geeks. It contains well written, well thought  
-                      and well explained computer science and programming  
-                      articles.`,
-      isOpen: false,
-    },
-  ]);
+  const [accordions, setAccordion] = useState(faqs);
 
   const toggleAccordion = (accordionkey: number) => {
-    const updatedAccordions = accordions.map((accord) => {
+    const updatedAccordions = accordions?.map((accord) => {
       if (accord.key === accordionkey) {
         return { ...accord, isOpen: !accord.isOpen };
       } else {
@@ -59,19 +35,12 @@ export default function Faq({ description, href }: FaqProps) {
         <div className="flex flex-col items-start gap-6 self-stretch">
           <div className="flex flex-col items-start gap-5 self-stretch">
             <h2 className="self-stretch text-4xl not-italic font-bold leading-[120%] lg:text-5xl">
-              {"FAQ"}
+              {title}
             </h2>
             <p className="self-stretch text-base lg:text-lg not-italic font-normal leading-[150%]">
               {description}
             </p>
           </div>
-          {href ? (
-            <Button
-              buttonText="Learn More"
-              variant="secondary"
-              onClick={() => router.push(href)}
-            />
-          ) : null}
         </div>
       </div>
       <div>
@@ -85,6 +54,21 @@ export default function Faq({ description, href }: FaqProps) {
           />
         ))}
       </div>
+      {href ? (
+        <div className="flex flex-col items-center gap-6 self-stretch">
+          <div className="flex flex-col items-center gap-4 self-stretch">
+            <h4 className="self-stretch text-center text-2xl not-italic font-bold leading-[140%]">
+              {"Still have questions?"}
+            </h4>
+            <p className="self-stretch text-center text-base not-italic font-normal leading-[150%]">
+              {"contact us today for more information."}
+            </p>
+          </div>
+          <Link href={href}>
+            <Button buttonText="Contact" variant="secondary" />
+          </Link>
+        </div>
+      ) : null}
     </div>
   );
 }
