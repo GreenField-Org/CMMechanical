@@ -1,205 +1,280 @@
+"use client";
+
 import Button from "@/app/components/button/button";
 import Container from "@/app/components/container/container";
 import Faq from "@/app/components/faq/faq";
+import { SnowOutline } from "react-ionicons";
 
 const coolingFaqs = [
-    {
-        key: 1,
-        title: "How do heating systems work?",
-        data: `lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru`,
-        isOpen: false,
-    },
-    {
-        key: 2,
-        title: "What are the benefits of regular maintenance?",
-        data: `lorems ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru`,
-        isOpen: false,
-    },
-    {
-        key: 3,
-        title: "How often should I replace my heating system?",
-        data: `lorems ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru`,
-        isOpen: false,
-    },
-    {
-        key: 4,
-        title: "Can I install a heating system myself?",
-        data: `lorems ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru`,
-        isOpen: false,
-    },
-    {
-        key: 5,
-        title: "What is the NYSERTA program?",
-        data: `lorems ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru`,
-        isOpen: false,
-    },
+  {
+    key: 1,
+    title: "How do heating systems work?",
+    data: `lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru`,
+    isOpen: false,
+  },
+  {
+    key: 2,
+    title: "What are the benefits of regular maintenance?",
+    data: `lorems ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru`,
+    isOpen: false,
+  },
+  {
+    key: 3,
+    title: "How often should I replace my heating system?",
+    data: `lorems ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru`,
+    isOpen: false,
+  },
+  {
+    key: 4,
+    title: "Can I install a heating system myself?",
+    data: `lorems ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru`,
+    isOpen: false,
+  },
+  {
+    key: 5,
+    title: "What is the NYSERTA program?",
+    data: `lorems ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru`,
+    isOpen: false,
+  },
 ];
 
 export default function CoolingPage() {
-    return (
-        <>
-            <div className="w-[375px] h-[352px] px-5 py-16 bg-black bg-opacity-50 flex-col justify-start items-start gap-12 inline-flex lg:w-[1440px] lg:h-[470px] lg:px-16 lg:py-28 lg:gap-20">
-                <div className="self-stretch h-56 flex-col justify-start items-start gap-2 flex">
-                    <div className="self-stretch h-[152px] flex-col justify-start items-start gap-3 flex">
-                        <div className="text-white text-base font-semibold leading-normal">Expertise</div>
-                        <div className="self-stretch h-[116px] flex-col justify-start items-start gap-5 flex">
-                            <div className="self-stretch text-white text-[40px] lg:font-[56px] font-bold leading-[48px]">Stay Cool All</div>
-                            <div className="self-stretch text-white text-base lg:text-lg font-normal leading-normal">Trust our family-owned HVAC business in the capital region for reliable cooling services.</div>
-                        </div>
-                    </div>
-                    <div className="pt-4 justify-start items-start gap-4 inline-flex">
-                        <Button buttonText="Learn More" variant="secondary" />
-                        <Button buttonText="Contact Us" variant="secondary" />
-                    </div>
-                </div>
+  return (
+    <>
+      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 bg-black bg-opacity-50 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+        <Container>
+          <div className="flex flex-col items-start gap-3 self-stretch lg:gap-4">
+            <p className="text-white text-base not-italic font-semibold leading-[150%]">
+              {"Expertise"}
+            </p>
+            <div className="flex flex-col items-start gap-5 self-stretch lg:gap-6">
+              <h1 className="self-stretch text-white text-[40px] not-italic font-bold leading-[120%] lg:text-[56px]">
+                {"Stay Cool All Summer Long"}
+              </h1>
+              <p className="self-stretch text-white text-base not-italic font-normal leading-[150%] lg:text-lg">
+                {
+                  "Trust our family-owned HVAC business in the capital region for reliable cooling services."
+                }
+              </p>
             </div>
-            <div className="w-[375px] h-[1014px] px-5 py-16 flex-col justify-start items-start gap-12 inline-flex lg:w-[1440px] lg:h-[470px] lg:px-16 lg:py-28 lg:gap-20">
-                <div className="self-stretch h-[886px] flex-col justify-start items-start gap-12 flex lg:flex-row">
-                    <div className="self-stretch h-[490px] flex-col justify-start items-start gap-8 flex">
-                        <div className="self-stretch justify-start items-start gap-8 inline-flex">
-                            <div className="w-[142px] self-stretch origin-top-left rotate-90 border-2 border-black"></div>
-                            <div className="grow shrink basis-0 flex-col justify-center items-start gap-3 inline-flex">
-                                <div className="self-stretch text-2xl font-bold leading-[33.60px]">Expert Cooling Services</div>
-                                <div className="self-stretch text-base font-normal leading-normal">We offer professional air conditioning installation, maintenance, and repair services to keep your home cool and comfortable.</div>
-                            </div>
-                        </div>
-                        <div className="self-stretch justify-start items-start gap-8 inline-flex">
-                            <div className="w-[142px] self-stretch origin-top-left rotate-90 opacity-0 border-2 border-black"></div>
-                            <div className="grow shrink basis-0 flex-col justify-center items-start gap-3 inline-flex">
-                                <div className="self-stretch text-2xl font-bold leading-[33.60px]">Quality AC Solutions</div>
-                                <div className="self-stretch text-base font-normal leading-normal">Our team of certified technicians is experienced in providing top-notch air conditioning solutions tailored to your specific needs.</div>
-                            </div>
-                        </div>
-                        <div className="self-stretch justify-start items-start gap-8 inline-flex">
-                            <div className="w-[142px] self-stretch origin-top-left rotate-90 opacity-0 border-2 border-black"></div>
-                            <div className="grow shrink basis-0 flex-col justify-center items-start gap-3 inline-flex">
-                                <div className="self-stretch text-2xl font-bold leading-[33.60px]">Reliable AC Repair</div>
-                                <div className="self-stretch text-base font-normal leading-normal">When your air conditioner breaks down, our experts are here to quickly diagnose and repair any issues, ensuring your system is up and running smoothly.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <img className="self-stretch h-[348px]" src="https://via.placeholder.com/335x348" />
-                </div>
+          </div>
+          <div className="flex items-start gap-4 pt-4">
+            <Button buttonText="Learn More" variant="primary" />
+            <Button buttonText="Contact Us" variant="secondary" />
+          </div>
+        </Container>
+      </div>
+      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:items-center lg:gap-20 lg:px-16 lg:py-28">
+        <Container>
+          <div className="flex flex-col items-start gap-8 self-stretch lg:gap-10 lg:flex-[1_0_0]">
+            <div className="flex items-start gap-8 self-stretch">
+              <div className="w-0.5 h-[142px] lg:h-[106px]"></div>
+              <div className="flex flex-col justify-center items-start gap-3 flex-[1_0_0] lg:gap-4">
+                <h4 className="self-stretch text-2xl not-italic font-bold leading-[140%] lg:text-[32px]">
+                  {"Expert Cooling Services"}
+                </h4>
+                <p className="self-stretch text-base not-italic font-normal leading-[150%]">
+                  {
+                    "We offer professional air conditioning installation, maintenance, and repair services to keep your home cool and comfortable."
+                  }
+                </p>
+              </div>
             </div>
-            <div className="w-[375px] h-[901px] px-5 py-16 flex-col justify-start items-start gap-12 inline-flex lg:w-[1440px] lg:h-[470px] lg:px-16 lg:py-28 lg:gap-20">
-                <div className="self-stretch h-[773px] flex-col justify-start items-start gap-12 flex">
-                    <div className="self-stretch h-[377px] flex-col justify-start items-start gap-2 flex">
-                        <div className="self-stretch h-[305px] flex-col justify-start items-start gap-3 flex">
-                            <div className="text-center text-base font-semibold leading-normal">Efficient</div>
-                            <div className="self-stretch h-[269px] flex-col justify-start items-start gap-5 flex">
-                                <div className="self-stretch text-4xl font-bold leading-[43.20px]">Stay Cool with Mitsubishi Cooling Solutions</div>
-                                <div className="self-stretch text-base font-normal leading-normal">Experience ultimate comfort with our range of Mitsubishi cooling products. From air conditioners to ductless systems, we have the perfect solution to keep your home cool and comfortable all year round.</div>
-                            </div>
-                        </div>
-                        <div className="pt-4 justify-start items-center gap-6 inline-flex">
-                            <div className="px-6 py-3 border border-black justify-center items-center gap-2 flex">
-                                <div className="text-base font-normal leading-normal">Learn More</div>
-                            </div>
-                            <div className="justify-center items-center gap-2 flex">
-                                <div className="text-base font-normal leading-normal">Sign Up</div>
-                                <div className="w-6 h-6 relative"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <img className="self-stretch h-[348px]" src="https://via.placeholder.com/335x348" />
-                </div>
+            <div className="flex items-start gap-8 self-stretch">
+              <div className="w-0.5 h-[142px] lg:h-[106px]"></div>
+              <div className="flex flex-col justify-center items-start gap-3 flex-[1_0_0] lg:gap-4">
+                <h4 className="self-stretch text-2xl not-italic font-bold leading-[140%] lg:text-[32px]">
+                  {"Quality AC Solutions"}
+                </h4>
+                <p className="self-stretch text-base not-italic font-normal leading-[150%]">
+                  {
+                    "Our team of certified technicians is experienced in providing top-notch air conditioning solutions tailored to your specific needs."
+                  }
+                </p>
+              </div>
             </div>
-            <div className="w-[375px] h-[1042px] px-5 py-16 flex-col justify-start items-start gap-12 inline-flex lg:w-[1440px] lg:h-[470px] lg:px-16 lg:py-28 lg:gap-20">
-                <div className="self-stretch h-[914px] flex-col justify-start items-start gap-12 flex">
-                    <div className="self-stretch h-[518px] flex-col justify-start items-start gap-5 flex">
-                        <div className="self-stretch h-[306px] flex-col justify-start items-start gap-5 flex">
-                            <div className="self-stretch text-[32px] font-bold leading-[38.40px]">Choose Our Cooling Services for Energy Efficiency, Cost Savings, and Improved Comfort</div>
-                            <div className="self-stretch text-base font-normal leading-normal">Our cooling services offer energy-efficient solutions that can help you save on your utility bills while ensuring optimal comfort in your home or office.</div>
-                        </div>
-                        <div className="self-stretch h-48 py-2 flex-col justify-start items-start gap-4 flex">
-                            <div className="self-stretch justify-start items-center gap-4 inline-flex">
-                                <div className="w-4 h-4 relative"></div>
-                                <div className="grow shrink basis-0 text-base font-normal leading-normal">Energy-efficient cooling solutions for cost savings</div>
-                            </div>
-                            <div className="self-stretch justify-start items-center gap-4 inline-flex">
-                                <div className="w-4 h-4 relative"></div>
-                                <div className="grow shrink basis-0 text-base font-normal leading-normal">Enhanced comfort with our cooling services</div>
-                            </div>
-                            <div className="self-stretch justify-start items-center gap-4 inline-flex">
-                                <div className="w-4 h-4 relative"></div>
-                                <div className="grow shrink basis-0 text-base font-normal leading-normal">Stay cool and save money with our cooling solutions</div>
-                            </div>
-                        </div>
-                    </div>
-                    <img className="self-stretch h-[348px]" src="https://via.placeholder.com/335x348" />
-                </div>
+            <div className="flex items-start gap-8 self-stretch">
+              <div className="w-0.5 h-[142px] lg:h-[106px]"></div>
+              <div className="flex flex-col justify-center items-start gap-3 flex-[1_0_0] lg:gap-4">
+                <h4 className="self-stretch text-2xl not-italic font-bold leading-[140%] lg:text-[32px]">
+                  {"Reliable AC Repair"}
+                </h4>
+                <p className="self-stretch text-base not-italic font-normal leading-[150%]">
+                  {
+                    "When your air conditioner breaks down, our experts are here to quickly diagnose and repair any issues, ensuring your system is up and running smoothly."
+                  }
+                </p>
+              </div>
             </div>
-            <div className="w-[375px] h-[1681px] px-5 py-16 flex-col justify-start items-center gap-12 inline-flex lg:w-[1440px] lg:h-[470px] lg:px-16 lg:py-28 lg:gap-20">
-                <div className="self-stretch h-[281px] flex-col justify-start items-center gap-3 flex">
-                    <div className="text-center text-base font-semibold leading-normal">Efficient</div>
-                    <div className="self-stretch h-[245px] flex-col justify-start items-center gap-5 flex">
-                        <div className="self-stretch text-center text-4xl font-bold leading-[43.20px]">Easy and Convenient Cooling Services for You</div>
-                        <div className="self-stretch text-center text-base font-normal leading-normal">Scheduling and receiving cooling services from our company is a breeze. Our team of experts will guide you through the process, ensuring a seamless experience from start to finish.</div>
-                    </div>
-                </div>
-                <div className="self-stretch h-[1224px] flex-col justify-start items-center gap-6 flex">
-                    <div className="self-stretch h-[1136px] flex-col justify-start items-center gap-12 flex">
-                        <div className="self-stretch h-[358px] flex-col justify-start items-start gap-6 flex">
-                            <img className="self-stretch h-[198px]" src="https://via.placeholder.com/335x198" />
-                            <div className="self-stretch h-[136px] flex-col justify-start items-center gap-5 flex">
-                                <div className="self-stretch text-center text-2xl font-bold leading-[33.60px]">Step 1: Schedule Your Cooling Service</div>
-                                <div className="self-stretch text-center text-base font-normal leading-normal">Contact us to schedule your cooling service appointment.</div>
-                            </div>
-                        </div>
-                        <div className="self-stretch h-[358px] flex-col justify-start items-start gap-6 flex">
-                            <img className="self-stretch h-[198px]" src="https://via.placeholder.com/335x198" />
-                            <div className="self-stretch h-[136px] flex-col justify-start items-center gap-5 flex">
-                                <div className="self-stretch text-center text-2xl font-bold leading-[33.60px]">Step 2: Professional Cooling Service</div>
-                                <div className="self-stretch text-center text-base font-normal leading-normal">Our certified technicians will arrive promptly and provide top-notch cooling services.</div>
-                            </div>
-                        </div>
-                        <div className="self-stretch h-[324px] flex-col justify-start items-start gap-6 flex">
-                            <img className="self-stretch h-[198px]" src="https://via.placeholder.com/335x198" />
-                            <div className="self-stretch h-[102px] flex-col justify-start items-center gap-5 flex">
-                                <div className="self-stretch text-center text-2xl font-bold leading-[33.60px]">Step 3: Enjoy Cool Comfort</div>
-                                <div className="self-stretch text-center text-base font-normal leading-normal">Sit back, relax, and enjoy the cool comfort of your home.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="pt-4 justify-start items-center gap-6 inline-flex">
-                        <div className="px-6 py-3 border border-black justify-center items-center gap-2 flex">
-                            <div className="text-base font-normal leading-normal">Schedule</div>
-                        </div>
-                        <div className="justify-center items-center gap-2 flex">
-                            <div className="text-base font-normal leading-normal">Contact</div>
-                            <div className="w-6 h-6 relative"></div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div className="h-[348px] self-stretch bg-gray-300 shadow-2xl lg:h-[640px] lg:flex-[1_0_0]"></div>
+        </Container>
+      </div>
+      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+        <Container>
+          <div className="flex flex-col items-start gap-2 self-stretch lg:gap-6 lg:flex-[1_0_0]">
+            <div className="flex flex-col items-start gap-3 self-stretch lg:gap-4">
+              <p className="text-center text-base not-italic font-semibold leading-[150%]">
+                {"Efficient"}
+              </p>
+              <div className="flex flex-col items-start gap-5 self-stretch lg:gap-6">
+                <h2 className="self-stretch text-4xl not-italic font-bold leading-[120%] lg:text-5xl">
+                  {"Stay Cool with Mitsubishi Colling Solutions"}
+                </h2>
+                <p className="self-stretch text-base not-italic font-normal leading-[150%] lg:text-lg">
+                  {
+                    "Experience ultimate comfort with our range of Mitsubishi cooling products. From air conditioners to ductless systems, we have the perfect solution to keep your home cool and comfortable all year round."
+                  }
+                </p>
+              </div>
             </div>
-            <div className="w-[375px] h-[312px] px-5 py-16 flex-col justify-start items-start gap-12 inline-flex lg:w-[1440px] lg:h-[470px] lg:px-16 lg:py-28 lg:gap-20">
-                <div className="self-stretch h-[184px] flex-col justify-center items-start gap-6 flex">
-                    <div className="self-stretch h-28 flex-col justify-start items-start gap-3 flex">
-                        <div className="self-stretch text-[32px] font-bold leading-[38.40px]">Expert Cooling Services for You</div>
-                        <div className="self-stretch text-base font-normal leading-normal">Stay cool with our reliable cooling solutions</div>
-                    </div>
-                    <div className="justify-start items-start gap-4 inline-flex">
-                        <div className="px-6 py-3 bg-black border border-black justify-center items-center gap-2 flex">
-                            <div className="text-white text-base font-normal leading-normal">Schedule</div>
-                        </div>
-                        <div className="px-6 py-3 border border-black justify-center items-center gap-2 flex">
-                            <div className="text-base font-normal leading-normal">Contact</div>
-                        </div>
-                    </div>
-                </div>
+            <div className="flex items-center gap-6 pt-4">
+              <Button buttonText="Learn More" variant="secondary" />
             </div>
-            <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
-                <Container center>
-                    <Faq
-                        title={"FAQs"}
-                        description={
-                            "Find answers to commonly asked questions about heating systems, installation, and maintenance."
-                        }
-                        href={"/contact"}
-                        faqs={coolingFaqs}
-                    />
-                </Container>
+          </div>
+          <div className="h-[348px] self-stretch bg-gray-300 shadow-2xl lg:h-[640px] lg:flex-[1_0_0]"></div>
+        </Container>
+      </div>
+      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+        <Container classes={`lg:flex-row`}>
+          <div className="flex flex-col items-start gap-5 self-stretch lg:gap-8 lg:flex-[1_0_0]">
+            <div className="flex flex-col items-start gap-5 self-stretch lg:gap-6">
+              <h3 className="self-stretch text-[32px] not-italic font-bold leading-[120%] lg:text-[40px]">
+                {
+                  "Choose Our Cooling Services for Energy Efficiency, Cost Savings, and Improved Comfort"
+                }
+              </h3>
+              <p className="self-stretch text-base not-italic font-normal leading-[150%] lg:text-lg">
+                {
+                  "Our cooling services offer energy-efficient solutions that can help you save on your utility bills while ensuring optimal comfort in your home or office."
+                }
+              </p>
             </div>
-        </>
-    )
+            <div className="flex flex-col items-start gap-4 self-stretch px-0 py-2">
+              <div className="flex items-center gap-4 self-stretch">
+                <SnowOutline
+                  color={"#25368A"}
+                  title={""}
+                  height="25px"
+                  width="25px"
+                />
+                <p className="flex-[1_0_0] text-base not-italic font-normal leading-[150%]">
+                  {"Energy-efficient cooling solutions for cost savings"}
+                </p>
+              </div>
+              <div className="flex items-center gap-4 self-stretch">
+                <SnowOutline
+                  color={"#25368A"}
+                  title={""}
+                  height="25px"
+                  width="25px"
+                />
+                <p className="flex-[1_0_0] text-base not-italic font-normal leading-[150%]">
+                  {"Enhanced comfort with our cooling services"}
+                </p>
+              </div>
+              <div className="flex items-center gap-4 self-stretch">
+                <SnowOutline
+                  color={"#25368A"}
+                  title={""}
+                  height="25px"
+                  width="25px"
+                />
+                <p className="flex-[1_0_0] text-base not-italic font-normal leading-[150%]">
+                  {"Stay cool and save money with our cooling solutions"}
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="h-[348px] self-stretch bg-gray-300 shadow-2xl lg:h-[640px] lg:flex-[1_0_0]"></div>
+        </Container>
+      </div>
+      <div className="flex w-[375px] flex-col items-center gap-12 px-5 py-16 lg:w-[1400px] lg:gap-20 lg:px-16 lg:py-28">
+        <div className="flex flex-col items-center gap-3 self-stretch lg:w-[768px] lg:gap-4">
+          <p className="text-center text-base not-italic font-semibold leading-[150%]">
+            {"Efficient"}
+          </p>
+          <div className="flex flex-col items-center gap-5 self-stretch lg:gap-6">
+            <h2 className="self-stretch text-center text-4xl not-italic font-bold leading-[120%] lg:text-5xl">
+              {"Easy and Convenient Cooling Services for You"}
+            </h2>
+            <p className="self-stretch text-center text-base not-italic font-normal leading-[150%] lg:text-lg">
+              {
+                "Scheduling and receiving cooling services from our company is a breeze. Our team of experts will guide you through the process, ensuring a seamless experience from start to finish."
+              }
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col items-center gap-6 self-stretch lg:gap-12">
+          <div className="flex flex-col items-center gap-12 self-stretch lg:w-[1312px] lg:flex-row lg:items-start">
+            <div className="flex flex-col items-start gap-6 self-stretch lg:gap-8 lg:flex-[1_0_0]">
+              <div className="h-[198px] self-stretch bg-gray-300 shadow-2xl lg:h-60"></div>
+              <div className="flex flex-col items-center gap-5 self-stretch lg:gap-6">
+                <h4 className="self-stretch text-center text-2xl not-italic font-bold leading-[140%] lg:text-[32px]">
+                  {"Step 1: Schedule Your Cooling Service"}
+                </h4>
+                <p className="self-stretch text-center text-base not-italic font-normal leading-[150%]">
+                  {"Contact us to schedule your cooling service appointment."}
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col items-start gap-6 self-stretch lg:gap-8 lg:flex-[1_0_0]">
+              <div className="h-[198px] self-stretch bg-gray-300 shadow-2xl lg:h-60"></div>
+              <div className="flex flex-col items-center gap-5 self-stretch lg:gap-6">
+                <h4 className="self-stretch text-center text-2xl not-italic font-bold leading-[140%] lg:text-[32px]">
+                  {"Step 2: Professional Cooling Service"}
+                </h4>
+                <p className="self-stretch text-center text-base not-italic font-normal leading-[150%]">
+                  {
+                    "Our certified technicians will arrive promptly and provide top-notch cooling services."
+                  }
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col items-start gap-6 self-stretch lg:gap-8 lg:flex-[1_0_0]">
+              <div className="h-[198px] self-stretch bg-gray-300 shadow-2xl lg:h-60"></div>
+              <div className="flex flex-col items-center gap-5 self-stretch lg:gap-6">
+                <h4 className="self-stretch text-center text-2xl not-italic font-bold leading-[140%] lg:text-[32px]">
+                  {"Step 3: Enjoy Cool Comfort"}
+                </h4>
+                <p className="self-stretch text-center text-base not-italic font-normal leading-[150%]">
+                  {"Sit back, relax, and enjoy the cool comfort of your home."}
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="flex items-center gap-6 pt-4">
+            <Button buttonText="Contact Us" variant="secondary" />
+          </div>
+        </div>
+      </div>
+      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+        <Container classes={`lg:flex-row`}>
+          <div className="flex flex-col items-start gap-3 self-stretch lg:gap-6 lg:flex-[1_0_0] lg:w-[768px]">
+            <h3 className="self-stretch text-[32px] not-italic font-bold leading-[120%] lg:text-[40px]">
+              {"Expert Cooling Services for You"}
+            </h3>
+            <p className="self-stretch text-base not-italic font-normal leading-[150%] lg:text-lg">
+              {"Stay cool with our reliable cooling solutions"}
+            </p>
+          </div>
+          <div className="flex items-start gap-4">
+            <Button buttonText="Contact" variant="secondary" />
+          </div>
+        </Container>
+      </div>
+      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+        <Container center>
+          <Faq
+            title={"FAQs"}
+            description={
+              "Find answers to commonly asked questions about heating systems, installation, and maintenance."
+            }
+            href={"/contact"}
+            faqs={coolingFaqs}
+          />
+        </Container>
+      </div>
+    </>
+  );
 }
