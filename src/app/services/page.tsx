@@ -37,7 +37,7 @@ export default function ServicesPage() {
         <Container>
           <div className="flex flex-col items-start gap-10 self-stretch lg:gap-10 lg:flex-[1_0_0]">
             <div className="flex justify-center items-start gap-8 self-stretch">
-              <div className="w-0.5 h-56 lg:h-[130px]"></div>
+              <div className="w-0.5 h-56 lg:h-[130px]" />
               <div className="flex flex-col justify-center items-start gap-3 lg:gap-4 flex-[1_0_0]">
                 <h4 className="self-stretch text-2xl lg:text-[32px] not-italic font-bold leading-[140%] lg:leading-[130%]">
                   {"Expert Heating Services Available"}
@@ -50,7 +50,7 @@ export default function ServicesPage() {
               </div>
             </div>
             <div className="flex justify-center items-start gap-8 self-stretch">
-              <div className="w-0.5 h-56 lg:h-[130px]"></div>
+              <div className="w-0.5 h-56 lg:h-[130px]" />
               <div className="flex flex-col justify-center items-start gap-3 lg:gap-4 flex-[1_0_0]">
                 <h4 className="self-stretch text-2xl lg:text-[32px] not-italic font-bold leading-[140%] lg:leading-[130%]">
                   {"Professional Heating Repairs"}
@@ -63,7 +63,7 @@ export default function ServicesPage() {
               </div>
             </div>
             <div className="flex justify-center items-start gap-8 self-stretch">
-              <div className="w-0.5 h-56 lg:h-[130px]"></div>
+              <div className="w-0.5 h-56 lg:h-[130px]" />
               <div className="flex flex-col justify-center items-start gap-3 lg:gap-4 flex-[1_0_0]">
                 <h4 className="self-stretch text-2xl lg:text-[32px] not-italic font-bold leading-[140%] lg:leading-[130%]">
                   {"Efficient Heating Installations"}
@@ -76,7 +76,7 @@ export default function ServicesPage() {
               </div>
             </div>
           </div>
-          <div className="h-[348px] lg:h-[640px] self-stretch lg:flex-[1_0_0] bg-gray-200"></div>
+          <div className="h-[348px] lg:h-[640px] self-stretch lg:flex-[1_0_0] bg-gray-200" />
         </Container>
       </div>
       <div className="flex w-[375px] flex-col items-center gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
@@ -86,7 +86,7 @@ export default function ServicesPage() {
         <div className="flex flex-col lg:flex-row lg:justify-center items-center lg:item-start gap-12 self-stretch">
           <div className="flex flex-col items-center gap-4 lg:gap-6 lg:flex-[1_0_0] self-stretch">
             <div className="flex flex-col items-center gap-5 lg:gap-6 self-stretch">
-              <div className="w-12 h-12"></div>
+              <div className="w-12 h-12" />
               <div className="flex flex-col items-start gap-5 lg:gap-6 self-stretch">
                 <h5 className="self-stretch text-center text-xl lg:text-2xl not-italic font-bold leading-[140%]">
                   {"Stay Cool with Our Professional Cooling Solutions"}
@@ -104,7 +104,7 @@ export default function ServicesPage() {
           </div>
           <div className="flex flex-col items-center gap-4 lg:gap-6 lg:flex-[1_0_0] self-stretch">
             <div className="flex flex-col items-center gap-5 lg:gap-6 self-stretch">
-              <div className="w-12 h-12"></div>
+              <div className="w-12 h-12" />
               <div className="flex flex-col items-start gap-5 lg:gap-6 self-stretch">
                 <h5 className="self-stretch text-center text-xl lg:text-2xl not-italic font-bold leading-[140%]">
                   {"Efficient Cooling Solutions for Every Space"}
@@ -122,7 +122,7 @@ export default function ServicesPage() {
           </div>
           <div className="flex flex-col items-center gap-4 lg:gap-6 lg:flex-[1_0_0] self-stretch">
             <div className="flex flex-col items-center gap-5 lg:gap-6 self-stretch">
-              <div className="w-12 h-12"></div>
+              <div className="w-12 h-12" />
               <div className="flex flex-col items-start gap-5 lg:gap-6 self-stretch">
                 <h5 className="self-stretch text-center text-xl lg:text-2xl not-italic font-bold leading-[140%]">
                   {
@@ -146,7 +146,7 @@ export default function ServicesPage() {
         <Container>
           <div className="flex flex-col items-start gap-10 self-stretch lg:gap-10 lg:flex-[1_0_0]">
             <div className="flex justify-center items-start gap-8 self-stretch">
-              <div className="w-0.5 h-56 lg:h-[130px]"></div>
+              <div className="w-0.5 h-56 lg:h-[130px]" />
               <div className="flex flex-col justify-center items-start gap-3 lg:gap-4 flex-[1_0_0]">
                 <h4 className="self-stretch text-2xl lg:text-[32px] not-italic font-bold leading-[140%] lg:leading-[130%]">
                   {"Expert Ductless Services"}
@@ -159,7 +159,7 @@ export default function ServicesPage() {
               </div>
             </div>
             <div className="flex justify-center items-start gap-8 self-stretch">
-              <div className="w-0.5 h-56 lg:h-[130px]"></div>
+              <div className="w-0.5 h-56 lg:h-[130px]" />
               <div className="flex flex-col justify-center items-start gap-3 lg:gap-4 flex-[1_0_0]">
                 <h4 className="self-stretch text-2xl lg:text-[32px] not-italic font-bold leading-[140%] lg:leading-[130%]">
                   {"Why Choose Us?"}
@@ -172,7 +172,7 @@ export default function ServicesPage() {
               </div>
             </div>
             <div className="flex justify-center items-start gap-8 self-stretch">
-              <div className="w-0.5 h-56 lg:h-[130px]"></div>
+              <div className="w-0.5 h-56 lg:h-[130px]" />
               <div className="flex flex-col justify-center items-start gap-3 lg:gap-4 flex-[1_0_0]">
                 <h4 className="self-stretch text-2xl lg:text-[32px] not-italic font-bold leading-[140%] lg:leading-[130%]">
                   {"Frequently Asked Questions"}
@@ -185,7 +185,7 @@ export default function ServicesPage() {
               </div>
             </div>
           </div>
-          <div className="h-[348px] lg:h-[640px] self-stretch lg:flex-[1_0_0] bg-gray-200"></div>
+          <div className="h-[348px] lg:h-[640px] self-stretch lg:flex-[1_0_0] bg-gray-200" />
         </Container>
       </div>
       <div className="flex w-[375px] flex-col items-center gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
@@ -195,7 +195,7 @@ export default function ServicesPage() {
         <div className="flex flex-col lg:flex-row lg:justify-center items-center lg:item-start gap-12 self-stretch">
           <div className="flex flex-col items-center gap-4 lg:gap-6 lg:flex-[1_0_0] self-stretch">
             <div className="flex flex-col items-center gap-5 lg:gap-6 self-stretch">
-              <div className="w-12 h-12"></div>
+              <div className="w-12 h-12" />
               <div className="flex flex-col items-start gap-5 lg:gap-6 self-stretch">
                 <h5 className="self-stretch text-center text-xl lg:text-2xl not-italic font-bold leading-[140%]">
                   {"Benefit from the NYSERDA Program and Save on Energy Costs"}
@@ -213,7 +213,7 @@ export default function ServicesPage() {
           </div>
           <div className="flex flex-col items-center gap-4 lg:gap-6 lg:flex-[1_0_0] self-stretch">
             <div className="flex flex-col items-center gap-5 lg:gap-6 self-stretch">
-              <div className="w-12 h-12"></div>
+              <div className="w-12 h-12" />
               <div className="flex flex-col items-start gap-5 lg:gap-6 self-stretch">
                 <h5 className="self-stretch text-center text-xl lg:text-2xl not-italic font-bold leading-[140%]">
                   {"Experience Superior Comfort with Mitsubishi HVAC Solutions"}
@@ -231,7 +231,7 @@ export default function ServicesPage() {
           </div>
           <div className="flex flex-col items-center gap-4 lg:gap-6 lg:flex-[1_0_0] self-stretch">
             <div className="flex flex-col items-center gap-5 lg:gap-6 self-stretch">
-              <div className="w-12 h-12"></div>
+              <div className="w-12 h-12" />
               <div className="flex flex-col items-start gap-5 lg:gap-6 self-stretch">
                 <h5 className="self-stretch text-center text-xl lg:text-2xl not-italic font-bold leading-[140%]">
                   {"Get Answers to Your HVAC Questions in Our FAQ Section"}

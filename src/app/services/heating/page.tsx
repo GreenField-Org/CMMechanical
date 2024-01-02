@@ -86,7 +86,7 @@ export default function HeatingPage() {
               <Button buttonText="Contact Us" variant="secondary" />
             </div>
           </div>
-          <div className="h-[348px] lg:h-[640px] self-stretch lg:flex-[1_0_0] bg-gray-300 shadow-2xl"></div>
+          <div className="h-[348px] lg:h-[640px] self-stretch lg:flex-[1_0_0] bg-gray-300 shadow-2xl" />
         </Container>
       </div>
       <div className="flex w-[375px] flex-col items-center gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
@@ -97,7 +97,7 @@ export default function HeatingPage() {
         </h3>
         <div className="flex flex-col lg:flex-row items-center lg:justify-center lg:items-start gap-12 self-stretch">
           <div className="flex flex-col items-start gap-6 self-stretch">
-            <div className="h-[198px] self-stretch bg-gray-300 shadow-2xl"></div>
+            <div className="h-[198px] self-stretch bg-gray-300 shadow-2xl" />
             <div className="flex flex-col items-center gap-4 self-stretch">
               <div className="flex flex-col items-start gap-3 self-stretch">
                 <h5 className="self-stretch text-center text-xl not-italic font-bold leading-[140%]">
@@ -115,7 +115,7 @@ export default function HeatingPage() {
             </div>
           </div>
           <div className="flex flex-col items-start gap-6 self-stretch">
-            <div className="h-[198px] self-stretch bg-gray-300 shadow-2xl"></div>
+            <div className="h-[198px] self-stretch bg-gray-300 shadow-2xl" />
             <div className="flex flex-col items-center gap-4 self-stretch">
               <div className="flex flex-col items-start gap-3 self-stretch">
                 <h5 className="self-stretch text-center text-xl not-italic font-bold leading-[140%]">
@@ -133,7 +133,7 @@ export default function HeatingPage() {
             </div>
           </div>
           <div className="flex flex-col items-start gap-6 self-stretch">
-            <div className="h-[198px] self-stretch bg-gray-300 shadow-2xl"></div>
+            <div className="h-[198px] self-stretch bg-gray-300 shadow-2xl" />
             <div className="flex flex-col items-center gap-4 self-stretch">
               <div className="flex flex-col items-start gap-3 self-stretch">
                 <h5 className="self-stretch text-center text-xl not-italic font-bold leading-[140%]">
@@ -171,7 +171,7 @@ export default function HeatingPage() {
         <div className="flex flex-col items-center gap-6 lg:gap-12 self-stretch">
           <div className="flex flex-col lg:flex-row lg:w-[1312px] items-center gap-12 self-stretch">
             <div className="flex flex-col items-start gap-6 self-stretch">
-              <div className="h-[198px] self-stretch bg-gray-300 shadow-2xl"></div>
+              <div className="h-[198px] self-stretch bg-gray-300 shadow-2xl" />
               <div className="flex flex-col items-center gap-5 self-stretch">
                 <h4 className="self-stretch text-center text-2xl not-italic font-bold leading-[140%]">
                   {"Energy Efficient Heating Solutions for your Home"}
@@ -182,7 +182,7 @@ export default function HeatingPage() {
               </div>
             </div>
             <div className="flex flex-col items-start gap-6 self-stretch">
-              <div className="h-[198px] self-stretch bg-gray-300 shadow-2xl"></div>
+              <div className="h-[198px] self-stretch bg-gray-300 shadow-2xl" />
               <div className="flex flex-col items-center gap-5 self-stretch">
                 <h4 className="self-stretch text-center text-2xl not-italic font-bold leading-[140%]">
                   {"Expert Technicians for Reliable Heating Installations"}
@@ -195,7 +195,7 @@ export default function HeatingPage() {
               </div>
             </div>
             <div className="flex flex-col items-start gap-6 self-stretch">
-              <div className="h-[198px] self-stretch bg-gray-300 shadow-2xl"></div>
+              <div className="h-[198px] self-stretch bg-gray-300 shadow-2xl" />
               <div className="flex flex-col items-center gap-5 self-stretch">
                 <h4 className="self-stretch text-center text-2xl not-italic font-bold leading-[140%]">
                   {"Stay Warm with Our Efficient Heating Solutions"}

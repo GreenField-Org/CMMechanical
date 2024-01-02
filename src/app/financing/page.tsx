@@ -23,7 +23,7 @@ export default function FinancingPage() {
         <Container>
           <div className="flex flex-col items-start gap-2 lg:gap-6 self-stretch lg:flex-[1_0_0]">
             <div className="flex flex-col items-start gap-5 lg:gap-6 self-stretch">
-              <div className="w-20 h-20"></div>
+              <div className="w-20 h-20" />
               <div className="flex flex-col items-start gap-5 lg:gap-6 self-stretch">
                 <h2 className="self-stretch text-4xl lg:text-5xl not-italic font-bold leading-[120%]">
                   {
@@ -70,7 +70,7 @@ export default function FinancingPage() {
               </form>
             </div>
           </div>
-          <div className="h-[348px] lg:h-[640px] lg:flex-[1_0_0] self-stretch bg-slate-100"></div>
+          <div className="h-[348px] lg:h-[640px] lg:flex-[1_0_0] self-stretch bg-slate-100" />
         </Container>
       </div>
     </>

@@ -43,7 +43,7 @@ export default function AboutPage() {
               }
             </p>
           </div>
-          <div className="h-[348px] lg:h-[640px] self-stretch lg:flex-[1_0_0] bg-gray-300"></div>
+          <div className="h-[348px] lg:h-[640px] self-stretch lg:flex-[1_0_0] bg-gray-300" />
         </Container>
       </div>
       <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
@@ -95,7 +95,7 @@ export default function AboutPage() {
               </div>
               <div className="flex flex-col items-start gap-4 self-stretch px-0 py-2">
                 <div className="flex items-start gap-4 self-stretch">
-                  <div className="w-4 h-4"></div>
+                  <div className="w-4 h-4" />
                   <p className="flex-[1_0_0] text-base not-italic font-normal leading-[150%]">
                     {
                       "Expert HVAC Services for Residential and Commercial Clients"
@@ -103,7 +103,7 @@ export default function AboutPage() {
                   </p>
                 </div>
                 <div className="flex items-start gap-4 self-stretch">
-                  <div className="w-4 h-4"></div>
+                  <div className="w-4 h-4" />
                   <p className="flex-[1_0_0] text-base not-italic font-normal leading-[150%]">
                     {
                       "Efficient Heating and Cooling Solutions for Year-Round Comfort"
@@ -111,7 +111,7 @@ export default function AboutPage() {
                   </p>
                 </div>
                 <div className="flex items-start gap-4 self-stretch">
-                  <div className="w-4 h-4"></div>
+                  <div className="w-4 h-4" />
                   <p className="flex-[1_0_0] text-base not-italic font-normal leading-[150%]">
                     {"Ductless Systems for Flexible and Zoned Climate Control"}
                   </p>
@@ -122,7 +122,7 @@ export default function AboutPage() {
               <Button buttonText="Learn More" variant="secondary" />
             </div>
           </div>
-          <div className="h-[348px] lg:h-[640px] self-stretch lg:flex-[1_0_0] bg-gray-300"></div>
+          <div className="h-[348px] lg:h-[640px] self-stretch lg:flex-[1_0_0] bg-gray-300" />
         </Container>
       </div>
       <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
@@ -142,7 +142,7 @@ export default function AboutPage() {
         </div>
         <div className="flex flex-col lg:flex-row items-center lg:item-start gap-12 lg:gap-8 self-stretch">
           <div className="flex flex-col items-start gap-3 self-stretch">
-            <div className="w-12 h-12"></div>
+            <div className="w-12 h-12" />
             <h5 className="self-stretch text-xl not-italic font-bold leading-[140%]">
               {"Expert Consultation and Customized Solutions"}
             </h5>
@@ -156,7 +156,7 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="flex flex-col items-start gap-3 self-stretch">
-            <div className="w-12 h-12"></div>
+            <div className="w-12 h-12" />
             <h5 className="self-stretch text-xl not-italic font-bold leading-[140%]">
               {"Efficient Installation and Quality Workmanship"}
             </h5>
@@ -170,7 +170,7 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="flex flex-col items-start gap-3 self-stretch">
-            <div className="w-12 h-12"></div>
+            <div className="w-12 h-12" />
             <h5 className="self-stretch text-xl not-italic font-bold leading-[140%]">
               {"Ongoing Maintenance and Exceptional Service"}
             </h5>

@@ -68,7 +68,7 @@ export default function CoolingPage() {
         <Container>
           <div className="flex flex-col items-start gap-8 self-stretch lg:gap-10 lg:flex-[1_0_0]">
             <div className="flex items-start gap-8 self-stretch">
-              <div className="w-0.5 h-[142px] lg:h-[106px]"></div>
+              <div className="w-0.5 h-[142px] lg:h-[106px]" />
               <div className="flex flex-col justify-center items-start gap-3 flex-[1_0_0] lg:gap-4">
                 <h4 className="self-stretch text-2xl not-italic font-bold leading-[140%] lg:text-[32px]">
                   {"Expert Cooling Services"}
@@ -81,7 +81,7 @@ export default function CoolingPage() {
               </div>
             </div>
             <div className="flex items-start gap-8 self-stretch">
-              <div className="w-0.5 h-[142px] lg:h-[106px]"></div>
+              <div className="w-0.5 h-[142px] lg:h-[106px]" />
               <div className="flex flex-col justify-center items-start gap-3 flex-[1_0_0] lg:gap-4">
                 <h4 className="self-stretch text-2xl not-italic font-bold leading-[140%] lg:text-[32px]">
                   {"Quality AC Solutions"}
@@ -94,7 +94,7 @@ export default function CoolingPage() {
               </div>
             </div>
             <div className="flex items-start gap-8 self-stretch">
-              <div className="w-0.5 h-[142px] lg:h-[106px]"></div>
+              <div className="w-0.5 h-[142px] lg:h-[106px]" />
               <div className="flex flex-col justify-center items-start gap-3 flex-[1_0_0] lg:gap-4">
                 <h4 className="self-stretch text-2xl not-italic font-bold leading-[140%] lg:text-[32px]">
                   {"Reliable AC Repair"}
@@ -107,7 +107,7 @@ export default function CoolingPage() {
               </div>
             </div>
           </div>
-          <div className="h-[348px] self-stretch bg-gray-300 shadow-2xl lg:h-[640px] lg:flex-[1_0_0]"></div>
+          <div className="h-[348px] self-stretch bg-gray-300 shadow-2xl lg:h-[640px] lg:flex-[1_0_0]" />
         </Container>
       </div>
       <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
@@ -132,7 +132,7 @@ export default function CoolingPage() {
               <Button buttonText="Learn More" variant="secondary" />
             </div>
           </div>
-          <div className="h-[348px] self-stretch bg-gray-300 shadow-2xl lg:h-[640px] lg:flex-[1_0_0]"></div>
+          <div className="h-[348px] self-stretch bg-gray-300 shadow-2xl lg:h-[640px] lg:flex-[1_0_0]" />
         </Container>
       </div>
       <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
@@ -186,7 +186,7 @@ export default function CoolingPage() {
               </div>
             </div>
           </div>
-          <div className="h-[348px] self-stretch bg-gray-300 shadow-2xl lg:h-[640px] lg:flex-[1_0_0]"></div>
+          <div className="h-[348px] self-stretch bg-gray-300 shadow-2xl lg:h-[640px] lg:flex-[1_0_0]" />
         </Container>
       </div>
       <div className="flex w-[375px] flex-col items-center gap-12 px-5 py-16 lg:w-[1400px] lg:gap-20 lg:px-16 lg:py-28">
@@ -208,7 +208,7 @@ export default function CoolingPage() {
         <div className="flex flex-col items-center gap-6 self-stretch lg:gap-12">
           <div className="flex flex-col items-center gap-12 self-stretch lg:w-[1312px] lg:flex-row lg:items-start">
             <div className="flex flex-col items-start gap-6 self-stretch lg:gap-8 lg:flex-[1_0_0]">
-              <div className="h-[198px] self-stretch bg-gray-300 shadow-2xl lg:h-60"></div>
+              <div className="h-[198px] self-stretch bg-gray-300 shadow-2xl lg:h-60" />
               <div className="flex flex-col items-center gap-5 self-stretch lg:gap-6">
                 <h4 className="self-stretch text-center text-2xl not-italic font-bold leading-[140%] lg:text-[32px]">
                   {"Step 1: Schedule Your Cooling Service"}
@@ -219,7 +219,7 @@ export default function CoolingPage() {
               </div>
             </div>
             <div className="flex flex-col items-start gap-6 self-stretch lg:gap-8 lg:flex-[1_0_0]">
-              <div className="h-[198px] self-stretch bg-gray-300 shadow-2xl lg:h-60"></div>
+              <div className="h-[198px] self-stretch bg-gray-300 shadow-2xl lg:h-60" />
               <div className="flex flex-col items-center gap-5 self-stretch lg:gap-6">
                 <h4 className="self-stretch text-center text-2xl not-italic font-bold leading-[140%] lg:text-[32px]">
                   {"Step 2: Professional Cooling Service"}
@@ -232,7 +232,7 @@ export default function CoolingPage() {
               </div>
             </div>
             <div className="flex flex-col items-start gap-6 self-stretch lg:gap-8 lg:flex-[1_0_0]">
-              <div className="h-[198px] self-stretch bg-gray-300 shadow-2xl lg:h-60"></div>
+              <div className="h-[198px] self-stretch bg-gray-300 shadow-2xl lg:h-60" />
               <div className="flex flex-col items-center gap-5 self-stretch lg:gap-6">
                 <h4 className="self-stretch text-center text-2xl not-italic font-bold leading-[140%] lg:text-[32px]">
                   {"Step 3: Enjoy Cool Comfort"}

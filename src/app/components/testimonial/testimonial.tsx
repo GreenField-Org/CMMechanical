@@ -16,7 +16,7 @@ export default function Testimonial({
         {comment}
       </h6>
       <div className="flex flex-col items-start gap-4">
-        <div className="w-14 h-14 rounded-[56px] bg-cyan-600"></div>
+        <div className="w-14 h-14 rounded-[56px] bg-cyan-600" />
         <div className="flex flex-col items-start">
           <p className="text-base not-italic font-semibold leading-[150%]">
             {name}

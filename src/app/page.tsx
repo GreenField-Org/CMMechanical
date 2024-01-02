@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <div className="flex w-[375px] h-[812px] flex-col items-center lg:w-[1440px] lg:h-[824px]">
         <div className="flex-[1_0_0] self-stretch bg-slate-800">
-          <video src="https://picsum.photos/200/300"></video>
+          <video src="https://picsum.photos/200/300" />
         </div>
         <div className="flex flex-col lg:flex-row items-start gap-5 self-stretch px-5 py-12 lg:gap-20 lg:px-16 lg:py-20">
           <div className="flex flex-col items-start self-stretch lg:flex-[1_0_0]">
@@ -142,14 +142,14 @@ export default function Home() {
               <Button buttonText="Learn More" variant="secondary" />
             </div>
           </div>
-          <div className="h-[348px] self-stretch lg:h-[640px] lg:flex-[1_0_0]"></div>
+          <div className="h-[348px] self-stretch lg:h-[640px] lg:flex-[1_0_0]" />
         </Container>
       </Section>
       <Section>
         <Container>
           <div className="flex flex-col items-start gap-10 self-stretch lg:gap-10 lg:flex-[1_0_0]">
             <div className="flex justify-center items-start gap-8 self-stretch">
-              <div className="w-0.5 h-[166px] lg:h-[130px] bg-slate-800"></div>
+              <div className="w-0.5 h-[166px] lg:h-[130px] bg-slate-800" />
               <div className="flex flex-col justify-center items-start gap-3 flex-[1_0_0] lg:gap-4">
                 <h4 className="self-stretch text-2xl not-italic font-bold leading-[140%] lg:text-[32px] lg:leading-[130%]">
                   {"Discover Our Products"}
@@ -162,7 +162,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex justify-center items-start gap-8 self-stretch">
-              <div className="w-0.5 h-[166px] lg:h-[130px]"></div>
+              <div className="w-0.5 h-[166px] lg:h-[130px]" />
               <div className="flex flex-col justify-center items-start gap-3 flex-[1_0_0] lg:gap-4">
                 <h4 className="self-stretch text-2xl not-italic font-bold leading-[140%] lg:text-[32px] lg:leading-[130%]">
                   {"Join the NYSERTA Program"}
@@ -175,7 +175,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex justify-center items-start gap-8 self-stretch">
-              <div className="w-0.5 h-[166px] lg:h-[130px]"></div>
+              <div className="w-0.5 h-[166px] lg:h-[130px]" />
               <div className="flex flex-col justify-center items-start gap-3 flex-[1_0_0] lg:gap-4">
                 <h4 className="self-stretch text-2xl not-italic font-bold leading-[140%] lg:text-[32px] lg:leading-[130%]">
                   {"Frequently Asked Questions"}
@@ -188,7 +188,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="h-[348px] self-stretch lg:h-[640px] lg:flex-[1_0_0]"></div>
+          <div className="h-[348px] self-stretch lg:h-[640px] lg:flex-[1_0_0]" />
         </Container>
       </Section>
       {/* Testimonials */}
