@@ -28,7 +28,7 @@ export const menuItemsData: MenuItem[] = [
       },
       {
         title: 'Ductless',
-        url: 'ductless',
+        url: '/ductless',
       },
     ],
   },
