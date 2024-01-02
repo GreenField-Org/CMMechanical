@@ -1,9 +1,60 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { CloseOutline, ReorderThreeOutline } from "react-ionicons";
 import { useState } from "react";
+import MenuItems, { MenuItem } from "../menu-items/menu-items";
+
+export const menuItemsData: MenuItem[] = [
+  {
+    title: 'Home',
+    url: '/',
+  },
+  {
+    title: 'About',
+    url: '/about',
+  },
+  {
+    title: 'Services',
+    url: '/services',
+    submenu: [
+      {
+        title: 'Heating',
+        url: 'heating',
+      },
+      {
+        title: 'Cooling',
+        url: 'cooling',
+      },
+      {
+        title: 'Ductless',
+        url: 'ductless',
+      },
+    ],
+  },
+  {
+    title: 'Products',
+    url: '/products',
+    submenu: [
+      {
+        title: 'Mitsubishi',
+        url: 'mitsubishi',
+      },
+      {
+        title: 'American Standard',
+        url: 'american-standard',
+      },
+      {
+        title: 'NYSERDA',
+        url: 'nyserda',
+      },
+    ],
+  },
+  {
+    title: 'Contact',
+    url: '/contact',
+  },
+];
 
 export default function Navbar() {
   const [nav, setNav] = useState(false);
@@ -53,32 +104,9 @@ export default function Navbar() {
             }`}
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              <li>
-                <Link href="/" className="hover:text-tertiary">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="hover:text-tertiary">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link href="/financing">Financing</Link>
-              </li>
-              <li>
-                <Link href="/services">Services</Link>
-              </li>
-              <li>
-                <Link href="/products" className="hover:text-tertiary">
-                  Products
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="hover:text-tertiary">
-                  Contact
-                </Link>
-              </li>
+              {menuItemsData.map((menu, index) => {
+                return <MenuItems items={menu} key={index} />
+              })}
             </ul>
           </div>
         </div>
