@@ -20,15 +20,15 @@ export const menuItemsData: MenuItem[] = [
     submenu: [
       {
         title: 'Heating',
-        url: 'heating',
+        url: '/services/heating',
       },
       {
         title: 'Cooling',
-        url: 'cooling',
+        url: '/services/cooling',
       },
       {
         title: 'Ductless',
-        url: '/ductless',
+        url: '/services/ductless',
       },
     ],
   },
@@ -38,15 +38,15 @@ export const menuItemsData: MenuItem[] = [
     submenu: [
       {
         title: 'Mitsubishi',
-        url: 'mitsubishi',
+        url: '/products/mitsubishi',
       },
       {
         title: 'American Standard',
-        url: 'american-standard',
+        url: '/products/american-standard',
       },
       {
         title: 'NYSERDA',
-        url: 'nyserda',
+        url: '/products/nyserda',
       },
     ],
   },
@@ -64,7 +64,7 @@ export default function Navbar() {
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <a href="#">
+            <a href="/">
               <Image
                 src={"/CMMechanical_logo.png"}
                 width={250}
