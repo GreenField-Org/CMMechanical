@@ -1,10 +1,8 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useState } from "react";
-import Accordion from "../accordion/accordion";
 import Link from "next/link";
-import { Button } from "@nextui-org/react";
+import { Accordion, AccordionItem, Button } from "@nextui-org/react";
 
 interface FaqProps {
   title?: string;
@@ -15,19 +13,6 @@ interface FaqProps {
 
 export default function Faq({ title, description, href, faqs }: FaqProps) {
   const router = useRouter();
-  const [accordions, setAccordion] = useState(faqs);
-
-  const toggleAccordion = (accordionkey: number) => {
-    const updatedAccordions = accordions?.map((accord) => {
-      if (accord.key === accordionkey) {
-        return { ...accord, isOpen: !accord.isOpen };
-      } else {
-        return { ...accord, isOpen: false };
-      }
-    });
-
-    setAccordion(updatedAccordions);
-  };
 
   return (
     <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:gap-20 lg:self-stretch">
@@ -44,15 +29,18 @@ export default function Faq({ title, description, href, faqs }: FaqProps) {
         </div>
       </div>
       <div>
-        {accordions.map((accordion) => (
-          <Accordion
-            key={accordion.key}
-            title={accordion.title}
-            data={accordion.data}
-            isOpen={accordion.isOpen}
-            toggleAccordion={() => toggleAccordion(accordion.key)}
-          />
-        ))}
+        <Accordion variant="shadow">
+          {faqs.map((accordion) => (
+              <AccordionItem
+                key={accordion.key}
+                title={accordion.title}
+                aria-label={accordion.title}
+              >
+                {accordion.data}
+              </AccordionItem>
+            )
+          )}
+        </Accordion>
       </div>
       {href ? (
         <div className="flex flex-col items-center gap-6 self-stretch">
