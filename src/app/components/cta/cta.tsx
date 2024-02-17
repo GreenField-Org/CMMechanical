@@ -1,7 +1,7 @@
 "use client";
 
+import { Button } from "@nextui-org/react";
 import { useRouter } from "next/navigation";
-import Button from "../button/button";
 
 export default function Cta() {
   const router = useRouter();
@@ -20,12 +20,14 @@ export default function Cta() {
           </div>
         </div>
         <div className="flex items-start gap-4">
-          <Button buttonText="Contact" variant="primary" />
+          <Button variant="shadow" color="primary">Contact</Button>
           <Button
-            buttonText="Learn More"
-            variant="secondary"
+            variant="ghost"
+            color="primary"
             onClick={() => router.push("/about")}
-          />
+          >
+            Learn More
+          </Button>
         </div>
       </div>
     </div>

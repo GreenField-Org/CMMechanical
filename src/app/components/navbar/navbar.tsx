@@ -51,6 +51,10 @@ export const menuItemsData: MenuItem[] = [
     ],
   },
   {
+    title: 'Financing',
+    url: '/financing',
+  },
+  {
     title: 'Contact',
     url: '/contact',
   },

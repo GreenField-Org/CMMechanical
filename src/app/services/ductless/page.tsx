@@ -1,6 +1,5 @@
 "use client";
-
-import Button from "@/app/components/button/button";
+import { Button } from "@nextui-org/react";
 import Container from "@/app/components/container/container";
 import Faq from "@/app/components/faq/faq";
 import { BuildOutline } from "react-ionicons";
@@ -54,8 +53,8 @@ export default function DuctlessPage() {
             </div>
           </div>
           <div className="flex gap-4 pt-4">
-            <Button buttonText="Learn More" variant="primary" />
-            <Button buttonText="Contact" variant="secondary" />
+            <Button variant="shadow" color="primary">Learn More</Button>
+            <Button variant="ghost" color="primary">Contact</Button>
           </div>
         </Container>
       </div>
@@ -248,8 +247,8 @@ export default function DuctlessPage() {
             </div>
           </div>
           <div className="flex items-center gap-6 pt-4">
-            <Button buttonText="Learn More" variant="secondary" />
-            <Button buttonText="Contact" variant="secondary" />
+            <Button variant="ghost"color="primary">Learn More</Button>
+            <Button variant="ghost" color="primary">Contact</Button>
           </div>
         </div>
       </div>
@@ -267,7 +266,7 @@ export default function DuctlessPage() {
               </p>
             </div>
             <div className="flex items-start gap-4 pt-4">
-              <Button buttonText="Contact Us" variant="secondary" />
+              <Button variant="ghost" color="primary">Contact Us</Button>
             </div>
           </div>
           <div className="h-[223px] self-stretch bg-neutral-300 lg:h-[437px] lg:flex-[1_0_0]" />

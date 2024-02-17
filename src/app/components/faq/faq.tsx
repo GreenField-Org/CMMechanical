@@ -1,10 +1,10 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import Button from "../button/button";
 import { useState } from "react";
 import Accordion from "../accordion/accordion";
 import Link from "next/link";
+import { Button } from "@nextui-org/react";
 
 interface FaqProps {
   title?: string;
@@ -65,7 +65,7 @@ export default function Faq({ title, description, href, faqs }: FaqProps) {
             </p>
           </div>
           <Link href={href}>
-            <Button buttonText="Contact" variant="secondary" />
+            <Button color="primary" variant="ghost">Contact</Button>
           </Link>
         </div>
       ) : null}

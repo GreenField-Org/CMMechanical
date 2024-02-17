@@ -1,6 +1,5 @@
 "use client";
-
-import Button from "@/app/components/button/button";
+import { Button } from "@nextui-org/react";
 import Container from "@/app/components/container/container";
 import Faq from "@/app/components/faq/faq";
 import { SnowOutline } from "react-ionicons";
@@ -59,8 +58,8 @@ export default function CoolingPage() {
             </div>
           </div>
           <div className="flex items-start gap-4 pt-4">
-            <Button buttonText="Learn More" variant="primary" />
-            <Button buttonText="Contact Us" variant="secondary" />
+            <Button variant="shadow" color="primary">Learn More </Button>
+            <Button variant="ghost" color="primary">Contact Us</Button>
           </div>
         </Container>
       </div>
@@ -129,7 +128,7 @@ export default function CoolingPage() {
               </div>
             </div>
             <div className="flex items-center gap-6 pt-4">
-              <Button buttonText="Learn More" variant="secondary" />
+              <Button variant="ghost" color="primary">Learn More</Button>
             </div>
           </div>
           <div className="h-[348px] self-stretch bg-gray-300 shadow-2xl lg:h-[640px] lg:flex-[1_0_0]" />
@@ -244,7 +243,7 @@ export default function CoolingPage() {
             </div>
           </div>
           <div className="flex items-center gap-6 pt-4">
-            <Button buttonText="Contact Us" variant="secondary" />
+            <Button variant="ghost" color="primary">Contact Us</Button>
           </div>
         </div>
       </div>
@@ -259,7 +258,7 @@ export default function CoolingPage() {
             </p>
           </div>
           <div className="flex items-start gap-4">
-            <Button buttonText="Contact" variant="secondary" />
+            <Button variant="ghost" color="primary">Contact</Button>
           </div>
         </Container>
       </div>

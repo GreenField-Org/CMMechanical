@@ -2,11 +2,12 @@ import Image from "next/image";
 import Cta from "./components/cta/cta";
 import Faq from "./components/faq/faq";
 import Carousel from "./components/carousel/carousel";
-import Button from "./components/button/button";
 import Container from "./components/container/container";
 import { ConstructOutline } from "react-ionicons";
 import Testimonial from "./components/testimonial/testimonial";
 import Section from "./components/section/section";
+import Modal from "./components/modal/modal";
+import { Button } from "@nextui-org/react";
 
 export default function Home() {
   return (
@@ -28,7 +29,7 @@ export default function Home() {
               }
             </p>
             <div className="flex items-start gap-4 pt-4">
-              <Button buttonText="Learn More" variant="primary" />
+              <Button color="primary" variant="shadow">Learn More</Button>
             </div>
           </div>
         </div>
@@ -77,7 +78,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex items-center gap-6 pt-4">
-              <Button buttonText="Learn More" variant="secondary" />
+              <Button color="secondary" variant="ghost">Learn More</Button>
             </div>
           </div>
           <div className="h-[348px] self-stretch lg:h-[640px] lg:flex-[1_0_0] bg-slate-800">
@@ -107,7 +108,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex items-center gap-6 pt-4">
-              <Button buttonText="Learn More" variant="primary" />
+              <Button color="primary" variant="shadow">Learn More</Button>
             </div>
           </div>
           <div className="h-[348px] self-stretch lg:h-[640px] lg:flex-[1_0_0] bg-slate-800">
@@ -139,7 +140,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex items-center gap-6 pt-4">
-              <Button buttonText="Learn More" variant="secondary" />
+              <Button variant="shadow" color="primary">Learn More</Button>
             </div>
           </div>
           <div className="h-[348px] self-stretch lg:h-[640px] lg:flex-[1_0_0]" />
@@ -193,6 +194,7 @@ export default function Home() {
       </Section>
       {/* Testimonials */}
       <Cta />
+      <Modal />
     </>
   );
 }

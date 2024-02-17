@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Container from "../components/container/container";
-import Button from "../components/button/button";
+import { Button } from "@nextui-org/react";
 
 export const metadata: Metadata = {
   title: "About",
@@ -27,7 +27,7 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="flex items-start gap-4 pt-4">
-            <Button buttonText="Learn More" variant="primary" />
+            <Button color="primary" variant="shadow">Learn More </Button>         
           </div>
         </Container>
       </div>
@@ -119,7 +119,7 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="flex items-center gap-6 pt-4">
-              <Button buttonText="Learn More" variant="secondary" />
+              <Button variant="ghost" color="primary" >Learn More</Button>
             </div>
           </div>
           <div className="h-[348px] lg:h-[640px] self-stretch lg:flex-[1_0_0] bg-gray-300" />
@@ -152,7 +152,7 @@ export default function AboutPage() {
               }
             </p>
             <div className="flex flex-col items-start gap-2 self-stretch pt-2">
-              <Button buttonText="Learn More" variant="secondary" />
+              <Button variant="ghost" color="primary" >Learn More</Button>
             </div>
           </div>
           <div className="flex flex-col items-start gap-3 self-stretch">
@@ -166,7 +166,7 @@ export default function AboutPage() {
               }
             </p>
             <div className="flex flex-col items-start gap-2 self-stretch pt-2">
-              <Button buttonText="Learn More" variant="secondary" />
+              <Button variant="ghost" color="primary" >Learn More </Button>
             </div>
           </div>
           <div className="flex flex-col items-start gap-3 self-stretch">
@@ -180,7 +180,7 @@ export default function AboutPage() {
               }
             </p>
             <div className="flex flex-col items-start gap-2 self-stretch pt-2">
-              <Button buttonText="Learn More" variant="secondary" />
+              <Button variant="ghost" color="primary" >Learn More</Button>
             </div>
           </div>
         </div>

@@ -1,5 +1,5 @@
+import { Button } from "@nextui-org/react";
 import { Metadata } from "next";
-import Button from "../components/button/button";
 
 export const metadata: Metadata = {
   title: "FAQ",
@@ -31,7 +31,7 @@ export default function FaqPage() {
           </p>
         </div>
         <div className="flex items-start gap-4 pt-4">
-          <Button buttonText="Contact Us" variant="primary" />
+          <Button variant="shadow" color="primary" >Contact Us</Button>
         </div>
       </div>
     </>
