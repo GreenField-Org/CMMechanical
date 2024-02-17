@@ -6,7 +6,6 @@ import Container from "./components/container/container";
 import { ConstructOutline } from "react-ionicons";
 import Testimonials from "./components/testimonials/testimonials";
 import Section from "./components/section/section";
-import Modal from "./components/modal/modal";
 import { Button } from "@nextui-org/react";
 import { Suspense } from "react";
 import { StickyScroll } from "./components/sticky-scroll/sticky-scroll";
@@ -165,16 +164,15 @@ export default function Home() {
           <div className="h-[348px] self-stretch lg:h-[640px] lg:flex-[1_0_0]" />
         </Container>
       </Section>
-      <Section>
+      <>
         <Container center>
           <StickyScroll content={content} />
         </Container>
-      </Section>
+      </>
       <Suspense fallback={<div>Loading...</div>}>
         <Testimonials />
       </Suspense>
       <Cta />
-      <Modal />
     </>
   );
 }

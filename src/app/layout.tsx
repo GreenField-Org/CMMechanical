@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/footer/footer";
 import Nav from "./components/navbar/navbar";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,6 +31,9 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <Script 
+    src="https://app.alta.so/sdk/chatbot.bundle.js"
+    id="new-chat-uhym86wisi"/>
       </body>
     </html>
   );
