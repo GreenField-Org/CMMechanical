@@ -4,10 +4,11 @@ import Faq from "./components/faq/faq";
 import Carousel from "./components/carousel/carousel";
 import Container from "./components/container/container";
 import { ConstructOutline } from "react-ionicons";
-import Testimonial from "./components/testimonial/testimonial";
+import Testimonials from "./components/testimonials/testimonials";
 import Section from "./components/section/section";
 import Modal from "./components/modal/modal";
 import { Button } from "@nextui-org/react";
+import { Suspense } from "react";
 
 export default function Home() {
   return (
@@ -192,7 +193,9 @@ export default function Home() {
           <div className="h-[348px] self-stretch lg:h-[640px] lg:flex-[1_0_0]" />
         </Container>
       </Section>
-      {/* Testimonials */}
+      <Suspense fallback={<div>Loading...</div>}>
+        <Testimonials />
+      </Suspense>
       <Cta />
       <Modal />
     </>
