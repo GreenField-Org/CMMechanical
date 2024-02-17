@@ -52,12 +52,12 @@ export default function Nav() {
           </Link>
         </NavbarBrand>
         <NavbarItem>
-          <Link href="#">
+          <Link href="/">
             Home
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link href="#" aria-current="page">
+          <Link href="/about" aria-current="page">
             About Us
           </Link>
         </NavbarItem>
@@ -72,7 +72,7 @@ export default function Nav() {
                 variant="light"
                 color="primary"
               >
-                Products
+                Services
               </Button>
             </DropdownTrigger>
           </NavbarItem>
@@ -114,7 +114,7 @@ export default function Nav() {
                 variant="light"
                 color="primary"
               >
-                Services
+                Products
               </Button>
             </DropdownTrigger>
           </NavbarItem>
@@ -147,7 +147,7 @@ export default function Nav() {
         </Dropdown>
 
         <NavbarItem>
-          <Link href="#">
+          <Link href="/financing">
             Financing
           </Link>
         </NavbarItem>
@@ -156,7 +156,7 @@ export default function Nav() {
       <NavbarContent justify="end">
         <NavbarItem>
           <Button as={Link} color="primary" href="#" variant="ghost">
-            Sign Up
+            Contact Us
           </Button>
         </NavbarItem>
       </NavbarContent>

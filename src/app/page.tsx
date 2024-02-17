@@ -9,8 +9,26 @@ import Section from "./components/section/section";
 import Modal from "./components/modal/modal";
 import { Button } from "@nextui-org/react";
 import { Suspense } from "react";
+import { StickyScroll } from "./components/sticky-scroll/sticky-scroll";
 
 export default function Home() {
+  const content = [
+    {
+      title: "Discover Our Products",
+      description:
+        "We offer a wide range of high-quality Mitsubishi heating, cooling, and ductless products. Our products are designed to provide efficient and reliable solutions for your home.",
+    },
+    {
+      title: "Join the NYSERDA Program",
+      description:
+        "We are proud to be part of the NYCERTA program, which promotes energy efficiency and sustainability. By working with us, you can contribute to a greener future for your community.",
+    },
+    {
+      title: "Frequently Asked Questions",
+      description:
+        "Have questions? Check out our FAQ section to find answers to common inquiries about our services, products, and more.",
+    },
+  ]
   return (
     <>
       <div className="flex w-[375px] h-[812px] flex-col items-center lg:w-[1440px] lg:h-[824px]">
@@ -148,49 +166,8 @@ export default function Home() {
         </Container>
       </Section>
       <Section>
-        <Container>
-          <div className="flex flex-col items-start gap-10 self-stretch lg:gap-10 lg:flex-[1_0_0]">
-            <div className="flex justify-center items-start gap-8 self-stretch">
-              <div className="w-0.5 h-[166px] lg:h-[130px] bg-slate-800" />
-              <div className="flex flex-col justify-center items-start gap-3 flex-[1_0_0] lg:gap-4">
-                <h4 className="self-stretch text-2xl not-italic font-bold leading-[140%] lg:text-[32px] lg:leading-[130%]">
-                  {"Discover Our Products"}
-                </h4>
-                <p className="self-stretch text-base not-italic font-normal leading-[150%]">
-                  {
-                    "We offer a wide range of high-quality Mitsubishi heating, cooling, and ductless products. Our products are designed to provide efficient and reliable solutions for your home."
-                  }
-                </p>
-              </div>
-            </div>
-            <div className="flex justify-center items-start gap-8 self-stretch">
-              <div className="w-0.5 h-[166px] lg:h-[130px]" />
-              <div className="flex flex-col justify-center items-start gap-3 flex-[1_0_0] lg:gap-4">
-                <h4 className="self-stretch text-2xl not-italic font-bold leading-[140%] lg:text-[32px] lg:leading-[130%]">
-                  {"Join the NYSERTA Program"}
-                </h4>
-                <p className="self-stretch text-base not-italic font-normal leading-[150%]">
-                  {
-                    "We are proud to be part of the NYCERTA program, which promotes energy efficiency and sustainability. By working with us, you can contribute to a greener future for your community."
-                  }
-                </p>
-              </div>
-            </div>
-            <div className="flex justify-center items-start gap-8 self-stretch">
-              <div className="w-0.5 h-[166px] lg:h-[130px]" />
-              <div className="flex flex-col justify-center items-start gap-3 flex-[1_0_0] lg:gap-4">
-                <h4 className="self-stretch text-2xl not-italic font-bold leading-[140%] lg:text-[32px] lg:leading-[130%]">
-                  {"Frequently Asked Questions"}
-                </h4>
-                <p className="self-stretch text-base not-italic font-normal leading-[150%]">
-                  {
-                    "Have questions? Check out our FAQ section to find answers to common inquiries about our services, products, and more."
-                  }
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="h-[348px] self-stretch lg:h-[640px] lg:flex-[1_0_0]" />
+        <Container center>
+          <StickyScroll content={content} />
         </Container>
       </Section>
       <Suspense fallback={<div>Loading...</div>}>

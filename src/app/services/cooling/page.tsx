@@ -3,6 +3,7 @@ import { Button } from "@nextui-org/react";
 import Container from "@/app/components/container/container";
 import Faq from "@/app/components/faq/faq";
 import { SnowOutline } from "react-ionicons";
+import { StickyScroll } from "@/app/components/sticky-scroll/sticky-scroll";
 
 const coolingFaqs = [
   {
@@ -37,6 +38,24 @@ const coolingFaqs = [
   },
 ];
 
+const content = [
+  {
+    title: "Expert Cooling Services",
+    description:
+      "We offer professional air conditioning installation, maintenance, and repair services to keep your home cool and comfortable.",
+  },
+  {
+    title: "Quality AC Solutions",
+    description:
+      "Our team of certified technicians is experienced in providing top-notch air conditioning solutions tailored to your specific needs.",
+  },
+  {
+    title: "Reliable AC Repair",
+    description:
+      "When your air conditioner breaks down, our experts are here to quickly diagnose and repair any issues, ensuring your system is up and running smoothly.",
+  },
+];
+
 export default function CoolingPage() {
   return (
     <>
@@ -65,48 +84,7 @@ export default function CoolingPage() {
       </div>
       <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:items-center lg:gap-20 lg:px-16 lg:py-28">
         <Container>
-          <div className="flex flex-col items-start gap-8 self-stretch lg:gap-10 lg:flex-[1_0_0]">
-            <div className="flex items-start gap-8 self-stretch">
-              <div className="w-0.5 h-[142px] lg:h-[106px]" />
-              <div className="flex flex-col justify-center items-start gap-3 flex-[1_0_0] lg:gap-4">
-                <h4 className="self-stretch text-2xl not-italic font-bold leading-[140%] lg:text-[32px]">
-                  {"Expert Cooling Services"}
-                </h4>
-                <p className="self-stretch text-base not-italic font-normal leading-[150%]">
-                  {
-                    "We offer professional air conditioning installation, maintenance, and repair services to keep your home cool and comfortable."
-                  }
-                </p>
-              </div>
-            </div>
-            <div className="flex items-start gap-8 self-stretch">
-              <div className="w-0.5 h-[142px] lg:h-[106px]" />
-              <div className="flex flex-col justify-center items-start gap-3 flex-[1_0_0] lg:gap-4">
-                <h4 className="self-stretch text-2xl not-italic font-bold leading-[140%] lg:text-[32px]">
-                  {"Quality AC Solutions"}
-                </h4>
-                <p className="self-stretch text-base not-italic font-normal leading-[150%]">
-                  {
-                    "Our team of certified technicians is experienced in providing top-notch air conditioning solutions tailored to your specific needs."
-                  }
-                </p>
-              </div>
-            </div>
-            <div className="flex items-start gap-8 self-stretch">
-              <div className="w-0.5 h-[142px] lg:h-[106px]" />
-              <div className="flex flex-col justify-center items-start gap-3 flex-[1_0_0] lg:gap-4">
-                <h4 className="self-stretch text-2xl not-italic font-bold leading-[140%] lg:text-[32px]">
-                  {"Reliable AC Repair"}
-                </h4>
-                <p className="self-stretch text-base not-italic font-normal leading-[150%]">
-                  {
-                    "When your air conditioner breaks down, our experts are here to quickly diagnose and repair any issues, ensuring your system is up and running smoothly."
-                  }
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="h-[348px] self-stretch bg-gray-300 shadow-2xl lg:h-[640px] lg:flex-[1_0_0]" />
+          <StickyScroll content={content} />
         </Container>
       </div>
       <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">

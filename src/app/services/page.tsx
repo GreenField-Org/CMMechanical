@@ -2,12 +2,30 @@ import { Metadata } from "next";
 import Container from "../components/container/container";
 import Cta from "../components/cta/cta";
 import { Button } from "@nextui-org/react";
+import { StickyScroll } from "../components/sticky-scroll/sticky-scroll";
 
 export const metadata: Metadata = {
   title: "Services",
 };
 
 export default function ServicesPage() {
+  const content = [
+    {
+      title: "Expert Ductless Services",
+      description:
+        "Our team of certified technicians specializes in providing top-notch ductless services, ensuring optimal comfort and energy efficiency for your home or business.",
+    },
+    {
+      title: "Why choose Us?",
+      description:
+        "With our extensive experience and Mitsubishi Diamond Contractor certification, we are equipped to handle all your ductless needs with precision and expertise.",
+    },
+    {
+      title: "Frequently Asked Questions",
+      description:
+        "Find answers to common questions about our ductless services, installation process, and maintenance requirements in our FAQ section.",
+    },
+  ];
   return (
     <>
       <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
@@ -144,48 +162,7 @@ export default function ServicesPage() {
       </div>
       <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
         <Container>
-          <div className="flex flex-col items-start gap-10 self-stretch lg:gap-10 lg:flex-[1_0_0]">
-            <div className="flex justify-center items-start gap-8 self-stretch">
-              <div className="w-0.5 h-56 lg:h-[130px]" />
-              <div className="flex flex-col justify-center items-start gap-3 lg:gap-4 flex-[1_0_0]">
-                <h4 className="self-stretch text-2xl lg:text-[32px] not-italic font-bold leading-[140%] lg:leading-[130%]">
-                  {"Expert Ductless Services"}
-                </h4>
-                <p className="self-stretch text-base not-italic font-normal leading-[150%]">
-                  {
-                    "Our team of certified technicians specializes in providing top-notch ductless services, ensuring optimal comfort and energy efficiency for your home or business."
-                  }
-                </p>
-              </div>
-            </div>
-            <div className="flex justify-center items-start gap-8 self-stretch">
-              <div className="w-0.5 h-56 lg:h-[130px]" />
-              <div className="flex flex-col justify-center items-start gap-3 lg:gap-4 flex-[1_0_0]">
-                <h4 className="self-stretch text-2xl lg:text-[32px] not-italic font-bold leading-[140%] lg:leading-[130%]">
-                  {"Why Choose Us?"}
-                </h4>
-                <p className="self-stretch text-base not-italic font-normal leading-[150%]">
-                  {
-                    "With our extensive experience and Mitsubishi Diamond Contractor certification, we are equipped to handle all your ductless needs with precision and expertise."
-                  }
-                </p>
-              </div>
-            </div>
-            <div className="flex justify-center items-start gap-8 self-stretch">
-              <div className="w-0.5 h-56 lg:h-[130px]" />
-              <div className="flex flex-col justify-center items-start gap-3 lg:gap-4 flex-[1_0_0]">
-                <h4 className="self-stretch text-2xl lg:text-[32px] not-italic font-bold leading-[140%] lg:leading-[130%]">
-                  {"Frequently Asked Questions"}
-                </h4>
-                <p className="self-stretch text-base not-italic font-normal leading-[150%]">
-                  {
-                    "Find answers to common questions about our ductless services, installation process, and maintenance requirements in our FAQ section."
-                  }
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="h-[348px] lg:h-[640px] self-stretch lg:flex-[1_0_0] bg-gray-200" />
+          <StickyScroll content={content} />
         </Container>
       </div>
       <div className="flex w-[375px] flex-col items-center gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
