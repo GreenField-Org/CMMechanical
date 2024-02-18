@@ -7,11 +7,34 @@ export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
-    "Home",
-    "About Us",
-    "Services",
-    "Products",
-    "Financing",
+    {
+      title: "Home",
+      href: "/",
+    },
+    {
+      title: "About Us",
+      href: "/about",
+    },
+    {
+      title: "Services",
+      href: "/services",
+    },
+    {
+      title: "Mitusbishi",
+      href: "/mitsubishi",
+    },
+    {
+      title: "American Standard",
+      href: "/american-standard",
+    },
+    {
+      title: "NYSERDA",
+      href: "/nyserda",
+    },
+    {
+      title: "Financing",
+      href: "/financing",
+    },
   ];
 
   return (
@@ -166,10 +189,10 @@ export default function Nav() {
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
               className="w-full"
-              href="#"
+              href={item.href}
               size="lg"
             >
-              {item}
+              {item.title}
             </Link>
           </NavbarMenuItem>
         ))}

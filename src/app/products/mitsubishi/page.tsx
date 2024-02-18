@@ -5,5 +5,5 @@ export const metadata: Metadata = {
 };
 
 export default function MitsubishiPage() {
-  return <div>Mitsubishi</div>;
+  return <iframe src="https://ebandlmarketing.com/prodconnect-test/mitsubishi/" rel="nofollow" width="100%" height="850px"></iframe>;
 }
