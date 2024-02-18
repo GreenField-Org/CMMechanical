@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Container from "../components/container/container";
 import { Button } from "@nextui-org/react";
 import { Team } from "../components/team/team";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About",
@@ -71,8 +72,9 @@ export default function AboutPage() {
         <p className="self-stretch text-base lg:text-lg not-italic font-bold leading-[150%]">
           {"Certified by top industry organizations for exceptional service"}
         </p>
-        <div className="flex flex-col items-start gap-2 self-stretch">
-          {/* Certifications */}
+        <div className="flex flex-col lg:flex-row lg:justify-center items-center lg:align-baseline gap-2 lg:gap-12 self-stretch">
+          <Image src="/Mitsubishi_Electric_logo.png" width={200} height={200} className="shadow-2xl" alt={"Mitsubishi electric logo"}/>
+          <Image src="/American-Standard-logo.png" width={200} height={200} className="shadow-2xl" alt={"American Standard logo"}/>
         </div>
       </div>
       <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
