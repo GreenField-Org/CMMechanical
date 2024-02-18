@@ -1,10 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { Button, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger, Link, Navbar, NavbarBrand, NavbarContent, NavbarItem, Image, NavbarMenu, NavbarMenuItem, NavbarMenuToggle } from "@nextui-org/react";
+import { Button, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger, Link, Navbar, NavbarBrand, NavbarContent, NavbarItem, Image, NavbarMenu, NavbarMenuItem, NavbarMenuToggle, useDisclosure, ModalContent, Modal, ModalHeader, ModalBody, ModalFooter } from "@nextui-org/react";
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const {isOpen, onOpen, onOpenChange} = useDisclosure();
 
   const menuItems = [
     {
@@ -42,7 +43,7 @@ export default function Nav() {
       isBordered
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
-      className="bg-transparent"
+      className="bg-forground"
     >
       <NavbarContent className="sm:hidden" justify="start">
         <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} className="text-primary" />
@@ -109,18 +110,21 @@ export default function Nav() {
             <DropdownItem
               key="Heating"
               description="ACME scales apps to meet user demand, automagically, based on load."
+              href="/services/heating"
             >
               Heating
             </DropdownItem>
             <DropdownItem
               key="cooling"
               description="Real-time metrics to debug issues. Slow query added? We’ll show you exactly where."
+              href="/services/cooling"
             >
               Cooling
             </DropdownItem>
             <DropdownItem
               key="ductless"
               description="ACME runs on ACME, join us and others serving requests at web scale."
+              href="/services/ductless"
             >
               Ductless
             </DropdownItem>
@@ -151,18 +155,21 @@ export default function Nav() {
             <DropdownItem
               key="Mitusbishi"
               description="ACME scales apps to meet user demand, automagically, based on load."
+              href="/products/mitsubishi"
             >
               Mitsubishi
             </DropdownItem>
             <DropdownItem
               key="american-standard"
               description="Real-time metrics to debug issues. Slow query added? We’ll show you exactly where."
+              href="/products/american-standard"
             >
               American Standard
             </DropdownItem>
             <DropdownItem
               key="NYSERDA"
               description="ACME runs on ACME, join us and others serving requests at web scale."
+              href="/products/nyserda"
             >
               NYSERDA
             </DropdownItem>
@@ -178,9 +185,45 @@ export default function Nav() {
 
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="ghost">
+          <Button as={Link} color="primary" variant="ghost" onPress={onOpen}>
             Contact Us
           </Button>
+          <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
+        <ModalContent>
+          {(onClose) => (
+            <>
+              <ModalHeader className="flex flex-col gap-1">Modal Title</ModalHeader>
+              <ModalBody>
+                <p> 
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nullam pulvinar risus non risus hendrerit venenatis.
+                  Pellentesque sit amet hendrerit risus, sed porttitor quam.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nullam pulvinar risus non risus hendrerit venenatis.
+                  Pellentesque sit amet hendrerit risus, sed porttitor quam.
+                </p>
+                <p>
+                  Magna exercitation reprehenderit magna aute tempor cupidatat consequat elit
+                  dolor adipisicing. Mollit dolor eiusmod sunt ex incididunt cillum quis. 
+                  Velit duis sit officia eiusmod Lorem aliqua enim laboris do dolor eiusmod. 
+                  Et mollit incididunt nisi consectetur esse laborum eiusmod pariatur 
+                  proident Lorem eiusmod et. Culpa deserunt nostrud ad veniam.
+                </p>
+              </ModalBody>
+              <ModalFooter>
+                <Button color="danger" variant="light" onPress={onClose}>
+                  Close
+                </Button>
+                <Button color="primary" onPress={onClose}>
+                  Action
+                </Button>
+              </ModalFooter>
+            </>
+          )}
+        </ModalContent>
+      </Modal>
         </NavbarItem>
       </NavbarContent>
 
