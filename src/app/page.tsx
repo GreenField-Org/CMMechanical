@@ -27,8 +27,8 @@ export default function Home() {
   ]
   return (
     <>
-      <div className="flex w-[375px] h-[812px] flex-col items-center lg:w-[1440px] lg:h-[824px]">
-        <div className="flex-[1_0_0] self-stretch bg-slate-800">
+      <div className="flex w-[375px] h-[812px] flex-col items-center lg:w-full lg:h-[824px]">
+        <div className="flex-[1_0_0] place-self-stretch bg-slate-800">
           <video src="https://picsum.photos/200/300" />
         </div>
         <div className="flex flex-col lg:flex-row items-start gap-5 self-stretch px-5 py-12 lg:gap-20 lg:px-16 lg:py-20">

@@ -80,7 +80,7 @@ export default function Nav() {
             Home
           </Link>
         </NavbarItem>
-        <NavbarItem isActive>
+        <NavbarItem>
           <Link href="/about" aria-current="page">
             About Us
           </Link>
@@ -185,7 +185,7 @@ export default function Nav() {
 
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button as={Link} color="primary" variant="ghost" onPress={onOpen}>
+          <Button as={Link} color="primary" variant="shadow" onPress={onOpen}>
             Contact Us
           </Button>
           <Modal isOpen={isOpen} onOpenChange={onOpenChange}>

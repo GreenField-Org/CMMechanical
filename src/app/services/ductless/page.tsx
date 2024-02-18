@@ -58,7 +58,7 @@ export default function DuctlessPage() {
           </div>
         </Container>
       </div>
-      <div className="flex w-[375px] flex-col items-start lg:justify-center lg:items-center gap-12 px-7 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+      <div className="flex w-[375px] flex-col items-start lg:justify-center lg:items-center gap-12 px-7 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <Container classes={`lg:flex-row`}>
           <div className="flex flex-col items-start gap-6 self-stretch lg:gap-8 lg:flex-[1_0_0]">
             <div className="flex flex-col items-start gap-5 self-stretch lg:gap-6">
@@ -93,7 +93,7 @@ export default function DuctlessPage() {
           <div className="h-[348px] self-stretch bg-neutral-300 lg:flex-[1_0_0]" />
         </Container>
       </div>
-      <div className="flex w-[375px] flex-col items-start lg:justify-center lg:items-center gap-12 px-7 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+      <div className="flex w-[375px] flex-col items-start lg:justify-center lg:items-center gap-12 px-7 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <Container classes={`lg:flex-row`}>
           <div className="flex flex-col items-start gap-6 self-stretch lg:gap-8 lg:flex-[1_0_0]">
             <div className="flex flex-col items-start gap-5 self-stretch lg:gap-6">
@@ -132,7 +132,7 @@ export default function DuctlessPage() {
           <div className="h-[348px] self-stretch bg-neutral-300 lg:flex-[1_0_0]" />
         </Container>
       </div>
-      <div className="flex w-[375px] flex-col items-start lg:justify-center lg:items-center gap-12 px-7 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+      <div className="flex w-[375px] flex-col items-start lg:justify-center lg:items-center gap-12 px-7 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <Container classes={`lg:flex-row`}>
           <div className="flex flex-col items-start gap-6 self-stretch lg:gap-8 lg:flex-[1_0_0]">
             <div className="flex flex-col items-start gap-5 self-stretch lg:gap-6">
@@ -173,7 +173,7 @@ export default function DuctlessPage() {
           <div className="h-[348px] self-stretch bg-neutral-300 lg:flex-[1_0_0]"/>
         </Container>
       </div>
-      <div className="flex w-[375px] flex-col items-center gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+      <div className="flex w-[375px] flex-col items-center gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <div className="flex flex-col items-center gap-3 self-stretch lg:w-[768px] lg:self-center lg:justify-center lg:gap-4">
           <p className="text-center text-base not-italic font-semibold leading-[150%]">
             {"Efficient"}
@@ -252,7 +252,7 @@ export default function DuctlessPage() {
           </div>
         </div>
       </div>
-      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <div className="flex flex-col justify-center items-start self-stretch border border-solid border-black lg:flex-row lg:items-center">
           <div className="flex flex-col items-start gap-2 self-stretch p-8 lg:justify-center lg:gap-6 lg:flex-[1_0_0] lg:p-12">
             <div className="flex flex-col items-start gap-5 self-stretch lg:gap-6">
@@ -272,7 +272,7 @@ export default function DuctlessPage() {
           <div className="h-[223px] self-stretch bg-neutral-300 lg:h-[437px] lg:flex-[1_0_0]" />
         </div>
       </div>
-      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <Container center>
           <Faq
             title={"FAQs"}

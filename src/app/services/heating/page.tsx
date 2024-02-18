@@ -40,7 +40,7 @@ const heatingFaqs = [
 export default function HeatingPage() {
   return (
     <>
-      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <Container>
           <div className="flex flex-col items-start gap-3 lg:gap-4 self-stretch">
             <p className="text-center text-base not-italic font-semibold leading-[150%]">
@@ -63,7 +63,7 @@ export default function HeatingPage() {
           </div>
         </Container>
       </div>
-      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <Container>
           <div className="flex flex-col items-start gap-2 lg:gap-6 self-stretch lg:flex-[1_0_0]">
             <div className="flex flex-col items-start gap-3 lg:gap-4 self-stretch">
@@ -89,7 +89,7 @@ export default function HeatingPage() {
           <div className="h-[348px] lg:h-[640px] self-stretch lg:flex-[1_0_0] bg-gray-300 shadow-2xl" />
         </Container>
       </div>
-      <div className="flex w-[375px] flex-col items-center gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+      <div className="flex w-[375px] flex-col items-center gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <h3 className="self-stretch text-center text-[32px] not-italic font-bold leading-[120%] lg:self-center lg:w-[768px] lg:text-[40px]">
           {
             "Expert Heating System Installation, Maintenance, and Repair Services"
@@ -152,7 +152,7 @@ export default function HeatingPage() {
           </div>
         </div>
       </div>
-      <div className="flex w-[375px] flex-col items-center gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+      <div className="flex w-[375px] flex-col items-center gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <div className="flex flex-col items-center gap-3 self-stretch lg:w-[768px] lg:gap-4 lg:self-center">
           <p className="text-center text-base not-italic font-semibold leading-[150%]">
             {"Efficient"}
@@ -214,7 +214,7 @@ export default function HeatingPage() {
           </div>
         </div>
       </div>
-      <div className="flex w-[375px] lg:w-[1440px] flex-col items-center gap-12 px-5 py-16">
+      <div className="flex w-[375px] lg:w-full flex-col items-center gap-12 px-5 py-16">
         <div className="flex flex-col lg:flex-row items-center lg:item-start gap-12 self-stretch">
           <div className="flex flex-col items-center gap-2 self-stretch">
             <div className="flex flex-col items-center gap-5 self-stretch">
@@ -288,7 +288,7 @@ export default function HeatingPage() {
           </div>
         </div>
       </div>
-      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <div className="flex flex-col items-start gap-2 self-stretch">
           <div className="flex flex-col items-start gap-5 self-stretch">
             <h2 className="self-stretch text-4xl not-italic font-bold leading-[120%]">
@@ -305,7 +305,7 @@ export default function HeatingPage() {
           </div>
         </div>
       </div>
-      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <Container center>
           <Faq
             title={"Heating FAQs"}

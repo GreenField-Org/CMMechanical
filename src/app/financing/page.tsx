@@ -3,7 +3,7 @@ import Container from "../components/container/container";
 export default function FinancingPage() {
   return (
     <>
-      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <div className="flex flex-col items-start gap-5 lg:gap-20 self-stretch">
           <div className="flex flex-col items-start gap-6 self-stretch lg:flex-[1_0_0]">
             <h1 className="self-stretch text-[40px] lg:text-[56px] not-italic font-bold leading-[120%]">
@@ -19,7 +19,7 @@ export default function FinancingPage() {
           </div>
         </div>
       </div>
-      <div className="flex w-[374px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+      <div className="flex w-[374px] flex-col items-start gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <Container>
           <div className="flex flex-col items-start gap-2 lg:gap-6 self-stretch lg:flex-[1_0_0]">
             <div className="flex flex-col items-start gap-5 lg:gap-6 self-stretch">
@@ -57,7 +57,7 @@ export default function FinancingPage() {
                 <input
                   type="submit"
                   value="Apply Online"
-                  className="bg-primary hover:bg-primary-dark"
+                  className="bg-primary hover:bg-primary-dark text-white"
                   style={{
                     borderRadius: "5px",
                     fontSize: "16px",

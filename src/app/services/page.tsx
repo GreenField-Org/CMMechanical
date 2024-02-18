@@ -28,7 +28,7 @@ export default function ServicesPage() {
   ];
   return (
     <>
-      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <Container center>
           <div className="flex flex-col items-start gap-3 self-stretch lg:gap-4">
             <p className="text-center text-base not-italic font-semibold leading-[150%]">
@@ -51,7 +51,7 @@ export default function ServicesPage() {
           </div>
         </Container>
       </div>
-      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <Container>
           <div className="flex flex-col items-start gap-10 self-stretch lg:gap-10 lg:flex-[1_0_0]">
             <div className="flex justify-center items-start gap-8 self-stretch">
@@ -97,7 +97,7 @@ export default function ServicesPage() {
           <div className="h-[348px] lg:h-[640px] self-stretch lg:flex-[1_0_0] bg-gray-200" />
         </Container>
       </div>
-      <div className="flex w-[375px] flex-col items-center gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+      <div className="flex w-[375px] flex-col items-center gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <h3 className="self-stretch text-center text-[32px] not-italic font-bold leading-[120%] lg:w-[768px] lg:text-[40px]">
           {"Expert Cooling Services for Your Home or Business"}
         </h3>
@@ -160,12 +160,12 @@ export default function ServicesPage() {
           </div>
         </div>
       </div>
-      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <Container>
           <StickyScroll content={content} />
         </Container>
       </div>
-      <div className="flex w-[375px] flex-col items-center gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+      <div className="flex w-[375px] flex-col items-center gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <h3 className="self-stretch text-center text-[32px] not-italic font-bold leading-[120%] lg:w-[768px] lg:text-[40px]">
           {"Discover the Power of Mitsubishi Products for Your HVAC Needs"}
         </h3>

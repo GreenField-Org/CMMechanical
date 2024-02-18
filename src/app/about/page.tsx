@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <Container>
           <div className="flex flex-col items-start gap-3 self-stretch lg:gap-4">
             <p className="text-center text-base not-italic font-semibold leading-[150%]">
@@ -32,7 +32,7 @@ export default function AboutPage() {
           </div>
         </Container>
       </div>
-      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <Container center>
           <div className="flex flex-col items-start gap-5 lg:gap-6 self-stretch lg:flex-[1_0_0]">
             <h3 className="self-stretch text-[32px] lg:text-[40px] not-italic font-bold leading-[120%]">
@@ -47,7 +47,7 @@ export default function AboutPage() {
           <div className="h-[348px] lg:h-[640px] self-stretch lg:flex-[1_0_0] bg-gray-300" />
         </Container>
       </div>
-      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <div className="flex flex-col items-start gap-3 self-stretch">
           <p className="text-base not-italic font-semibold leading-[150%]">
             {"Experienced"}
@@ -67,7 +67,7 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
-      <div className="flex w-[375px] flex-col items-center gap-8 px-5 py-12 lg:w-[1440px] lg:gap-12 lg:px-16 lg:py-20">
+      <div className="flex w-[375px] flex-col items-center gap-8 px-5 py-12 lg:w-full lg:gap-12 lg:px-16 lg:py-20">
         <p className="self-stretch text-base lg:text-lg not-italic font-bold leading-[150%]">
           {"Certified by top industry organizations for exceptional service"}
         </p>
@@ -75,7 +75,7 @@ export default function AboutPage() {
           {/* Certifications */}
         </div>
       </div>
-      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <Container>
           <div className="flex flex-col items-start gap-2 self-stretch lg:gap-6 lg:flex-[1_0_0]">
             <div className="flex flex-col items-start gap-5 lg:gap-8 self-stretch">
@@ -126,7 +126,7 @@ export default function AboutPage() {
           <div className="h-[348px] lg:h-[640px] self-stretch lg:flex-[1_0_0] bg-gray-300" />
         </Container>
       </div>
-      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <div className="flex flex-col items-start gap-5  self-stretch lg:flex-row lg:gap-20">
           <div className="flex flex-col items-start gap-4 self-stretch lg:flex-[1_0_0]">
             <h3 className="self-stretch text-[32px] lg:text-5xl not-italic font-bold leading-[120%]">

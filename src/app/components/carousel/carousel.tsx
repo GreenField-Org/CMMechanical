@@ -74,7 +74,7 @@ export default function Carousel() {
   }, []);
 
   return (
-    <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+    <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
       <div className="flex flex-col items-start gap-5 self-stretch lg:w-[560px] lg:gap-6" />
       <h2 className="self-stretch text-4xl not-italic font-bold leading-[120%] lg:text-5xl">
         Satisfied Customers

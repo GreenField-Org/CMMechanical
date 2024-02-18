@@ -59,7 +59,7 @@ const content = [
 export default function CoolingPage() {
   return (
     <>
-      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 bg-black bg-opacity-50 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 bg-black bg-opacity-50 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <Container>
           <div className="flex flex-col items-start gap-3 self-stretch lg:gap-4">
             <p className="text-white text-base not-italic font-semibold leading-[150%]">
@@ -82,12 +82,12 @@ export default function CoolingPage() {
           </div>
         </Container>
       </div>
-      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:items-center lg:gap-20 lg:px-16 lg:py-28">
+      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-full lg:items-center lg:gap-20 lg:px-16 lg:py-28">
         <Container>
           <StickyScroll content={content} />
         </Container>
       </div>
-      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <Container>
           <div className="flex flex-col items-start gap-2 self-stretch lg:gap-6 lg:flex-[1_0_0]">
             <div className="flex flex-col items-start gap-3 self-stretch lg:gap-4">
@@ -112,7 +112,7 @@ export default function CoolingPage() {
           <div className="h-[348px] self-stretch bg-gray-300 shadow-2xl lg:h-[640px] lg:flex-[1_0_0]" />
         </Container>
       </div>
-      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <Container classes={`lg:flex-row`}>
           <div className="flex flex-col items-start gap-5 self-stretch lg:gap-8 lg:flex-[1_0_0]">
             <div className="flex flex-col items-start gap-5 self-stretch lg:gap-6">
@@ -166,7 +166,7 @@ export default function CoolingPage() {
           <div className="h-[348px] self-stretch bg-gray-300 shadow-2xl lg:h-[640px] lg:flex-[1_0_0]" />
         </Container>
       </div>
-      <div className="flex w-[375px] flex-col items-center gap-12 px-5 py-16 lg:w-[1400px] lg:gap-20 lg:px-16 lg:py-28">
+      <div className="flex w-[375px] flex-col items-center gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <div className="flex flex-col items-center gap-3 self-stretch lg:w-[768px] lg:gap-4">
           <p className="text-center text-base not-italic font-semibold leading-[150%]">
             {"Efficient"}
@@ -183,7 +183,7 @@ export default function CoolingPage() {
           </div>
         </div>
         <div className="flex flex-col items-center gap-6 self-stretch lg:gap-12">
-          <div className="flex flex-col items-center gap-12 self-stretch lg:w-[1312px] lg:flex-row lg:items-start">
+          <div className="flex flex-col items-center gap-12 self-stretch lg:flex-row lg:items-start">
             <div className="flex flex-col items-start gap-6 self-stretch lg:gap-8 lg:flex-[1_0_0]">
               <div className="h-[198px] self-stretch bg-gray-300 shadow-2xl lg:h-60" />
               <div className="flex flex-col items-center gap-5 self-stretch lg:gap-6">
@@ -225,7 +225,7 @@ export default function CoolingPage() {
           </div>
         </div>
       </div>
-      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <Container classes={`lg:flex-row`}>
           <div className="flex flex-col items-start gap-3 self-stretch lg:gap-6 lg:flex-[1_0_0] lg:w-[768px]">
             <h3 className="self-stretch text-[32px] not-italic font-bold leading-[120%] lg:text-[40px]">
@@ -240,7 +240,7 @@ export default function CoolingPage() {
           </div>
         </Container>
       </div>
-      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <Container center>
           <Faq
             title={"FAQs"}

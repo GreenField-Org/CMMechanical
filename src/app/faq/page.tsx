@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 export default function FaqPage() {
   return (
     <>
-      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-[1440px] lg:h-[369px] lg:gap-20 lg:px-16 lg:py-28">
+      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-full lg:h-[369px] lg:gap-20 lg:px-16 lg:py-28">
         <div className="flex flex-col items-start gap-5 self-stretch">
           <h1 className="self-stretch text-[40px] not-italic font-bold leading-[120%]">
             {"FAQs"}
@@ -21,7 +21,7 @@ export default function FaqPage() {
         </div>
       </div>
       {/* FAQS */}
-      <div className="flex w-[375px] flex-col items-center gap-20 px-5 py-16 lg:w-[1440px] lg:gap-20 lg:px-16 lg:py-28">
+      <div className="flex w-[375px] flex-col items-center gap-20 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <div className="flex flex-col items-center gap-2 lg:gap-6 self-stretch">
           <h2 className="self-stretch text-center text-4xl lg:text-5xl not-italic font-bold leading-[120%]">
             {"Still have questions?"}
