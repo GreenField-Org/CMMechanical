@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Container from "../components/container/container";
 import { Button } from "@nextui-org/react";
+import { Team } from "../components/team/team";
 
 export const metadata: Metadata = {
   title: "About",
@@ -62,7 +63,7 @@ export default function AboutPage() {
         </div>
         <div className="flex flex-col items-start gap-14 lg:gap-24 self-stretch">
           <div className="flex flex-col items-start gap-12 self-stretch">
-            {/* Team Members */}
+            <Team />
           </div>
         </div>
       </div>
