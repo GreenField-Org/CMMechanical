@@ -2,6 +2,7 @@
 
 import { Button } from "@nextui-org/react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function Cta() {
   const router = useRouter();
@@ -21,13 +22,15 @@ export default function Cta() {
         </div>
         <div className="flex items-start gap-4">
           <Button variant="shadow" color="primary">Contact</Button>
-          <Button
-            variant="ghost"
-            color="primary"
-            onClick={() => router.push("/about")}
-          >
-            Learn More
-          </Button>
+          <Link href="/about">
+            <Button
+              variant="ghost"
+              color="primary"
+              onClick={() => router.push("/about")}
+            >
+              Learn More
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
