@@ -1,14 +1,11 @@
-import Image from "next/image";
 import Cta from "./components/cta/cta";
-import Faq from "./components/faq/faq";
-import Carousel from "./components/carousel/carousel";
 import Container from "./components/container/container";
-import { ConstructOutline } from "react-ionicons";
 import Testimonials from "./components/testimonials/testimonials";
 import Section from "./components/section/section";
 import { Button } from "@nextui-org/react";
 import { Suspense } from "react";
 import { StickyScroll } from "./components/sticky-scroll/sticky-scroll";
+import Link from "next/link";
 
 export default function Home() {
   const content = [
@@ -47,7 +44,9 @@ export default function Home() {
               }
             </p>
             <div className="flex items-start gap-4 pt-4">
-              <Button color="primary" variant="shadow">Learn More</Button>
+              <Link href="/services">
+                <Button color="primary" variant="shadow">Learn More</Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -96,7 +95,9 @@ export default function Home() {
               </div>
             </div>
             <div className="flex items-center gap-6 pt-4">
-              <Button color="secondary" variant="ghost">Learn More</Button>
+              <Link href="/heating">
+                <Button color="primary" variant="ghost">Learn More</Button>
+              </Link>
             </div>
           </div>
           <div className="h-[348px] self-stretch lg:h-[640px] lg:flex-[1_0_0] bg-slate-800">
@@ -126,7 +127,9 @@ export default function Home() {
               </div>
             </div>
             <div className="flex items-center gap-6 pt-4">
-              <Button color="primary" variant="shadow">Learn More</Button>
+              <Link href="/cooling">
+                <Button color="primary" variant="shadow">Learn More</Button>
+              </Link>
             </div>
           </div>
           <div className="h-[348px] self-stretch lg:h-[640px] lg:flex-[1_0_0] bg-slate-800">
@@ -158,7 +161,9 @@ export default function Home() {
               </div>
             </div>
             <div className="flex items-center gap-6 pt-4">
-              <Button variant="shadow" color="primary">Learn More</Button>
+              <Link href="/ductless">
+                <Button variant="shadow" color="primary">Learn More</Button>
+              </Link> 
             </div>
           </div>
           <div className="h-[348px] self-stretch lg:h-[640px] lg:flex-[1_0_0]" />
