@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <>
       <div className="flex w-[375px] h-[812px] flex-col items-center lg:w-full lg:h-[824px]">
-        <div className="flex-[1_0_0] place-self-stretch bg-slate-800">
+        <div className="flex-[1_0_0] place-self-stretch bg-gray-300 shadow-2xl">
           <video src="https://picsum.photos/200/300" />
         </div>
         <div className="flex flex-col lg:flex-row items-start gap-5 self-stretch px-5 py-12 lg:gap-20 lg:px-16 lg:py-20">
@@ -100,14 +100,9 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="h-[348px] self-stretch lg:h-[640px] lg:flex-[1_0_0] bg-slate-800">
+          <div className="h-[348px] self-stretch lg:h-[640px] lg:flex-[1_0_0] bg-gray-300 shadow-2xl">
             {/*Image*/}
-            <img
-              src={"https://picsum.photos/seed/picsum/200/300"}
-              width={200}
-              height={200}
-              alt="test image"
-            />
+            
           </div>
         </div>
       </Section>
@@ -132,7 +127,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="h-[348px] self-stretch lg:h-[640px] lg:flex-[1_0_0] bg-slate-800">
+          <div className="h-[348px] self-stretch lg:h-[640px] lg:flex-[1_0_0] bg-gray-300 shadow-2xl">
             <img
               src={"https://picsum.photos/seed/picsum/200/300"}
               width={200}

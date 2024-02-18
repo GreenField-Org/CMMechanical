@@ -35,7 +35,7 @@ const ductlessFaqs = [
 export default function DuctlessPage() {
   return (
     <>
-      <div className="bg-gradient-to-r from-slate-500 to-slate-600 flex flex-col items-center gap-12 px-5 py-16 lg:gap-20 lg:px-16 lg:py-28">
+      <div className="bg-gradient-to-r from-gray-500 to-slate-500 flex flex-col items-center gap-12 px-5 py-16 lg:gap-20 lg:px-16 lg:py-28 shadow-2xl">
         <Container classes={`lg:w-[768px] justify-center items-center`}>
           <div className="flex flex-col items-center gap-3 lg:gap-4 self-stretch">
             <p className="text-[color:var(--White,#FFF)] text-center text-base not-italic font-semibold leading-[150%]">
@@ -90,7 +90,7 @@ export default function DuctlessPage() {
               </div>
             </div>
           </div>
-          <div className="h-[348px] self-stretch bg-neutral-300 lg:flex-[1_0_0]" />
+          <div className="h-[348px] self-stretch bg-gray-300 shadow-2xl lg:flex-[1_0_0]" />
         </Container>
       </div>
       <div className="flex w-[375px] flex-col items-start lg:justify-center lg:items-center gap-12 px-7 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
@@ -129,7 +129,7 @@ export default function DuctlessPage() {
               </div>
             </div>
           </div>
-          <div className="h-[348px] self-stretch bg-neutral-300 lg:flex-[1_0_0]" />
+          <div className="h-[348px] self-stretch bg-gray-300 shadow-2xl lg:flex-[1_0_0]" />
         </Container>
       </div>
       <div className="flex w-[375px] flex-col items-start lg:justify-center lg:items-center gap-12 px-7 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
@@ -170,7 +170,7 @@ export default function DuctlessPage() {
               </div>
             </div>
           </div>
-          <div className="h-[348px] self-stretch bg-neutral-300 lg:flex-[1_0_0]"/>
+          <div className="h-[348px] self-stretch bg-gray-300 shadow-2xl lg:flex-[1_0_0]"/>
         </Container>
       </div>
       <div className="flex w-[375px] flex-col items-center gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
@@ -269,7 +269,7 @@ export default function DuctlessPage() {
               <Button variant="ghost" color="primary">Contact Us</Button>
             </div>
           </div>
-          <div className="h-[223px] self-stretch bg-neutral-300 lg:h-[437px] lg:flex-[1_0_0]" />
+          <div className="h-[223px] self-stretch bg-gray-300 shadow-2xl lg:h-[437px] lg:flex-[1_0_0]" />
         </div>
       </div>
       <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">

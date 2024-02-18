@@ -169,7 +169,7 @@ export default function HeatingPage() {
           </div>
         </div>
         <div className="flex flex-col items-center gap-6 lg:gap-12 self-stretch">
-          <div className="flex flex-col lg:flex-row lg:w-[1312px] items-center gap-12 self-stretch">
+          <div className="flex flex-col lg:flex-row items-center gap-12 self-stretch">
             <div className="flex flex-col items-start gap-6 self-stretch">
               <div className="h-[198px] self-stretch bg-gray-300 shadow-2xl" />
               <div className="flex flex-col items-center gap-5 self-stretch">
