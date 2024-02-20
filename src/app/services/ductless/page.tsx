@@ -2,7 +2,7 @@
 import { Button } from "@nextui-org/react";
 import Container from "@/app/components/container/container";
 import Faq from "@/app/components/faq/faq";
-import { BuildOutline } from "react-ionicons";
+import { Wrench } from "lucide-react";
 
 const ductlessFaqs = [
   {
@@ -192,11 +192,9 @@ export default function DuctlessPage() {
         <div className="flex flex-col items-center gap-6 self-stretch lg:gap-12">
           <div className="flex flex-col items-center gap-12 self-stretch lg:flex-row lg:items-start">
             <div className="flex flex-col items-center gap-5 self-stretch">
-              <BuildOutline
+              <Wrench
                 color={"#25368A"}
-                title={""}
-                height={"25px"}
-                width={"25px"}
+                size={25}
               />
               <div className="flex flex-col items-center gap-5 self-stretch">
                 <h4 className="self-stretch text-center text-2xl not-italic font-bold leading-[140%]">
@@ -210,11 +208,9 @@ export default function DuctlessPage() {
               </div>
             </div>
             <div className="flex flex-col items-center gap-5 self-stretch">
-              <BuildOutline
+              <Wrench
                 color={"#25368A"}
-                title={""}
-                height={"25px"}
-                width={"25px"}
+                size={25}
               />
               <div className="flex flex-col items-center gap-5 self-stretch">
                 <h4 className="self-stretch text-center text-2xl not-italic font-bold leading-[140%]">
@@ -228,11 +224,9 @@ export default function DuctlessPage() {
               </div>
             </div>
             <div className="flex flex-col items-center gap-5 self-stretch">
-              <BuildOutline
+              <Wrench
                 color={"#25368A"}
-                title={""}
-                height={"25px"}
-                width={"25px"}
+                size={25}
               />
               <div className="flex flex-col items-center gap-5 self-stretch">
                 <h4 className="self-stretch text-center text-2xl not-italic font-bold leading-[140%]">

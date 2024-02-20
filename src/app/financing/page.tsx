@@ -35,7 +35,7 @@ export default function FinancingPage() {
                     "Synchrony is one of the nation's premier consumer financial services companies. Our roots in consumer finance trace back to 1932, and today we are the largest provider of private label credit cards in the United States based on purchase volume and receivables."
                   }
                 </p>
-                <ul>
+                <ul className="list-disc mx-5">
                   <li>
                     {"A simple application process, and fast credit decisions"}
                   </li>

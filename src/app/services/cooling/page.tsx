@@ -2,8 +2,8 @@
 import { Button } from "@nextui-org/react";
 import Container from "@/app/components/container/container";
 import Faq from "@/app/components/faq/faq";
-import { SnowOutline } from "react-ionicons";
 import { StickyScroll } from "@/app/components/sticky-scroll/sticky-scroll";
+import { ThermometerSnowflake } from "lucide-react";
 
 const coolingFaqs = [
   {
@@ -129,33 +129,27 @@ export default function CoolingPage() {
             </div>
             <div className="flex flex-col items-start gap-4 self-stretch px-0 py-2">
               <div className="flex items-center gap-4 self-stretch">
-                <SnowOutline
+                <ThermometerSnowflake
                   color={"#25368A"}
-                  title={""}
-                  height="25px"
-                  width="25px"
+                  size={25}
                 />
                 <p className="flex-[1_0_0] text-base not-italic font-normal leading-[150%]">
                   {"Energy-efficient cooling solutions for cost savings"}
                 </p>
               </div>
               <div className="flex items-center gap-4 self-stretch">
-                <SnowOutline
+              <ThermometerSnowflake
                   color={"#25368A"}
-                  title={""}
-                  height="25px"
-                  width="25px"
+                  size={25}
                 />
                 <p className="flex-[1_0_0] text-base not-italic font-normal leading-[150%]">
                   {"Enhanced comfort with our cooling services"}
                 </p>
               </div>
               <div className="flex items-center gap-4 self-stretch">
-                <SnowOutline
+                <ThermometerSnowflake
                   color={"#25368A"}
-                  title={""}
-                  height="25px"
-                  width="25px"
+                  size={25}
                 />
                 <p className="flex-[1_0_0] text-base not-italic font-normal leading-[150%]">
                   {"Stay cool and save money with our cooling solutions"}

@@ -15,8 +15,8 @@ export default function Faq({ title, description, href, faqs }: FaqProps) {
   const router = useRouter();
 
   return (
-    <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:gap-20 lg:self-stretch">
-      <div className="flex flex-col items-start gap-12 self-stretch lg:w-[500px] lg:gap-8">
+    <div className="flex w-[375px] lg:w-full flex-col items-start gap-12 px-5 py-16 lg:gap-20 lg:self-stretch">
+      <div className="flex flex-col items-start gap-12 self-stretch lg:w-full lg:gap-8">
         <div className="flex flex-col items-start gap-6 self-stretch">
           <div className="flex flex-col items-start gap-5 self-stretch">
             <h2 className="self-stretch text-4xl not-italic font-bold leading-[120%] lg:text-5xl">
@@ -28,7 +28,7 @@ export default function Faq({ title, description, href, faqs }: FaqProps) {
           </div>
         </div>
       </div>
-      <div>
+      <div className="w-full">
         <Accordion variant="shadow">
           {faqs.map((accordion) => (
               <AccordionItem

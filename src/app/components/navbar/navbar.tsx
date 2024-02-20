@@ -2,10 +2,12 @@
 
 import { useState } from "react";
 import { Button, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger, Link, Navbar, NavbarBrand, NavbarContent, NavbarItem, Image, NavbarMenu, NavbarMenuItem, NavbarMenuToggle, useDisclosure, ModalContent, Modal, ModalHeader, ModalBody, ModalFooter } from "@nextui-org/react";
+import { usePathname } from "next/navigation";
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const {isOpen, onOpen, onOpenChange} = useDisclosure();
+  const pathname = usePathname();
 
   const menuItems = [
     {
@@ -75,19 +77,19 @@ export default function Nav() {
               />
           </Link>
         </NavbarBrand>
-        <NavbarItem>
+        <NavbarItem isActive={pathname === "/"}>
           <Link href="/">
             Home
           </Link>
         </NavbarItem>
-        <NavbarItem>
+        <NavbarItem isActive={pathname === "/about"}>
           <Link href="/about" aria-current="page">
             About Us
           </Link>
         </NavbarItem>
         
         <Dropdown>
-          <NavbarItem>
+          <NavbarItem isActive={pathname.includes("services")}>
             <DropdownTrigger>
               <Button
                 disableRipple
@@ -132,7 +134,7 @@ export default function Nav() {
         </Dropdown>
           
         <Dropdown>
-          <NavbarItem>
+          <NavbarItem isActive={pathname.includes("products")}>
             <DropdownTrigger>
               <Button
                 disableRipple
@@ -176,7 +178,7 @@ export default function Nav() {
           </DropdownMenu>
         </Dropdown>
 
-        <NavbarItem>
+        <NavbarItem isActive={pathname === "/financing"}>
           <Link href="/financing">
             Financing
           </Link>

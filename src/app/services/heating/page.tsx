@@ -1,8 +1,8 @@
 "use client";
 import Faq from "@/app/components/faq/faq";
 import Container from "../../components/container/container";
-import { FlameOutline } from "react-ionicons";
 import { Button } from "@nextui-org/react";
+import { Flame } from "lucide-react";
 
 const heatingFaqs = [
   {
@@ -218,11 +218,9 @@ export default function HeatingPage() {
         <div className="flex flex-col lg:flex-row items-center lg:item-start gap-12 self-stretch">
           <div className="flex flex-col items-center gap-2 self-stretch">
             <div className="flex flex-col items-center gap-5 self-stretch">
-              <FlameOutline
+            <Flame
                 color={"#FF0000"}
-                title={"open"}
-                height="25px"
-                width="25px"
+                size={25}
               />
               <div className="flex flex-col items-center gap-5 self-stretch">
                 <h4 className="self-stretch text-center text-2xl not-italic font-bold leading-[140%]">
@@ -240,11 +238,9 @@ export default function HeatingPage() {
           </div>
           <div className="flex flex-col items-center gap-2 self-stretch">
             <div className="flex flex-col items-center gap-5 self-stretch">
-              <FlameOutline
+              <Flame
                 color={"#FF0000"}
-                title={"open"}
-                height="25px"
-                width="25px"
+                size={25}
               />
               <div className="flex flex-col items-center gap-5 self-stretch">
                 <h4 className="self-stretch text-center text-2xl not-italic font-bold leading-[140%]">
@@ -264,11 +260,9 @@ export default function HeatingPage() {
           </div>
           <div className="flex flex-col items-center gap-2 self-stretch">
             <div className="flex flex-col items-center gap-5 self-stretch">
-              <FlameOutline
+            <Flame
                 color={"#FF0000"}
-                title={"open"}
-                height="25px"
-                width="25px"
+                size={25}
               />
               <div className="flex flex-col items-center gap-5 self-stretch">
                 <h4 className="self-stretch text-center text-2xl not-italic font-bold leading-[140%]">
