@@ -40,7 +40,7 @@ export default function Home() {
           <div className="flex flex-col items-start gap-2 self-stretch lg:gap-6 lg:flex-[1_0_0]">
             <p className="self-stretch text-base not-italic font-normal leading-[150%] lg:text-lg">
               {
-                "Experience top-quality heating, cooling, and dectless services."
+                "We offer more than 20 years of experience offering top-quality heating, cooling, and dectless services."
               }
             </p>
             <div className="flex items-start gap-4 pt-4">
