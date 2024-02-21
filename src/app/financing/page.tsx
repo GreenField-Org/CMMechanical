@@ -1,3 +1,4 @@
+import { Button } from "@nextui-org/react";
 import Container from "../components/container/container";
 
 export default function FinancingPage() {
@@ -54,19 +55,11 @@ export default function FinancingPage() {
               >
                 <input type="hidden" name="mid" value="5348121950077964" />
                 <input type="hidden" name="pcgc" value="M900" />
-                <input
+                <Button
                   type="submit"
-                  value="Apply Online"
-                  className="bg-primary hover:bg-primary-dark text-white"
-                  style={{
-                    borderRadius: "5px",
-                    fontSize: "16px",
-                    fontWeight: "bold",
-                    lineHeight: "20px",
-                    padding: "10px 15px",
-                    textAlign: "center",
-                  }}
-                />
+                  variant="shadow"
+                  color="primary"
+                >Apply Online</Button>
               </form>
             </div>
           </div>
