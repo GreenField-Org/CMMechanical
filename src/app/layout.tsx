@@ -1,11 +1,9 @@
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/footer/footer";
 import Nav from "./components/navbar/navbar";
 import Script from "next/script";
-
-const inter = Inter({ subsets: ["latin"] });
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
@@ -17,6 +15,8 @@ export const metadata: Metadata = {
   keywords:
     "HVAC, installation, air conditioning, heating, ductless, mitsubishi, NYSERDA, american standard dealer",
 };
+
+const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,
