@@ -41,7 +41,7 @@ export default function AboutPage() {
             </h3>
             <p className="self-stretch text-lg not-italic font-normal leading-[150%]">
               {
-                "We started as a family-owned HVAC business and now proudly offer heating, cooling, and ductless services in the capital region. Through our dedication and expertise, we have achieved the prestigious Mitsubishi Diamond Contractor certification."
+                "We are a small family owned business in the capital region. We have been in business for over 10 years with over 20 years of industry experience. We provide all types of heating and cooling systems as well as water heating systems. We specialize in Mitsubishi cold climate heat pumps (ductless split systems). As a Preferred Diamond Contractor for Mitsubishi we offer extended warranties, great financing options and rebates through the NY Clean Heat Program."
               }
             </p>
           </div>
