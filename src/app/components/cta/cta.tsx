@@ -16,12 +16,16 @@ export default function Cta() {
               {"Schedule a consultation today"}
             </h3>
             <p className="self-stretch text-base not-italic font-normal leading-[150%] lg:text-lg">
-              {"Contact us for more information about our services"}
+              {
+                "Ready to experience unparalleled HVAC service? Contact us today for a free consultation and let us tailor a solution that suits your needs and budget."
+              }
             </p>
           </div>
         </div>
         <div className="flex items-start gap-4">
-          <Button variant="shadow" color="primary">Contact</Button>
+          <Button variant="shadow" color="primary">
+            Contact
+          </Button>
           <Link href="/about">
             <Button
               variant="ghost"
