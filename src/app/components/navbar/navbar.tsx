@@ -23,16 +23,28 @@ export default function Nav() {
       href: "/services",
     },
     {
-      title: "Mitusbishi",
-      href: "/mitsubishi",
+      title: "Heating",
+      href: "/services/heating",
+    },
+    {
+      title: "Cooling",
+      href: "/services/cooling",
+    },
+    {
+      title: "Ductless",
+      href: "/services/ductless",
+    },
+    {
+      title: "Mitsusbishi",
+      href: "/products/mitsubishi",
     },
     {
       title: "American Standard",
-      href: "/american-standard",
+      href: "/products/american-standard",
     },
     {
       title: "NYSERDA",
-      href: "/nyserda",
+      href: "/products/nyserda",
     },
     {
       title: "Financing",
