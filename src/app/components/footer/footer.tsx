@@ -25,19 +25,34 @@ export default function Footer() {
           </h4>
         </div>
         <div className="group grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left mb-6">
-          <Link className="hover:text-tertiary mb-1" href="/about">
+          <Link
+            className="hover:text-tertiary hover:italic hover:font-bold mb-1"
+            href="/about"
+          >
             About Us
           </Link>
-          <Link className="hover:text-tertiary mb-1" href="/services">
+          <Link
+            className="hover:text-tertiary hover:italic hover:font-bold mb-1"
+            href="/services"
+          >
             Services
           </Link>
-          <Link className="hover:text-tertiary mb-1" href="/financing">
+          <Link
+            className="hover:text-tertiary hover:italic hover:font-bold mb-1"
+            href="/financing"
+          >
             Financing
           </Link>
-          <Link className="hover:text-tertiary mb-1" href="/contact">
+          <Link
+            className="hover:text-tertiary hover:italic hover:font-bold mb-1"
+            href="/contact"
+          >
             Contact
           </Link>
-          <Link className="hover:text-tertiary mb-1" href="/faq">
+          <Link
+            className="hover:text-tertiary hover:italic hover:font-bold mb-1"
+            href="/faq"
+          >
             FAQ
           </Link>
         </div>
