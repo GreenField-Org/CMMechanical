@@ -44,9 +44,11 @@ export default function Footer() {
         <Socials />
       </div>
       <hr className="bg-primary" />
-      <p className="flex justify-center p-5">
-        Designed & Developed by GreenField Dev &copy; {new Date().getFullYear()}
-      </p>
+      <div className="flex flex-col items-center justify-center p-5">
+        <p>&copy; {new Date().getFullYear()} C&M Mechanical HVAC</p>
+        <br />
+        <p>Designed & Developed by GreenField Development</p>
+      </div>
     </footer>
   );
 }
