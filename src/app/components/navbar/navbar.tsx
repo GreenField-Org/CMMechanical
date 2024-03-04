@@ -1,12 +1,33 @@
 "use client";
 
 import { useState } from "react";
-import { Button, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger, Link, Navbar, NavbarBrand, NavbarContent, NavbarItem, Image, NavbarMenu, NavbarMenuItem, NavbarMenuToggle, useDisclosure, ModalContent, Modal, ModalHeader, ModalBody, ModalFooter } from "@nextui-org/react";
+import {
+  Button,
+  Dropdown,
+  DropdownItem,
+  DropdownMenu,
+  DropdownTrigger,
+  Link,
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  Image,
+  NavbarMenu,
+  NavbarMenuItem,
+  NavbarMenuToggle,
+  useDisclosure,
+  ModalContent,
+  Modal,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+} from "@nextui-org/react";
 import { usePathname } from "next/navigation";
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const {isOpen, onOpen, onOpenChange} = useDisclosure();
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const pathname = usePathname();
 
   const menuItems = [
@@ -31,7 +52,7 @@ export default function Nav() {
       href: "/services/cooling",
     },
     {
-      title: "Ductless",
+      title: "Dnpm run devuctless",
       href: "/services/ductless",
     },
     {
@@ -60,19 +81,22 @@ export default function Nav() {
       className="bg-forground"
     >
       <NavbarContent className="sm:hidden" justify="start">
-        <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} className="text-primary" />
+        <NavbarMenuToggle
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          className="text-primary"
+        />
       </NavbarContent>
 
       <NavbarContent className="sm:hidden pr-3" justify="center">
         <NavbarBrand>
           <Link href="/">
-        <Image
-                src={"/CMMechanical_logo.png"}
-                width={250}
-                height={250}
-                alt="C&M Mechanical Logo"
-                className="my-0 mx-auto"
-              />
+            <Image
+              src={"/CMMechanical_logo.png"}
+              width={250}
+              height={250}
+              alt="C&M Mechanical Logo"
+              className="my-0 mx-auto"
+            />
           </Link>
         </NavbarBrand>
       </NavbarContent>
@@ -81,25 +105,25 @@ export default function Nav() {
         <NavbarBrand>
           <Link href="/">
             <Image
-                src={"/CMMechanical_logo.png"}
-                width={250}
-                height={250}
-                alt="C&M Mechanical Logo"
-                className="my-0 mx-auto"
-              />
+              src={"/CMMechanical_logo.png"}
+              width={250}
+              height={250}
+              alt="C&M Mechanical Logo"
+              className="my-0 mx-auto"
+            />
           </Link>
         </NavbarBrand>
-        <NavbarItem isActive={pathname === "/"}>
+        {/*<NavbarItem isActive={pathname === "/"}>
           <Link href="/">
             Home
           </Link>
-        </NavbarItem>
+  </NavbarItem>*/}
         <NavbarItem isActive={pathname === "/about"}>
-          <Link href="/about" aria-current="page">
+          <Link href="./about" aria-current="page">
             About Us
           </Link>
         </NavbarItem>
-        
+
         <Dropdown>
           <NavbarItem isActive={pathname.includes("services")}>
             <DropdownTrigger>
@@ -144,7 +168,7 @@ export default function Nav() {
             </DropdownItem>
           </DropdownMenu>
         </Dropdown>
-          
+
         <Dropdown>
           <NavbarItem isActive={pathname.includes("products")}>
             <DropdownTrigger>
@@ -191,9 +215,7 @@ export default function Nav() {
         </Dropdown>
 
         <NavbarItem isActive={pathname === "/financing"}>
-          <Link href="/financing">
-            Financing
-          </Link>
+          <Link href="/financing">Financing</Link>
         </NavbarItem>
       </NavbarContent>
 
@@ -203,52 +225,52 @@ export default function Nav() {
             Contact Us
           </Button>
           <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
-        <ModalContent>
-          {(onClose) => (
-            <>
-              <ModalHeader className="flex flex-col gap-1">Modal Title</ModalHeader>
-              <ModalBody>
-                <p> 
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam pulvinar risus non risus hendrerit venenatis.
-                  Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam pulvinar risus non risus hendrerit venenatis.
-                  Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                </p>
-                <p>
-                  Magna exercitation reprehenderit magna aute tempor cupidatat consequat elit
-                  dolor adipisicing. Mollit dolor eiusmod sunt ex incididunt cillum quis. 
-                  Velit duis sit officia eiusmod Lorem aliqua enim laboris do dolor eiusmod. 
-                  Et mollit incididunt nisi consectetur esse laborum eiusmod pariatur 
-                  proident Lorem eiusmod et. Culpa deserunt nostrud ad veniam.
-                </p>
-              </ModalBody>
-              <ModalFooter>
-                <Button color="danger" variant="light" onPress={onClose}>
-                  Close
-                </Button>
-                <Button color="primary" onPress={onClose}>
-                  Action
-                </Button>
-              </ModalFooter>
-            </>
-          )}
-        </ModalContent>
-      </Modal>
+            <ModalContent>
+              {(onClose) => (
+                <>
+                  <ModalHeader className="flex flex-col gap-1">
+                    Modal Title
+                  </ModalHeader>
+                  <ModalBody>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nullam pulvinar risus non risus hendrerit venenatis.
+                      Pellentesque sit amet hendrerit risus, sed porttitor quam.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nullam pulvinar risus non risus hendrerit venenatis.
+                      Pellentesque sit amet hendrerit risus, sed porttitor quam.
+                    </p>
+                    <p>
+                      Magna exercitation reprehenderit magna aute tempor
+                      cupidatat consequat elit dolor adipisicing. Mollit dolor
+                      eiusmod sunt ex incididunt cillum quis. Velit duis sit
+                      officia eiusmod Lorem aliqua enim laboris do dolor
+                      eiusmod. Et mollit incididunt nisi consectetur esse
+                      laborum eiusmod pariatur proident Lorem eiusmod et. Culpa
+                      deserunt nostrud ad veniam.
+                    </p>
+                  </ModalBody>
+                  <ModalFooter>
+                    <Button color="danger" variant="light" onPress={onClose}>
+                      Close
+                    </Button>
+                    <Button color="primary" onPress={onClose}>
+                      Action
+                    </Button>
+                  </ModalFooter>
+                </>
+              )}
+            </ModalContent>
+          </Modal>
         </NavbarItem>
       </NavbarContent>
 
       <NavbarMenu className="bg-transparent">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
-              className="w-full"
-              href={item.href}
-              size="lg"
-            >
+            <Link className="w-full" href={item.href} size="lg">
               {item.title}
             </Link>
           </NavbarMenuItem>
