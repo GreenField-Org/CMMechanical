@@ -6,6 +6,7 @@ import { Button } from "@nextui-org/react";
 import { Suspense } from "react";
 import { StickyScroll } from "./components/sticky-scroll/sticky-scroll";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   const content = [
@@ -24,9 +25,9 @@ export default function Home() {
       description:
         "Have questions? Check out our FAQ section to find answers to common inquiries about our services, products, and more.",
     },
-  ]
+  ];
   return (
-    <>
+    <div className="rounded-lg shadow-2xl bg-slate-100 p-3">
       <div className="flex w-[375px] h-[812px] flex-col items-center lg:w-full lg:h-[824px]">
         <div className="flex-[1_0_0] place-self-stretch bg-gray-300 shadow-2xl">
           <video src="https://picsum.photos/200/300" />
@@ -44,12 +45,22 @@ export default function Home() {
               }
             </p>
             <div className="flex items-start gap-4 pt-4">
-              <Link href="/services">
-                <Button color="primary" variant="shadow">Learn More</Button>
+              <Link href="/about">
+                <Button color="primary" variant="shadow">
+                  Learn More
+                </Button>
               </Link>
             </div>
           </div>
         </div>
+      </div>
+      <div className="flex justify-center">
+        <Image
+          src="/diamonddealer-sm.png"
+          width={300}
+          height={300}
+          alt="test image"
+        />
       </div>
       <Section>
         <div className="flex flex-col lg:flex-row items-start gap-12 self-stretch lg:items-center lg:gap-20">
@@ -95,14 +106,15 @@ export default function Home() {
               </div>
             </div>
             <div className="flex items-center gap-6 pt-4">
-              <Link href="/heating">
-                <Button color="primary" variant="ghost">Learn More</Button>
+              <Link href="/services/heating">
+                <Button color="primary" variant="ghost">
+                  Learn More
+                </Button>
               </Link>
             </div>
           </div>
           <div className="h-[348px] self-stretch lg:h-[640px] lg:flex-[1_0_0] bg-gray-300 shadow-2xl">
             {/*Image*/}
-            
           </div>
         </div>
       </Section>
@@ -122,8 +134,10 @@ export default function Home() {
               </div>
             </div>
             <div className="flex items-center gap-6 pt-4">
-              <Link href="/cooling">
-                <Button color="primary" variant="shadow">Learn More</Button>
+              <Link href="/services/cooling">
+                <Button color="primary" variant="shadow">
+                  Learn More
+                </Button>
               </Link>
             </div>
           </div>
@@ -156,9 +170,11 @@ export default function Home() {
               </div>
             </div>
             <div className="flex items-center gap-6 pt-4">
-              <Link href="/ductless">
-                <Button variant="shadow" color="primary">Learn More</Button>
-              </Link> 
+              <Link href="/services/ductless">
+                <Button variant="shadow" color="primary">
+                  Learn More
+                </Button>
+              </Link>
             </div>
           </div>
           <div className="h-[348px] self-stretch lg:h-[640px] lg:flex-[1_0_0]" />
@@ -173,6 +189,6 @@ export default function Home() {
         <Testimonials />
       </Suspense>
       <Cta />
-    </>
+    </div>
   );
 }

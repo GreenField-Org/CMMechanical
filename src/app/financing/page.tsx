@@ -3,7 +3,7 @@ import Container from "../components/container/container";
 
 export default function FinancingPage() {
   return (
-    <>
+    <div className="rounded-lg shadow-2xl bg-slate-100 p-3">
       <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <div className="flex flex-col items-start gap-5 lg:gap-20 self-stretch">
           <div className="flex flex-col items-start gap-6 self-stretch lg:flex-[1_0_0]">
@@ -55,17 +55,15 @@ export default function FinancingPage() {
               >
                 <input type="hidden" name="mid" value="5348121950077964" />
                 <input type="hidden" name="pcgc" value="M900" />
-                <Button
-                  type="submit"
-                  variant="shadow"
-                  color="primary"
-                >Apply Online</Button>
+                <Button type="submit" variant="shadow" color="primary">
+                  Apply Online
+                </Button>
               </form>
             </div>
           </div>
           <div className="h-[348px] lg:h-[640px] lg:flex-[1_0_0] self-stretch bg-slate-100" />
         </Container>
       </div>
-    </>
+    </div>
   );
 }
