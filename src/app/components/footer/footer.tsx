@@ -4,8 +4,8 @@ import Socials from "../socials/socials";
 
 export default function Footer() {
   return (
-    <footer className="transition-colors py-10 px-5">
-      <div className="grid text-center lg:w-full lg:mb-5 lg:grid-cols-3 lg:text-left mb-6">
+    <footer className="py-10 px-5">
+      <div className="grid text-center lg:w-full lg:mb-5 lg:grid-cols-4 lg:text-left mb-6">
         <div className="flex flex-col justify-center items-center gap-2 mb-6">
           <Image
             src="/CMMechanical_logo.png"
@@ -24,18 +24,38 @@ export default function Footer() {
             </a>
           </h4>
         </div>
-        <div className="group grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left mb-6">
+        <div className="group flex flex-col text-center lg:max-w-2xl lg:w-full lg:mb-0 lg:grid-cols-1 lg:text-left mb-6">
+          <Link
+            className="text-lg hover:text-tertiary hover:italic hover:font-bold mb-1"
+            href="/services"
+          >
+            Services
+          </Link>
+          <Link
+            className="hover:text-tertiary hover:italic hover:font-bold mb-1"
+            href="/services/heating"
+          >
+            Heating
+          </Link>
+          <Link
+            className="hover:text-tertiary hover:italic hover:font-bold mb-1"
+            href="/services/cooling"
+          >
+            Cooling
+          </Link>
+          <Link
+            className="hover:text-tertiary hover:italic hover:font-bold mb-1"
+            href="/services/ductless"
+          >
+            Ductless
+          </Link>
+        </div>
+        <div className="group flex flex-col text-center lg:max-w-2xl lg:w-full lg:mb-0 lg:grid-cols-1 lg:text-left mb-6">
           <Link
             className="hover:text-tertiary hover:italic hover:font-bold mb-1"
             href="/about"
           >
             About Us
-          </Link>
-          <Link
-            className="hover:text-tertiary hover:italic hover:font-bold mb-1"
-            href="/services"
-          >
-            Services
           </Link>
           <Link
             className="hover:text-tertiary hover:italic hover:font-bold mb-1"
