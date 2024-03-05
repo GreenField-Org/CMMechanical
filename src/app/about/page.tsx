@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <>
+    <div className="rounded-lg shadow-2xl bg-slate-100 p-3">
       <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <Container>
           <div className="flex flex-col items-start gap-3 self-stretch lg:gap-4">
@@ -29,7 +29,9 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="flex items-start gap-4 pt-4">
-            <Button color="primary" variant="shadow">Learn More </Button>         
+            <Button color="primary" variant="shadow">
+              Learn More{" "}
+            </Button>
           </div>
         </Container>
       </div>
@@ -73,8 +75,27 @@ export default function AboutPage() {
           {"Certified by top industry organizations for exceptional service"}
         </p>
         <div className="flex flex-col lg:flex-row lg:justify-center items-center lg:align-baseline gap-2 lg:gap-12 self-stretch">
-          <Image src="/Mitsubishi_Electric_logo.png" width={200} height={200} className="shadow-2xl" alt={"Mitsubishi electric logo"}/>
-          <Image src="/American-Standard-logo.png" width={200} height={200} className="shadow-2xl" alt={"American Standard logo"}/>
+          <Image
+            src="/dclogo_vertical.png"
+            width={200}
+            height={200}
+            className="shadow-2xl"
+            alt={"Diamond Contractor logo"}
+          />
+          <Image
+            src="/Mitsubishi_Electric_logo.png"
+            width={300}
+            height={300}
+            className="shadow-2xl"
+            alt={"Mitsubishi electric logo"}
+          />
+          <Image
+            src="/American-Standard-logo.png"
+            width={250}
+            height={250}
+            className="shadow-2xl"
+            alt={"American Standard logo"}
+          />
         </div>
       </div>
       <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
@@ -122,7 +143,9 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="flex items-center gap-6 pt-4">
-              <Button variant="ghost" color="primary" >Learn More</Button>
+              <Button variant="ghost" color="primary">
+                Learn More
+              </Button>
             </div>
           </div>
           <div className="h-[348px] lg:h-[640px] self-stretch lg:flex-[1_0_0] bg-gray-300" />
@@ -155,7 +178,9 @@ export default function AboutPage() {
               }
             </p>
             <div className="flex flex-col items-start gap-2 self-stretch pt-2">
-              <Button variant="ghost" color="primary" >Learn More</Button>
+              <Button variant="ghost" color="primary">
+                Learn More
+              </Button>
             </div>
           </div>
           <div className="flex flex-col items-start gap-3 self-stretch">
@@ -169,7 +194,9 @@ export default function AboutPage() {
               }
             </p>
             <div className="flex flex-col items-start gap-2 self-stretch pt-2">
-              <Button variant="ghost" color="primary" >Learn More </Button>
+              <Button variant="ghost" color="primary">
+                Learn More{" "}
+              </Button>
             </div>
           </div>
           <div className="flex flex-col items-start gap-3 self-stretch">
@@ -183,11 +210,13 @@ export default function AboutPage() {
               }
             </p>
             <div className="flex flex-col items-start gap-2 self-stretch pt-2">
-              <Button variant="ghost" color="primary" >Learn More</Button>
+              <Button variant="ghost" color="primary">
+                Learn More
+              </Button>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

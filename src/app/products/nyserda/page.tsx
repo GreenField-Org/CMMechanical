@@ -5,5 +5,5 @@ export const metadata: Metadata = {
 };
 
 export default function NyserdaPage() {
-  return <div>NYSERDA</div>;
+  return <div className="rounded-lg shadow-2xl bg-slate-100 p-3">NYSERDA</div>;
 }

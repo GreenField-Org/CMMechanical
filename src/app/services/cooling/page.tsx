@@ -58,7 +58,7 @@ const content = [
 
 export default function CoolingPage() {
   return (
-    <>
+    <div className="rounded-lg shadow-2xl bg-slate-100 p-3">
       <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 bg-black bg-opacity-50 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <Container>
           <div className="flex flex-col items-start gap-3 self-stretch lg:gap-4">
@@ -77,8 +77,12 @@ export default function CoolingPage() {
             </div>
           </div>
           <div className="flex items-start gap-4 pt-4">
-            <Button variant="shadow" color="primary">Learn More </Button>
-            <Button variant="ghost" color="primary">Contact Us</Button>
+            <Button variant="shadow" color="primary">
+              Learn More{" "}
+            </Button>
+            <Button variant="ghost" color="primary">
+              Contact Us
+            </Button>
           </div>
         </Container>
       </div>
@@ -106,7 +110,9 @@ export default function CoolingPage() {
               </div>
             </div>
             <div className="flex items-center gap-6 pt-4">
-              <Button variant="ghost" color="primary">Learn More</Button>
+              <Button variant="ghost" color="primary">
+                Learn More
+              </Button>
             </div>
           </div>
           <div className="h-[348px] self-stretch bg-gray-300 shadow-2xl lg:h-[640px] lg:flex-[1_0_0]" />
@@ -129,28 +135,19 @@ export default function CoolingPage() {
             </div>
             <div className="flex flex-col items-start gap-4 self-stretch px-0 py-2">
               <div className="flex items-center gap-4 self-stretch">
-                <ThermometerSnowflake
-                  color={"#25368A"}
-                  size={25}
-                />
+                <ThermometerSnowflake color={"#25368A"} size={25} />
                 <p className="flex-[1_0_0] text-base not-italic font-normal leading-[150%]">
                   {"Energy-efficient cooling solutions for cost savings"}
                 </p>
               </div>
               <div className="flex items-center gap-4 self-stretch">
-              <ThermometerSnowflake
-                  color={"#25368A"}
-                  size={25}
-                />
+                <ThermometerSnowflake color={"#25368A"} size={25} />
                 <p className="flex-[1_0_0] text-base not-italic font-normal leading-[150%]">
                   {"Enhanced comfort with our cooling services"}
                 </p>
               </div>
               <div className="flex items-center gap-4 self-stretch">
-                <ThermometerSnowflake
-                  color={"#25368A"}
-                  size={25}
-                />
+                <ThermometerSnowflake color={"#25368A"} size={25} />
                 <p className="flex-[1_0_0] text-base not-italic font-normal leading-[150%]">
                   {"Stay cool and save money with our cooling solutions"}
                 </p>
@@ -215,7 +212,9 @@ export default function CoolingPage() {
             </div>
           </div>
           <div className="flex items-center gap-6 pt-4">
-            <Button variant="ghost" color="primary">Contact Us</Button>
+            <Button variant="ghost" color="primary">
+              Contact Us
+            </Button>
           </div>
         </div>
       </div>
@@ -230,7 +229,9 @@ export default function CoolingPage() {
             </p>
           </div>
           <div className="flex items-start gap-4">
-            <Button variant="ghost" color="primary">Contact</Button>
+            <Button variant="ghost" color="primary">
+              Contact
+            </Button>
           </div>
         </Container>
       </div>
@@ -246,6 +247,6 @@ export default function CoolingPage() {
           />
         </Container>
       </div>
-    </>
+    </div>
   );
 }

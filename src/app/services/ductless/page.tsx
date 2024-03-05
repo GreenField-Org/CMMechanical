@@ -34,7 +34,7 @@ const ductlessFaqs = [
 
 export default function DuctlessPage() {
   return (
-    <>
+    <div className="rounded-lg shadow-2xl bg-slate-100 p-3">
       <div className="bg-gradient-to-r from-gray-500 to-slate-500 flex flex-col items-center gap-12 px-5 py-16 lg:gap-20 lg:px-16 lg:py-28 shadow-2xl">
         <Container classes={`lg:w-[768px] justify-center items-center`}>
           <div className="flex flex-col items-center gap-3 lg:gap-4 self-stretch">
@@ -53,8 +53,12 @@ export default function DuctlessPage() {
             </div>
           </div>
           <div className="flex gap-4 pt-4">
-            <Button variant="shadow" color="primary">Learn More</Button>
-            <Button variant="ghost" color="primary">Contact</Button>
+            <Button variant="shadow" color="primary">
+              Learn More
+            </Button>
+            <Button variant="ghost" color="primary">
+              Contact
+            </Button>
           </div>
         </Container>
       </div>
@@ -170,7 +174,7 @@ export default function DuctlessPage() {
               </div>
             </div>
           </div>
-          <div className="h-[348px] self-stretch bg-gray-300 shadow-2xl lg:flex-[1_0_0]"/>
+          <div className="h-[348px] self-stretch bg-gray-300 shadow-2xl lg:flex-[1_0_0]" />
         </Container>
       </div>
       <div className="flex w-[375px] flex-col items-center gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
@@ -192,10 +196,7 @@ export default function DuctlessPage() {
         <div className="flex flex-col items-center gap-6 self-stretch lg:gap-12">
           <div className="flex flex-col items-center gap-12 self-stretch lg:flex-row lg:items-start">
             <div className="flex flex-col items-center gap-5 self-stretch">
-              <Wrench
-                color={"#25368A"}
-                size={25}
-              />
+              <Wrench color={"#25368A"} size={25} />
               <div className="flex flex-col items-center gap-5 self-stretch">
                 <h4 className="self-stretch text-center text-2xl not-italic font-bold leading-[140%]">
                   {"Quiet Operation"}
@@ -208,10 +209,7 @@ export default function DuctlessPage() {
               </div>
             </div>
             <div className="flex flex-col items-center gap-5 self-stretch">
-              <Wrench
-                color={"#25368A"}
-                size={25}
-              />
+              <Wrench color={"#25368A"} size={25} />
               <div className="flex flex-col items-center gap-5 self-stretch">
                 <h4 className="self-stretch text-center text-2xl not-italic font-bold leading-[140%]">
                   {"Convenient Remote Control"}
@@ -224,10 +222,7 @@ export default function DuctlessPage() {
               </div>
             </div>
             <div className="flex flex-col items-center gap-5 self-stretch">
-              <Wrench
-                color={"#25368A"}
-                size={25}
-              />
+              <Wrench color={"#25368A"} size={25} />
               <div className="flex flex-col items-center gap-5 self-stretch">
                 <h4 className="self-stretch text-center text-2xl not-italic font-bold leading-[140%]">
                   {"Customizable Comfort"}
@@ -241,8 +236,12 @@ export default function DuctlessPage() {
             </div>
           </div>
           <div className="flex items-center gap-6 pt-4">
-            <Button variant="ghost"color="primary">Learn More</Button>
-            <Button variant="ghost" color="primary">Contact</Button>
+            <Button variant="ghost" color="primary">
+              Learn More
+            </Button>
+            <Button variant="ghost" color="primary">
+              Contact
+            </Button>
           </div>
         </div>
       </div>
@@ -260,7 +259,9 @@ export default function DuctlessPage() {
               </p>
             </div>
             <div className="flex items-start gap-4 pt-4">
-              <Button variant="ghost" color="primary">Contact Us</Button>
+              <Button variant="ghost" color="primary">
+                Contact Us
+              </Button>
             </div>
           </div>
           <div className="h-[223px] self-stretch bg-gray-300 shadow-2xl lg:h-[437px] lg:flex-[1_0_0]" />
@@ -278,6 +279,6 @@ export default function DuctlessPage() {
           />
         </Container>
       </div>
-    </>
+    </div>
   );
 }

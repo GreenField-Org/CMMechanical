@@ -27,7 +27,7 @@ export default function ServicesPage() {
     },
   ];
   return (
-    <>
+    <div className="rounded-lg shadow-2xl bg-slate-100 p-3">
       <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <Container center>
           <div className="flex flex-col items-start gap-3 self-stretch lg:gap-4">
@@ -46,8 +46,12 @@ export default function ServicesPage() {
             </div>
           </div>
           <div className="flex items-start gap-4 pt-4">
-          <Button variant="shadow" color="primary">Learn More</Button>
-            <Button variant="ghost" color="primary">Contact Us</Button>
+            <Button variant="shadow" color="primary">
+              Learn More
+            </Button>
+            <Button variant="ghost" color="primary">
+              Contact Us
+            </Button>
           </div>
         </Container>
       </div>
@@ -117,7 +121,9 @@ export default function ServicesPage() {
               </div>
             </div>
             <div className="flex flex-col items-center gap-2 self-stretch pt-2">
-            <Button variant="ghost" color="primary">Learn More</Button>
+              <Button variant="ghost" color="primary">
+                Learn More
+              </Button>
             </div>
           </div>
           <div className="flex flex-col items-center gap-4 lg:gap-6 lg:flex-[1_0_0] self-stretch">
@@ -135,7 +141,9 @@ export default function ServicesPage() {
               </div>
             </div>
             <div className="flex flex-col items-center gap-2 self-stretch pt-2">
-            <Button variant="ghost" color="primary">Learn More</Button>
+              <Button variant="ghost" color="primary">
+                Learn More
+              </Button>
             </div>
           </div>
           <div className="flex flex-col items-center gap-4 lg:gap-6 lg:flex-[1_0_0] self-stretch">
@@ -155,7 +163,9 @@ export default function ServicesPage() {
               </div>
             </div>
             <div className="flex flex-col items-center gap-2 self-stretch pt-2">
-            <Button variant="ghost" color="primary">Learn More</Button>
+              <Button variant="ghost" color="primary">
+                Learn More
+              </Button>
             </div>
           </div>
         </div>
@@ -185,7 +195,9 @@ export default function ServicesPage() {
               </div>
             </div>
             <div className="flex flex-col items-center gap-2 self-stretch pt-2">
-            <Button variant="ghost" color="primary">Learn More</Button>
+              <Button variant="ghost" color="primary">
+                Learn More
+              </Button>
             </div>
           </div>
           <div className="flex flex-col items-center gap-4 lg:gap-6 lg:flex-[1_0_0] self-stretch">
@@ -203,7 +215,9 @@ export default function ServicesPage() {
               </div>
             </div>
             <div className="flex flex-col items-center gap-2 self-stretch pt-2">
-            <Button variant="ghost" color="primary">Learn More</Button>
+              <Button variant="ghost" color="primary">
+                Learn More
+              </Button>
             </div>
           </div>
           <div className="flex flex-col items-center gap-4 lg:gap-6 lg:flex-[1_0_0] self-stretch">
@@ -221,12 +235,14 @@ export default function ServicesPage() {
               </div>
             </div>
             <div className="flex flex-col items-center gap-2 self-stretch pt-2">
-            <Button variant="ghost" color="primary">Learn More</Button>
+              <Button variant="ghost" color="primary">
+                Learn More
+              </Button>
             </div>
           </div>
         </div>
       </div>
       <Cta />
-    </>
+    </div>
   );
 }

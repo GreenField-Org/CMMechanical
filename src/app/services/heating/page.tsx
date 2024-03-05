@@ -39,7 +39,7 @@ const heatingFaqs = [
 
 export default function HeatingPage() {
   return (
-    <>
+    <div className="rounded-lg shadow-2xl bg-slate-100 p-3">
       <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
         <Container>
           <div className="flex flex-col items-start gap-3 lg:gap-4 self-stretch">
@@ -58,8 +58,12 @@ export default function HeatingPage() {
             </div>
           </div>
           <div className="flex items-start gap-4 pt-4">
-            <Button variant="shadow" color="primary">Learn More</Button>
-            <Button variant="ghost" color="primary">Contact Us</Button>
+            <Button variant="shadow" color="primary">
+              Learn More
+            </Button>
+            <Button variant="ghost" color="primary">
+              Contact Us
+            </Button>
           </div>
         </Container>
       </div>
@@ -82,8 +86,12 @@ export default function HeatingPage() {
               </div>
             </div>
             <div className="flex items-center gap-6 pt-4">
-            <Button variant="shadow" color="primary">Learn More</Button>
-            <Button variant="ghost" color="primary">Contact Us</Button>
+              <Button variant="shadow" color="primary">
+                Learn More
+              </Button>
+              <Button variant="ghost" color="primary">
+                Contact Us
+              </Button>
             </div>
           </div>
           <div className="h-[348px] lg:h-[640px] self-stretch lg:flex-[1_0_0] bg-gray-300 shadow-2xl" />
@@ -110,7 +118,9 @@ export default function HeatingPage() {
                 </p>
               </div>
               <div className="flex flex-col items-center gap-2 self-stretch pt-2">
-              <Button variant="ghost" color="primary">Learn More</Button>
+                <Button variant="ghost" color="primary">
+                  Learn More
+                </Button>
               </div>
             </div>
           </div>
@@ -128,7 +138,9 @@ export default function HeatingPage() {
                 </p>
               </div>
               <div className="flex flex-col items-center gap-2 self-stretch pt-2">
-            <Button variant="ghost" color="primary">Contact Us</Button>
+                <Button variant="ghost" color="primary">
+                  Contact Us
+                </Button>
               </div>
             </div>
           </div>
@@ -146,7 +158,9 @@ export default function HeatingPage() {
                 </p>
               </div>
               <div className="flex flex-col items-center gap-2 self-stretch pt-2">
-            <Button variant="ghost" color="primary">Contact</Button>
+                <Button variant="ghost" color="primary">
+                  Contact
+                </Button>
               </div>
             </div>
           </div>
@@ -209,8 +223,12 @@ export default function HeatingPage() {
             </div>
           </div>
           <div className="flex items-center gap-6 pt-4">
-          <Button variant="shadow" color="primary">Learn More</Button>
-            <Button variant="ghost" color="primary">Contact Us</Button>
+            <Button variant="shadow" color="primary">
+              Learn More
+            </Button>
+            <Button variant="ghost" color="primary">
+              Contact Us
+            </Button>
           </div>
         </div>
       </div>
@@ -218,10 +236,7 @@ export default function HeatingPage() {
         <div className="flex flex-col lg:flex-row items-center lg:item-start gap-12 self-stretch">
           <div className="flex flex-col items-center gap-2 self-stretch">
             <div className="flex flex-col items-center gap-5 self-stretch">
-            <Flame
-                color={"#FF0000"}
-                size={25}
-              />
+              <Flame color={"#FF0000"} size={25} />
               <div className="flex flex-col items-center gap-5 self-stretch">
                 <h4 className="self-stretch text-center text-2xl not-italic font-bold leading-[140%]">
                   {"Selecting, Installing, and Maintaining Heating Systems"}
@@ -232,16 +247,17 @@ export default function HeatingPage() {
               </div>
             </div>
             <div className="flex items-center gap-6 pt-4">
-            <Button variant="shadow" color="primary">Learn More</Button>
-            <Button variant="ghost" color="primary">Contact Us</Button>
+              <Button variant="shadow" color="primary">
+                Learn More
+              </Button>
+              <Button variant="ghost" color="primary">
+                Contact Us
+              </Button>
             </div>
           </div>
           <div className="flex flex-col items-center gap-2 self-stretch">
             <div className="flex flex-col items-center gap-5 self-stretch">
-              <Flame
-                color={"#FF0000"}
-                size={25}
-              />
+              <Flame color={"#FF0000"} size={25} />
               <div className="flex flex-col items-center gap-5 self-stretch">
                 <h4 className="self-stretch text-center text-2xl not-italic font-bold leading-[140%]">
                   {"Expert Heating System Installation"}
@@ -254,16 +270,17 @@ export default function HeatingPage() {
               </div>
             </div>
             <div className="flex items-center gap-6 pt-4">
-            <Button variant="shadow" color="primary">Learn More</Button>
-            <Button variant="ghost" color="primary">Contact Us</Button>
+              <Button variant="shadow" color="primary">
+                Learn More
+              </Button>
+              <Button variant="ghost" color="primary">
+                Contact Us
+              </Button>
             </div>
           </div>
           <div className="flex flex-col items-center gap-2 self-stretch">
             <div className="flex flex-col items-center gap-5 self-stretch">
-            <Flame
-                color={"#FF0000"}
-                size={25}
-              />
+              <Flame color={"#FF0000"} size={25} />
               <div className="flex flex-col items-center gap-5 self-stretch">
                 <h4 className="self-stretch text-center text-2xl not-italic font-bold leading-[140%]">
                   {"Regular Maintenance for Optimal Performance"}
@@ -276,8 +293,12 @@ export default function HeatingPage() {
               </div>
             </div>
             <div className="flex items-center gap-6 pt-4">
-            <Button variant="shadow" color="primary">Learn More</Button>
-            <Button variant="ghost" color="primary">Contact Us</Button>
+              <Button variant="shadow" color="primary">
+                Learn More
+              </Button>
+              <Button variant="ghost" color="primary">
+                Contact Us
+              </Button>
             </div>
           </div>
         </div>
@@ -295,7 +316,9 @@ export default function HeatingPage() {
             </p>
           </div>
           <div className="flex items-start gap-4 pt-4">
-            <Button variant="shadow" color="primary">Contact Us Today</Button>
+            <Button variant="shadow" color="primary">
+              Contact Us Today
+            </Button>
           </div>
         </div>
       </div>
@@ -311,6 +334,6 @@ export default function HeatingPage() {
           />
         </Container>
       </div>
-    </>
+    </div>
   );
 }
