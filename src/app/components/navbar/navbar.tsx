@@ -52,7 +52,7 @@ export default function Nav() {
       href: "/services/cooling",
     },
     {
-      title: "Dnpm run devuctless",
+      title: "Ductless",
       href: "/services/ductless",
     },
     {
