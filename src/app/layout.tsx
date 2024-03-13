@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   },
 };
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Roboto_Condensed({ display: "swap", subsets: ["latin"] });
 
 export default function RootLayout({
   children,

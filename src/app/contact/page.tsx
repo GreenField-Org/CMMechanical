@@ -22,7 +22,7 @@ export default function ContactPage() {
   ];
 
   return (
-    <div className="w-full mt-8 p-8 flex flex-col items-center justify-center">
+    <div className="w-full lg:mt-8 lg:p-8 flex flex-col items-center justify-center">
       <h1 className="text-4xl font-bold text-center mb-8">
         Contact C&M Mechanical today!
       </h1>

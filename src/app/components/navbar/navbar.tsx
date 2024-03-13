@@ -225,7 +225,13 @@ export default function Nav() {
           <Button as={Link} color="primary" variant="shadow" onPress={onOpen}>
             Contact Us
           </Button>
-          <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
+          <Modal
+            isOpen={isOpen}
+            onOpenChange={onOpenChange}
+            size="sm"
+            scrollBehavior="outside"
+            backdrop="blur"
+          >
             <ModalContent>
               {(onClose) => (
                 <>
@@ -243,9 +249,6 @@ export default function Nav() {
                   <ModalFooter>
                     <Button color="danger" variant="light" onPress={onClose}>
                       Close
-                    </Button>
-                    <Button color="primary" onPress={onClose}>
-                      Action
                     </Button>
                   </ModalFooter>
                 </>
