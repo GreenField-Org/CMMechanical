@@ -69,26 +69,29 @@ export default function CoolingPage() {
               <h1 className="self-stretch text-white text-[40px] not-italic font-bold leading-[120%] lg:text-[56px]">
                 {"Stay Cool All Summer Long"}
               </h1>
-              <p className="self-stretch text-white text-base not-italic font-normal leading-[150%] lg:text-lg">
-                {
-                  "Trust our family-owned HVAC business in the capital region for reliable cooling services."
-                }
-              </p>
+              <div className="self-stretch text-white text-base not-italic font-normal leading-[150%] lg:text-lg">
+                Let C&M Mechanical help you beat the summer heat with our
+                quality residential and commercial Air Conditioning installation
+                and maintenance services.
+                <br />
+                We can assist you with any of the following (and more!):
+                <br />
+                <ul className="list-disc p-5 ml-4">
+                  <li>AC installation</li>
+                  <li>AC repairs</li>
+                  <li>Duct cleaning & repair</li>
+                  <li>Thermostat installation and adjustment</li>
+                  <li>Indoor air quality assessments</li>
+                  <li>Maintenance</li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div className="flex items-start gap-4 pt-4">
+          <div className="flex items-start gap-4">
             <Button variant="shadow" color="primary">
-              Learn More{" "}
-            </Button>
-            <Button variant="ghost" color="primary">
               Contact Us
             </Button>
           </div>
-        </Container>
-      </div>
-      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-full lg:items-center lg:gap-20 lg:px-16 lg:py-28">
-        <Container>
-          <StickyScroll content={content} />
         </Container>
       </div>
       <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
@@ -233,6 +236,11 @@ export default function CoolingPage() {
               Contact
             </Button>
           </div>
+        </Container>
+      </div>
+      <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-full lg:items-center lg:gap-20 lg:px-16 lg:py-28">
+        <Container>
+          <StickyScroll content={content} />
         </Container>
       </div>
       <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
