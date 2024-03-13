@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Faq from "@/app/components/faq/faq";
 import Container from "../../components/container/container";
 import { Button } from "@nextui-org/react";
@@ -50,21 +51,31 @@ export default function HeatingPage() {
               <h1 className="self-stretch text-[40px] lg:text-[56px] not-italic font-bold leading-[120%]">
                 {"Expert Heating Services"}
               </h1>
-              <p className="self-stretch text-base lg:text-lg not-italic font-normal leading-[150%]">
-                {
-                  "Stay warm and comfortable with our top-notch heating services and Mitsubishi expertise."
-                }
-              </p>
+              <div className="self-stretch text-base lg:text-lg not-italic font-normal leading-[150%]">
+                C&M Mechanical provides services for all types of heating
+                systems, including furnaces, boilers & heat pumps.
+                <br />
+                <br />
+                Call us today and we can assist you with any of the following
+                (and more!):
+                <br />
+                <ul className="list-disc m-10">
+                  <li>Installation or repair of heating systems</li>
+                  <li>
+                    Scheduled system inspections, maintenance, and tune-ups
+                  </li>
+                  <li>Replacement of dirty or clogged filters</li>
+                  <li>Address mechanical wear and tear</li>
+                  <li>Inspect and repair pilot or ignition control problems</li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div className="flex items-start gap-4 pt-4">
-            <Button variant="shadow" color="primary">
-              Learn More
-            </Button>
+          {/*<div className="flex items-start">
             <Button variant="ghost" color="primary">
               Contact Us
             </Button>
-          </div>
+  </div>*/}
         </Container>
       </div>
       <div className="flex w-[375px] flex-col items-start gap-12 px-5 py-16 lg:w-full lg:gap-20 lg:px-16 lg:py-28">
@@ -105,7 +116,14 @@ export default function HeatingPage() {
         </h3>
         <div className="flex flex-col lg:flex-row items-center lg:justify-center lg:items-start gap-12 self-stretch">
           <div className="flex flex-col items-start gap-6 self-stretch">
-            <div className="h-[198px] self-stretch bg-gray-300 shadow-2xl" />
+            <div className="h-[198px] self-stretch bg-gray-300 shadow-2xl">
+              <Image
+                src="/heating_5.jpg"
+                alt="Heating System"
+                width={265}
+                height={100}
+              />
+            </div>
             <div className="flex flex-col items-center gap-4 self-stretch">
               <div className="flex flex-col items-start gap-3 self-stretch">
                 <h5 className="self-stretch text-center text-xl not-italic font-bold leading-[140%]">
@@ -125,7 +143,14 @@ export default function HeatingPage() {
             </div>
           </div>
           <div className="flex flex-col items-start gap-6 self-stretch">
-            <div className="h-[198px] self-stretch bg-gray-300 shadow-2xl" />
+            <div className="h-[198px] self-stretch bg-gray-300 shadow-2xl">
+              <Image
+                src="/heating_6.jpg"
+                alt="Heating System"
+                width={265}
+                height={100}
+              />
+            </div>
             <div className="flex flex-col items-center gap-4 self-stretch">
               <div className="flex flex-col items-start gap-3 self-stretch">
                 <h5 className="self-stretch text-center text-xl not-italic font-bold leading-[140%]">
