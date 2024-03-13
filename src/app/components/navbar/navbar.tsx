@@ -24,6 +24,7 @@ import {
   ModalFooter,
 } from "@nextui-org/react";
 import { usePathname } from "next/navigation";
+import Script from "next/script";
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -232,25 +233,12 @@ export default function Nav() {
                     Modal Title
                   </ModalHeader>
                   <ModalBody>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nullam pulvinar risus non risus hendrerit venenatis.
-                      Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                    </p>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nullam pulvinar risus non risus hendrerit venenatis.
-                      Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                    </p>
-                    <p>
-                      Magna exercitation reprehenderit magna aute tempor
-                      cupidatat consequat elit dolor adipisicing. Mollit dolor
-                      eiusmod sunt ex incididunt cillum quis. Velit duis sit
-                      officia eiusmod Lorem aliqua enim laboris do dolor
-                      eiusmod. Et mollit incididunt nisi consectetur esse
-                      laborum eiusmod pariatur proident Lorem eiusmod et. Culpa
-                      deserunt nostrud ad veniam.
-                    </p>
+                    <iframe
+                      src="https://www.cognitoforms.com/f/LvQPwOaDqkqSdWMZXeMjwg/4"
+                      className="border-none shadow-2xl rounded-lg w-full"
+                      height="751"
+                    ></iframe>
+                    <Script src="https://www.cognitoforms.com/f/iframe.js"></Script>
                   </ModalBody>
                   <ModalFooter>
                     <Button color="danger" variant="light" onPress={onClose}>
