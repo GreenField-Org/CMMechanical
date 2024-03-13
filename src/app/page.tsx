@@ -7,8 +7,28 @@ import { Suspense } from "react";
 import { StickyScroll } from "./components/sticky-scroll/sticky-scroll";
 import Link from "next/link";
 import Image from "next/image";
+import Slideshow from "./components/slideshow/slideshow";
 
 export default function Home() {
+  const heatingImages = [
+    {
+      url: "/heating_7.jpg",
+      caption: "heating7",
+    },
+    {
+      url: "/heating2.jpg",
+      caption: "heating2",
+    },
+    {
+      url: "/heating3.jpg",
+      caption: "heating3",
+    },
+    {
+      url: "/heating4.jpg",
+      caption: "heating4",
+    },
+  ];
+
   const content = [
     {
       title: "Discover Our Products",
@@ -113,8 +133,8 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="h-[348px] self-stretch lg:h-[640px] lg:flex-[1_0_0] bg-gray-300 shadow-2xl">
-            {/*Image*/}
+          <div className="w-[300px] self-stretch lg:flex-[1_0_0] bg-gray-300 shadow-2xl">
+            <Slideshow images={heatingImages} />
           </div>
         </div>
       </Section>
