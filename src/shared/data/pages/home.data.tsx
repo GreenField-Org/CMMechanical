@@ -29,6 +29,11 @@ import {
   TestimonialsProps,
 } from '../../types';
 import heroImg from '~/assets/images/hero.jpg';
+import nyserda from '~/assets/images/NYSERDA-Logo.png';
+import mitsubishi from '~/assets/images/me-2color-1.png';
+import diamondContractor from '~/assets/images/diamond-contractor.png';
+import americanStandard from '~/assets/images/American-Standard-Logo.png';
+import vpSupply from '~/assets/images/vp_supplylogo.webp';
 import nextJsLogo from '~/assets/images/nextjs-logo.png';
 import reactLogo from '~/assets/images/react-logo.png';
 import tailwindCssLogo from '~/assets/images/tailwind-css-logo.png';
@@ -80,23 +85,28 @@ export const socialProofHome: SocialProofProps = {
   images: [
     {
       link: 'https://nextjs.org/',
-      src: nextJsLogo,
-      alt: 'NextJs Logo',
+      src: nyserda,
+      alt: 'ew York State NYSERDA program',
     },
     {
       link: 'https://react.dev/',
-      src: reactLogo,
-      alt: 'React Logo',
+      src: mitsubishi,
+      alt: 'Mitsubishi Electric ',
     },
     {
       link: 'https://tailwindcss.com/',
-      src: tailwindCssLogo,
-      alt: 'Tailwind CSS Logo',
+      src: diamondContractor,
+      alt: 'Mitsuibishi Diamond Contractor',
     },
     {
       link: 'https://www.typescriptlang.org/',
-      src: typescriptLogo,
-      alt: 'Typescript Logo',
+      src: americanStandard,
+      alt: 'American Standard',
+    },
+    {
+      link: 'https://www.typescriptlang.org/',
+      src: vpSupply,
+      alt: 'CP Supply Corp',
     },
   ],
 };
@@ -324,6 +334,7 @@ export const stepsHome: StepsProps = {
 export const testimonialsHome: TestimonialsProps = {
   id: 'testimonials-on-home',
   hasBackground: false,
+  isTestimonialUp: true,
   header: {
     title: 'What our customers say about us',
     subtitle:
