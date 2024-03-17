@@ -1,11 +1,8 @@
 import {
   IconArrowDown,
-  IconArrowsRightLeft,
   IconBrandLinkedin,
-  IconBrandTailwind,
   IconBrandTwitter,
   IconBulb,
-  IconCheck,
   IconClock,
   IconComponents,
   IconDownload,
@@ -13,7 +10,6 @@ import {
   IconMail,
   IconMapPin,
   IconPhoneCall,
-  IconRocket,
 } from '@tabler/icons-react';
 import {
   CallToActionProps,
@@ -34,10 +30,6 @@ import mitsubishi from '~/assets/images/me-2color-1.png';
 import diamondContractor from '~/assets/images/diamond-contractor.png';
 import americanStandard from '~/assets/images/American-Standard-Logo.png';
 import vpSupply from '~/assets/images/vp_supplylogo.webp';
-import nextJsLogo from '~/assets/images/nextjs-logo.png';
-import reactLogo from '~/assets/images/react-logo.png';
-import tailwindCssLogo from '~/assets/images/tailwind-css-logo.png';
-import typescriptLogo from '~/assets/images/typescript-logo.png';
 import heating3 from '~/assets/images/heating3.jpg';
 import cooling1 from '~/assets/images/cooling1.jpg';
 import duct1 from '~/assets/images/duct1.jpg';
