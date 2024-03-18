@@ -24,13 +24,18 @@ import {
   TeamProps,
   TestimonialsProps,
 } from '../../types';
-import heroImg from '~/assets/images/hero.jpg';
+import oilHeating from '~/assets/images/oil_heating.jpg';
 import nyserda from '~/assets/images/NYSERDA-Logo.png';
 import mitsubishi from '~/assets/images/me-2color-1.png';
 import diamondContractor from '~/assets/images/diamond-contractor.png';
 import americanStandard from '~/assets/images/American-Standard-Logo.png';
 import vpSupply from '~/assets/images/vp_supplylogo.webp';
-import heating3 from '~/assets/images/heating3.jpg';
+import heating1 from '~/assets/images/heating1.jpg';
+//import heating2 from '~/assets/images/heating2.jpg';
+//import heating3 from '~/assets/images/heating3.jpg';
+//import heating4 from '~/assets/images/heating4.jpg';
+//import heating5 from '~/assets/images/heating_5.jpg';
+//import heating6 from '~/assets/images/heating_6.jpg';
 import cooling1 from '~/assets/images/cooling1.jpg';
 import duct1 from '~/assets/images/duct1.jpg';
 import gasImg from '~/assets/images/gas.jpg';
@@ -65,8 +70,8 @@ export const heroHome: HeroProps = {
     href: '/about',
   },
   image: {
-    src: heroImg,
-    alt: 'Hero TailNext',
+    src: oilHeating,
+    alt: 'Oil Heating System',
   },
 };
 
@@ -220,9 +225,35 @@ export const contentHomeOne: ContentProps = {
       //  'At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.',
     },
   ],
+  /*images: [
+    {
+      src: '/heating1.jpg',
+      alt: 'indoor heating system Image',
+    }, 
+    {
+      src: '/heating2.jpg',
+      alt: 'outdoor cooling system Image',
+    },
+    {
+      src: '/heating3.jpg',
+      alt: 'outdoor cooling system Image',
+    },
+    {
+      src: '/heating4.jpg',
+      alt: 'outdoor cooling system Image',
+    },
+    {
+      src: '/heating_5.jpg',
+      alt: 'outdoor cooling system Image',
+    },
+    {
+      src: '/heating_6.jpg',
+      alt: 'outdoor cooling system Image',
+    },
+  ],*/
   image: {
-    src: heating3,
-    alt: 'Heating system image',
+    src: heating1,
+    alt: 'indoor heating system Image',
   },
   isReversed: false,
   isAfterContent: false,

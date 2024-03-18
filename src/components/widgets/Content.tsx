@@ -5,12 +5,14 @@ import { ContentProps } from '~/shared/types';
 import Headline from '../common/Headline';
 import WidgetWrapper from '../common/WidgetWrapper';
 import ItemGrid from '../common/ItemGrid';
+import ImagesSlider from './ImagesSlider';
 
 const Content = ({
   header,
   content,
   items,
   image,
+  images,
   isReversed,
   isAfterContent,
   id,
@@ -50,6 +52,13 @@ const Content = ({
                 placeholder="blur"
                 quality={50}
               />
+            </div>
+          )}
+          {images && (
+            <div className="relative m-auto max-w-4xl">
+            <ImagesSlider
+              images={images}
+             />
             </div>
           )}
         </div>
