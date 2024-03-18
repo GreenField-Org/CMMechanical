@@ -22,4 +22,58 @@
   .ribbon {
     @apply absolute top-[19px] right-[-21px] block w-full rotate-45 bg-green-700 text-center text-[10px] font-bold uppercase leading-5 text-white shadow-[0_3px_10px_-5px_rgba(0,0,0,0.3)] before:absolute before:left-0 before:top-full before:z-[-1] before:border-[3px] before:border-r-transparent before:border-b-transparent before:border-l-green-800 before:border-t-green-800 before:content-[''] after:absolute after:right-0 after:top-full after:z-[-1] after:border-[3px] after:border-l-transparent after:border-b-transparent after:border-r-green-800 after:border-t-green-800 after:content-[''];
   }
+
+  .carousel-images {
+    position: relative;
+    border-radius: 10px;
+    height: 700px;
+    max-width: 828px;
+    margin: auto;
+    overflow: hidden;
+  }
+  .carousel-images img {
+    width: 99%;
+    height: 99%;
+    border-radius: 8px;
+    border: #ff00008e solid 2px;
+  }
+  .slide_direction {
+    display: flex;
+    justify-content: space-between;
+  }
+  .left,
+  .right {
+    background-color: #fb666675;
+    color: #fff;
+    padding: 8px;
+    margin: 0 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 10px;
+    height: 25px;
+    width: 25px;
+  }
+  .left {
+    left: 0;
+  }
+  .right {
+    right: 0;
+  }
+  .carousel-indicator {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .dot {
+    background-color: #333;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+  .active {
+    background-color: #fa2020;
+  }
 }

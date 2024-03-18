@@ -225,36 +225,13 @@ export const contentHomeOne: ContentProps = {
       //  'At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.',
     },
   ],
-  /*images: [
-    {
-      src: '/heating1.jpg',
-      alt: 'indoor heating system Image',
-    }, 
-    {
-      src: '/heating2.jpg',
-      alt: 'outdoor cooling system Image',
-    },
-    {
-      src: '/heating3.jpg',
-      alt: 'outdoor cooling system Image',
-    },
-    {
-      src: '/heating4.jpg',
-      alt: 'outdoor cooling system Image',
-    },
-    {
-      src: '/heating_5.jpg',
-      alt: 'outdoor cooling system Image',
-    },
-    {
-      src: '/heating_6.jpg',
-      alt: 'outdoor cooling system Image',
-    },
-  ],*/
-  image: {
+  images: [
+    '/heating1.jpg','/heating2.jpg', '/heating3.jpg','/heating4.jpg', '/heating_5.jpg','/heating_6.jpg'
+  ],
+  /*image: {
     src: heating1,
     alt: 'indoor heating system Image',
-  },
+  },*/
   isReversed: false,
   isAfterContent: false,
 };
