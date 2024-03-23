@@ -2,6 +2,7 @@ import Form from '../common/Form';
 import Headline from '../common/Headline';
 import { ContactProps } from '~/shared/types';
 import WidgetWrapper from '../common/WidgetWrapper';
+import Script from 'next/script';
 
 const Contact = ({ header, content, items, form, id, hasBackground = false }: ContactProps) => (
   <WidgetWrapper id={id ? id : ''} hasBackground={hasBackground} containerClass="max-w-6xl">
@@ -36,7 +37,10 @@ const Contact = ({ header, content, items, form, id, hasBackground = false }: Co
               ))}
           </ul>
         </div>
-        <Form {...form} containerClass="card h-fit max-w-2xl mx-auto p-5 md:p-12" btnPosition="center" />
+        {form ? <Form {...form} containerClass="card h-fit max-w-2xl mx-auto p-5 md:p-12" btnPosition="center" /> :
+        (
+          <><iframe src="https://www.cognitoforms.com/f/LvQPwOaDqkqSdWMZXeMjwg/4" style={{ border: 0, width: '100%', height: "889" }}></iframe><Script src="https://www.cognitoforms.com/f/iframe.js"></Script></>
+        )}
       </div>
     </div>
   </WidgetWrapper>

@@ -30,14 +30,6 @@ import mitsubishi from '~/assets/images/me-2color-1.png';
 import diamondContractor from '~/assets/images/diamond-contractor.png';
 import americanStandard from '~/assets/images/American-Standard-Logo.png';
 import vpSupply from '~/assets/images/vp_supplylogo.webp';
-import heating1 from '~/assets/images/heating1.jpg';
-//import heating2 from '~/assets/images/heating2.jpg';
-//import heating3 from '~/assets/images/heating3.jpg';
-//import heating4 from '~/assets/images/heating4.jpg';
-//import heating5 from '~/assets/images/heating_5.jpg';
-//import heating6 from '~/assets/images/heating_6.jpg';
-import cooling1 from '~/assets/images/cooling1.jpg';
-import duct1 from '~/assets/images/duct1.jpg';
 import gasImg from '~/assets/images/gas.jpg';
 
 // Hero data on Home page *******************
@@ -259,10 +251,7 @@ export const contentHomeTwo: ContentProps = {
       title: 'AMintenance',
     },
   ],
-  image: {
-    src: cooling1,
-    alt: 'outdoor cooling system Image',
-  },
+  images: ['/cooling1.jpg', '/cooling2.jpg', '/cooling3.jpg', '/cooling5.jpg'],
   isReversed: true,
   isAfterContent: true,
 };
@@ -284,10 +273,7 @@ export const contentHomeThree: ContentProps = {
       title: 'Installation, inspection, and maintenance of ductless systems',
     },
   ],
-  image: {
-    src: duct1,
-    alt: 'outdoor hvac system Image',
-  },
+  images: ['/duct1.jpg', '/ductless2.jpg', '/ductless3.jpg', '/ductless4.jpg'],
   isReversed: false,
   isAfterContent: true,
 };
@@ -643,7 +629,7 @@ export const contactHome: ContactProps = {
       icon: IconClock,
     },
   ],
-  form: {
+  /*form: {
     title: 'Ready to Get Started?',
     inputs: [
       {
@@ -669,7 +655,7 @@ export const contactHome: ContactProps = {
       title: 'Send Message',
       type: 'submit',
     },
-  },
+  },*/
 };
 
 // CallToAction data *******************

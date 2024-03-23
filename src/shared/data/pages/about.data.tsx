@@ -8,7 +8,7 @@ import {
   TeamProps,
   TestimonialsProps,
 } from '~/shared/types';
-import heating1 from '~/assets/images/heating1.jpg';
+import teamwork from '~/assets/images/teamwork.jpg';
 import {
   IconAdjustments,
   IconAward,
@@ -47,8 +47,8 @@ export const hero2About: HeroProps = {
     href: '/contact',
   },
   image: {
-    src: heating1,
-    alt: 'Hero TailNext',
+    src: teamwork,
+    alt: 'C&M Mechanical Team putting in heating system',
   },
 };
 

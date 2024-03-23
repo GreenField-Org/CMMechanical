@@ -1,6 +1,6 @@
 import { ContactProps, ContentProps, HeroProps } from "~/shared/types";
 
-import heating1 from '~/assets/images/heating1.jpg';
+import livingRoom from '~/assets/images/living-room.jpg';
 import synchrony from '~/assets/images/synchrony.jpeg';
 
 // Hero2 data on Financing page *******************
@@ -10,8 +10,8 @@ export const hero2Financing: HeroProps = {
       'We understand your financing needs are as unique as the heating or cooling project specific to your home or business. Learn how to apply for a line of credit that\'s right for the project and budget!',
     /*tagline: 'About Us Page',*/
     image: {
-      src: heating1,
-      alt: 'Hero TailNext',
+      src: livingRoom,
+      alt: 'Living room with ductless heating & cooling system',
     },
   };
 
