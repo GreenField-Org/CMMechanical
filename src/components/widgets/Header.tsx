@@ -138,7 +138,8 @@ const Header = () => {
                 <IconRss className="h-5 w-5" />
               </Link>
             )}
-            <Image src={'/diamonddealer-sm.png'} alt="logo" className='dark:bg-white' width={300} height={200} />
+            <Image src={'/diamonddealer-sm.png'} alt='diamond dealer' className='dark:bg-white' width={300} height={200} />
+            <Image src={'https://www.afmheatcool.com/wp-content/uploads/Ruud-ProPartner_Stacked.png'} alt='pro partner' className='dark:bg-white ml-2' width={30} height={50} />
             {/*actions && actions.length > 0 && (
               <div className="ml-4 flex w-max flex-wrap justify-end">
                 {actions.map((callToAction, index) => (

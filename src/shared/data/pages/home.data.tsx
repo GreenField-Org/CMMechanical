@@ -28,8 +28,8 @@ import oilHeating from '~/assets/images/oil_heating.jpg';
 import nyserda from '~/assets/images/NYSERDA-Logo.png';
 import mitsubishi from '~/assets/images/me-2color-1.png';
 import diamondContractor from '~/assets/images/diamond-contractor.png';
-import americanStandard from '~/assets/images/American-Standard-Logo.png';
-import vpSupply from '~/assets/images/vp_supplylogo.webp';
+import proPartner from '~/assets/images/proPartner.png';
+import ruud from '~/assets/images/RUUD_Logo_Vector_RGB.png';
 import gasImg from '~/assets/images/gas.jpg';
 
 // Hero data on Home page *******************
@@ -89,12 +89,12 @@ export const socialProofHome: SocialProofProps = {
     },
     {
       link: 'https://www.typescriptlang.org/',
-      src: americanStandard,
+      src: ruud,
       alt: 'American Standard',
     },
     {
       link: 'https://www.typescriptlang.org/',
-      src: vpSupply,
+      src: proPartner,
       alt: 'CP Supply Corp',
     },
   ],
