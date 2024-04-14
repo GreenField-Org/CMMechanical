@@ -39,8 +39,10 @@ import {
 // Hero2 data on About page *******************
 export const hero2About: HeroProps = {
   title: 'Put your trust in us',
-  subtitle:
-    'C & M Mechanical Inc. has been a family owned business since 2007. We have over 15 years of experience in the industry. We understand that not every job is the same and that each home or business requires a unique heating and cooling system. We also work hard to meet the individual needs of each of our customers.  Keeping you comfortable is our goal!',
+  subtitle: 
+      <span>
+        C & M Mechanical Inc. has been a family owned business since 2007. We have over {new Date().getFullYear() - 1999} years of experience in the industry. We understand that not every job is the same and that each home or business requires a unique heating and cooling system. We also work hard to meet the individual needs of each of our customers.  Keeping you comfortable is our goal!
+      </span>,
   //tagline: 'About Us Page',
   callToAction: {
     text: 'Contact us',
@@ -574,7 +576,7 @@ export const contactAbout: ContactProps = {
       icon: IconClock,
     },
   ],
-  form: {
+  /*form: {
     title: 'Ready to Get Started?',
     inputs: [
       {
@@ -600,5 +602,5 @@ export const contactAbout: ContactProps = {
       title: 'Send Message',
       type: 'submit',
     },
-  },
+  },*/
 };

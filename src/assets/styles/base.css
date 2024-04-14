@@ -26,8 +26,7 @@
   .carousel-images {
     position: relative;
     border-radius: 10px;
-    height: 700px;
-    max-width: 828px;
+    height: 500px;
     margin: auto;
     overflow: hidden;
   }

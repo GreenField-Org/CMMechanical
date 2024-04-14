@@ -25,6 +25,10 @@ export const announcementData: AnnouncementProps = {
 export const headerData: HeaderProps = {
   links: [
     {
+      label: 'Home',
+      href: '/',
+    },
+    {
       label: 'About us',
       href: '/about',
     },
@@ -226,7 +230,7 @@ export const footerData: FooterProps = {
 
 // Footer2 data
 export const footerData2: FooterProps = {
-  links: [
+  /*links: [
     {
       label: 'Terms & Conditions',
       href: '/terms',
@@ -235,7 +239,7 @@ export const footerData2: FooterProps = {
       label: 'Privacy Policy',
       href: '/privacy',
     },
-  ],
+  ],*/
   columns: [
     {
       title: 'Address',
@@ -258,7 +262,8 @@ export const footerData2: FooterProps = {
       Made by{' '}
       <a
         className="font-semibold text-slate-900 dark:text-gray-200 hover:text-blue-600 hover:underline dark:hover:text-blue-600"
-        href="https://onwidget.com/"
+        href="https://greenervigil.github.io/next-portfolio/"
+        target='_blank'
       >
         {' '}
         GreenField Dev

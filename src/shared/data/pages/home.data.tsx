@@ -24,7 +24,7 @@ import {
   TeamProps,
   TestimonialsProps,
 } from '../../types';
-import oilHeating from '~/assets/images/oil_heating.jpg';
+import air from '~/assets/images/air.jpg';
 import nyserda from '~/assets/images/NYSERDA-Logo.png';
 import mitsubishi from '~/assets/images/me-2color-1.png';
 import diamondContractor from '~/assets/images/diamond-contractor.png';
@@ -48,7 +48,7 @@ export const heroHome: HeroProps = {
         </span>{' '}
         is a family-owned and operated business servicing the Capital Region.
       </span>{' '}
-      We have over 15 years of delivering high quality service throughout the area.
+      We have over {new Date().getFullYear() - 1999} years of delivering high quality service throughout the area.
     </>
   ),
   callToAction: {
@@ -62,8 +62,8 @@ export const heroHome: HeroProps = {
     href: '/about',
   },
   image: {
-    src: oilHeating,
-    alt: 'Oil Heating System',
+    src: air,
+    alt: 'Mitsubishi Air System',
   },
 };
 
@@ -73,29 +73,29 @@ export const socialProofHome: SocialProofProps = {
   hasBackground: false,
   images: [
     {
-      link: 'https://nextjs.org/',
+      link: '/products/nyserda',
       src: nyserda,
-      alt: 'ew York State NYSERDA program',
+      alt: 'New York State NYSERDA program',
     },
     {
-      link: 'https://react.dev/',
+      link: '/products/mitsubishi',
       src: mitsubishi,
-      alt: 'Mitsubishi Electric ',
+      alt: 'Mitsubishi Electric proucts',
     },
     {
-      link: 'https://tailwindcss.com/',
+      link: '/about',
       src: diamondContractor,
       alt: 'Mitsuibishi Diamond Contractor',
     },
     {
-      link: 'https://www.typescriptlang.org/',
+      link: '/products/ruud',
       src: ruud,
-      alt: 'American Standard',
+      alt: 'Ruud Products',
     },
     {
-      link: 'https://www.typescriptlang.org/',
+      link: '/products/ruud',
       src: proPartner,
-      alt: 'CP Supply Corp',
+      alt: 'Ruud Pro Partner',
     },
   ],
 };
@@ -119,7 +119,7 @@ export const featuresHome: FeaturesProps = {
     {
       title: 'Reliablility',
       description:
-        'Family is very important to us and we will treat you just like family. We will be there when you need us.',
+        'Customer service is what our company is built on. We will be there when you need us.',
       icon: IconListCheck,
       /*callToAction: {
         text: 'Discover now',
@@ -139,7 +139,7 @@ export const featuresHome: FeaturesProps = {
     {
       title: 'Best Products',
       description:
-        'We will only use the best products for your home. We will make sure you are getting the best quality.',
+        'We will only install top quality equipment and materials. We make sure you are getting the best quality products.',
       icon: IconBulb,
       /*callToAction: {
         text: 'Discover now',
@@ -212,7 +212,7 @@ export const contentHomeOne: ContentProps = {
       //  'Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.',
     },
     {
-      title: 'inspect and repair pilot or ignition control problems',
+      title: 'Diagnose and repair complicated and simple problems',
       //description:
       //  'At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.',
     },
@@ -236,19 +236,19 @@ export const contentHomeTwo: ContentProps = {
     'Let C&M Mechanical help you beat the summer heat with our quality residential and commercial Air Conditioning installation and maintenance services.',
   items: [
     {
-      title: 'AC Installation',
+      title: 'A/C Installation',
     },
     {
-      title: 'AC Repair',
+      title: 'A/C Repair',
     },
     {
-      title: 'Duct cleaning and repair',
+      title: 'A/C Services',
     },
     {
       title: 'Indoor air quality assessments',
     },
     {
-      title: 'AMintenance',
+      title: 'Annual preventative maintenance',
     },
   ],
   images: ['/cooling1.jpg', '/cooling2.jpg', '/cooling3.jpg', '/cooling5.jpg'],
@@ -264,13 +264,13 @@ export const contentHomeThree: ContentProps = {
     'Looking for an alternative heating and cooling solution that is easy to install, cost-effective, and can even help improve indoor air quality? Sometimes referred to as split systems, ductless heating and cooling offers a simple way to replace inefficient window air conditioning units, space heaters and electric baseboard heaters. They can be installed in homes, apartments or condominiums, or to improve temperature control in specific rooms. Ductless systems can even be fit for buildings that currently use ducted forced-air systems.',
   items: [
     {
-      title: 'Zone consultation and planning for optimal efficiency',
+      title: 'Ductless installation and service',
     },
     {
       title: 'Indoor air quality assessments',
     },
     {
-      title: 'Installation, inspection, and maintenance of ductless systems',
+      title: 'Multi-zone systems that heat and cool',
     },
   ],
   images: ['/duct1.jpg', '/ductless2.jpg', '/ductless3.jpg', '/ductless4.jpg'],
