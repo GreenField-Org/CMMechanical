@@ -58,10 +58,10 @@ export const headerData: HeaderProps = {
           label: 'Mitsubishi',
           href: '/products/mitsubishi',
         },
-        {
+        /*{
           label: 'American Standard',
           href: '/products/american-standard',
-        },
+        },*/
         {
           label: 'NYSERDA',
           href: '/products/nyserda',

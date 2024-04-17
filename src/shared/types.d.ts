@@ -94,7 +94,7 @@ type FormProps = {
   method? : string;
   title?: string;
   description?: string;
-  inputs: Array<Input>;
+  inputs: Array<Input> | undefined;
   radioBtns?: RadioBtn;
   textarea?: Textarea;
   checkboxes?: Array<Checkbox>;
