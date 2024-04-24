@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     default: SITE.title,
   },
   description: SITE.description,
+  keywords: SITE.keywords,
   alternates: {
     canonical: "/",
   },
