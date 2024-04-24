@@ -30,7 +30,7 @@ export const contact2Contact: ContactProps = {
   items: [
     {
       title: 'Our Address',
-      description: ['1230 Maecenas Street Donec Road', 'New York, EEUU'],
+      description: [' 2067 U.S. Route 9W', 'Selkirk, NY 12158'],
       icon: IconMapPin,
     },
     {

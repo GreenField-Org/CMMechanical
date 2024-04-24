@@ -626,7 +626,7 @@ export const contactHome: ContactProps = {
   items: [
     {
       title: 'Our Address',
-      description: ['203 Cedar Grove Rd', 'Selkirk, NY 12158'],
+      description: ['2067 U.S. Route 9W', 'Selkirk, NY 12158'],
       icon: IconMapPin,
     },
     {

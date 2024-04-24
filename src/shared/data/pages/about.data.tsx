@@ -41,7 +41,7 @@ export const hero2About: HeroProps = {
   title: 'Put your trust in us',
   subtitle: 
       <span>
-        C & M Mechanical Inc. has been a family owned business since 2007. We have over {new Date().getFullYear() - 2004} years of experience in the industry. We understand that not every job is the same and that each home or business requires a unique heating and cooling system. We also work hard to meet the individual needs of each of our customers.  Keeping you comfortable is our goal!
+        C & M Mechanical Inc. has been a family owned business since 2007. We have over {new Date().getFullYear() - 1999} years of experience in the industry. We understand that not every job is the same and that each home or business requires a unique heating and cooling system. We also work hard to meet the individual needs of each of our customers.  Keeping you comfortable is our goal!
       </span>,
   //tagline: 'About Us Page',
   callToAction: {
@@ -562,12 +562,12 @@ export const contactAbout: ContactProps = {
   items: [
     {
       title: 'Our Address',
-      description: ['203 Cedar Grove Rd', 'Selkirk, NY 12158'],
+      description: ['2067 U.S. Route 9W', 'Selkirk, NY 12158'],
       icon: IconMapPin,
     },
     {
       title: 'Contact',
-      description: ['Phone: (518) 768-8800', 'Mail: office@cmmechanical.com'],
+      description: ['Phone: (518) 768-8800', 'Mail: office@cmmechanicalhvac.com'],
       icon: IconPhoneCall,
     },
     {
