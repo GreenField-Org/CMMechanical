@@ -24,7 +24,10 @@ import {
   TeamProps,
   TestimonialsProps,
 } from '../../types';
-import air from '~/assets/images/air.jpg';
+import home from '~/assets/images/home.jpeg';
+import heating from '~/assets/images/heating.jpeg';
+import cooling from '~/assets/images/cooling.jpeg';
+import ductless from '~/assets/images/ductless.jpeg';
 import nyserda from '~/assets/images/NYSERDA-Logo.png';
 import mitsubishi from '~/assets/images/me-2color-1.png';
 import diamondContractor from '~/assets/images/diamond-contractor.png';
@@ -62,8 +65,8 @@ export const heroHome: HeroProps = {
     href: '/about',
   },
   image: {
-    src: air,
-    alt: 'Mitsubishi Air System',
+    src: home,
+    alt: 'C & M Mechanical vehicles',
   },
 };
 
@@ -217,13 +220,13 @@ export const contentHomeOne: ContentProps = {
       //  'At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.',
     },
   ],
-  images: [
+  /*images: [
     '/heating1.jpg','/heating2.jpg', '/heating3.jpg','/heating4.jpg', '/heating_5.jpg','/heating_6.jpg'
-  ],
-  /*image: {
-    src: heating1,
+  ],*/
+  image: {
+    src: heating,
     alt: 'indoor heating system Image',
-  },*/
+  },
   isReversed: false,
   isAfterContent: false,
 };
@@ -251,7 +254,11 @@ export const contentHomeTwo: ContentProps = {
       title: 'Annual preventative maintenance',
     },
   ],
-  images: ['/cooling1.jpg', '/cooling2.jpg', '/cooling3.jpg', '/cooling5.jpg'],
+  image: {
+    src: cooling,
+    alt: 'Cooling system Image',
+  },
+  //images: ['/cooling1.jpg', '/cooling2.jpg', '/cooling3.jpg', '/cooling5.jpg'],
   isReversed: true,
   isAfterContent: true,
 };
@@ -273,7 +280,11 @@ export const contentHomeThree: ContentProps = {
       title: 'Multi-zone systems that heat and cool',
     },
   ],
-  images: ['/duct1.jpg', '/ductless2.jpg', '/ductless3.jpg', '/ductless4.jpg'],
+  image: {
+    src: ductless,
+    alt: 'Ductless system Image',
+  },
+  //images: ['/duct1.jpg', '/ductless2.jpg', '/ductless3.jpg', '/ductless4.jpg'],
   isReversed: false,
   isAfterContent: true,
 };
