@@ -78,7 +78,7 @@ export const contactFinancing: ContactProps = {
       },
       {
         title: 'Contact',
-        description: ['Phone: (518) 768-8800', 'Mail: office@cmmechanical.com'],
+        description: ['Phone: (518) 768-8800', 'Mail: office@cmmechanicalhvac.com'],
         icon: IconPhoneCall,
       },
       {
