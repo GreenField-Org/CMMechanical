@@ -2,6 +2,9 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: `Mitsubishi Products`,
+    alternates: {
+        canonical: '/products/mitsubishi',
+    },
   };
   
 const Page = () => {

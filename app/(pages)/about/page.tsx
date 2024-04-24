@@ -26,6 +26,9 @@ import {
 
 export const metadata: Metadata = {
   title: `About us`,
+  alternates: {
+    canonical: '/about',
+  },
 };
 
 const Page = () => {

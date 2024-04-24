@@ -17,11 +17,15 @@ export interface LayoutProps {
 }
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://cmmechanicalhvac.com'),
   title: {
     template: `%s — ${SITE.name}`,
     default: SITE.title,
   },
   description: SITE.description,
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps) {

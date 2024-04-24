@@ -7,6 +7,9 @@ import { contactFinancing, contentFinancing, hero2Financing } from "~/shared/dat
 
 export const metadata: Metadata = {
     title: 'Financing Options',
+    alternates: {
+        canonical: '/financing',
+    },
   };
 
 const Page = () => {

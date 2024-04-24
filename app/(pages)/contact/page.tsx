@@ -5,6 +5,9 @@ import { heroContact } from '~/shared/data/pages/contact.data';
 
 export const metadata: Metadata = {
   title: 'Contact us',
+  alternates: {
+    canonical: '/contact',
+  },
 };
 
 const Page = () => {

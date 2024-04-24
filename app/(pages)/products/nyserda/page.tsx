@@ -6,6 +6,9 @@ import { callToAction2Nyserda, contentNyserda, hero2Nyserda } from "~/shared/dat
 
 export const metadata: Metadata = {
     title: `NYSERDA Program`,
+    alternates: {
+        canonical: '/nyserda',
+    },
     };
 
 const Page = () => {
