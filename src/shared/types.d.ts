@@ -339,7 +339,7 @@ type SocialProofProps = Widget & {
 
 type ContactProps = Widget & {
   header?: Header;
-  content?: string;
+  content?: string | ReactElement;
   items?: Array<Item>;
   form?: FormProps;
 };

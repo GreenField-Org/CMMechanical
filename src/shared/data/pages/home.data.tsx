@@ -622,7 +622,7 @@ export const contactHome: ContactProps = {
     tagline: 'Contact',
   },
   content:
-    'With over 15 years of experience, we are ready to assist you with any job, no matter how big or small. Please feel free to contact us through our online form, by phone, or by email..',
+    <span>With over {new Date().getFullYear() - 2004} years of experience, we are ready to assist you with any job, no matter how big or small. Please feel free to contact us through our online form, by phone, or by email.</span>,
   items: [
     {
       title: 'Our Address',
