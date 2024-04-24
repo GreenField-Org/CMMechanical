@@ -48,7 +48,7 @@ export const heroHome: HeroProps = {
         </span>{' '}
         is a family-owned and operated business servicing the Capital Region.
       </span>{' '}
-      We have over {new Date().getFullYear() - 1999} years of delivering high quality service throughout the area.
+      We have over {new Date().getFullYear() - 2004} years of delivering high quality service throughout the area.
     </>
   ),
   callToAction: {
