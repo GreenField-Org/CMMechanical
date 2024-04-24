@@ -243,7 +243,7 @@ export const footerData2: FooterProps = {
   columns: [
     {
       title: 'Address',
-      texts: ['203 Cedar Grove Rd', 'Selkirk, NY 12158'],
+      texts: ['2067 U.S. Route 9W', 'Selkirk, NY 12158'],
     },
     {
       title: 'Phone',
