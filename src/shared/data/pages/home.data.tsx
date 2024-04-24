@@ -39,7 +39,7 @@ import gasImg from '~/assets/images/gas.jpg';
 export const heroHome: HeroProps = {
   title: (
     <>
-      Experience top-quality <span className="hidden md:inline">heating, cooling, and ductless </span>
+      Experience expert <span className="hidden md:inline">heating, cooling, and heat pump </span>
       <span className="sm:whitespace-nowrap">services</span>
     </>
   ),
