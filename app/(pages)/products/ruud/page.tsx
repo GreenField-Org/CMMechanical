@@ -16,7 +16,7 @@ const Page = () => {
             <div id="divider" className="h-[11px]" style={{ background: 'url(https://media.ruud.com/wp-content/uploads/sites/2/2020/04/ruudhybriddivider.jpg)', backgroundSize: 'cover'}}></div>
 
             <div id="introsection" className="pt-[200px] text-[15px]" style={{ background: 'url(https://media.ruud.com/wp-content/uploads/sites/2/2020/04/ruudhybridintroback.jpg)'}}>
-                <div className="w-full my-auto py-3">
+                <div className="w-full mx-auto py-3">
                 <div className="flex flex-wrap -mx-[15px]">
                     <div className="leftside w-1/2 self-start">
                         <div>
