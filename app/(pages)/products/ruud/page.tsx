@@ -1,43 +1,45 @@
+import Image from "next/image";
+
 const Page = () => {
     return (
         <main>
-            <div className="top-visual">
-                <div className="img-pattern">&nbsp;</div>
-                <div className="text-block">
-                    <div className="container">
-                        <img decoding="async" className="endeavor-logo" src="https://media.ruud.com/wp-content/uploads/sites/2/2022/10/MicrosoftTeams-image-24.png" alt="Built-In-EcoNet-Icon" />
-                        <img decoding="async" className="hero-image" src="https://media.ruud.com/wp-content/uploads/sites/2/2024/02/Ruud_Endeavor_Product_Grouping_rev.png" alt="Built-In-EcoNet-Icon" />
+            <div className="relative h-[375px] overflow-visible z-[1]" style={{background: 'url(https://media.ruud.com/wp-content/uploads/sites/2/2022/09/Ruud_Endeavor_BG_2.png) no-repeat top right', backgroundSize: 'cover'}}>
+                <div className="absolute w-full h-full opacity-10 top-0 left-0" style={{background: 'url(https://media.ruud.com/wp-content/uploads/sites/2/2022/09/Pattern_BG.png) no-repeat top left', backgroundSize: 'cover'}}>&nbsp;</div>
+                <div className="relative py-[107px] z-[2] min-h-[441px]">
+                    <div className="relative mx-auto px-3 flex flex-col justify-center items-center">
+                        <img decoding="async" className="endeavor-logo mx-0 my-auto block w-1/2 align-middle" src="https://media.ruud.com/wp-content/uploads/sites/2/2022/10/MicrosoftTeams-image-24.png" alt="Built-In-EcoNet-Icon" />
+                        <img decoding="async" className="hero-image w-4/5 ml-[10%] align-middle" src="https://media.ruud.com/wp-content/uploads/sites/2/2024/02/Ruud_Endeavor_Product_Grouping_rev.png" alt="Built-In-EcoNet-Icon" />
                     </div>
                 </div>
             </div>
 
-            <div id="divider"></div>
+            <div id="divider" className="h-[11px]" style={{ background: 'url(https://media.ruud.com/wp-content/uploads/sites/2/2020/04/ruudhybriddivider.jpg)', backgroundSize: 'cover'}}></div>
 
-            <div id="introsection">
-                <div className="container">
-                <div className="row">
-                    <div className="leftside col-12 col-lg-6 order-2 order-md-2 order-lg-1 align-self-start">
+            <div id="introsection" className="pt-[200px] text-[15px]" style={{ background: 'url(https://media.ruud.com/wp-content/uploads/sites/2/2020/04/ruudhybridintroback.jpg)'}}>
+                <div className="w-full my-auto py-3">
+                <div className="flex flex-wrap -mx-[15px]">
+                    <div className="leftside w-1/2 self-start">
                         <div>
-                            <h1>Lower Energy Bills. <br/>Smaller Carbon Footprint<sup>*</sup>. More Comfort.</h1>
+                            <h1 className="text-[#7A99AC] font-extrabold text-3xl mt-[30px] mb-5 uppercase">Lower Energy Bills. <br/>Smaller Carbon Footprint<sup>*</sup>. More Comfort.</h1>
                             <p>In response to tougher Department of Energy regulations taking effect in 2023, we introduce the all-new Ruud<sup>®</sup> Endeavor<sup>™</sup> Line of Gas Furnaces, Air Handlers, Split and Packaged Air Conditioners, Split and Packaged Heat Pumps and Packaged Gas Electric units. Rather than simply making Ruud products larger to achieve the increased efficiencies, we reengineered them from the ground up to create our most energy-efficient, reliable, capable and sustainable lineup ever. Because we’ve always been comfortable with innovation.</p>
                             <div style={{ paddingBottom: "75px"}}></div>
 
                         </div>
 
                     </div>
-                    <div className="rightside text-center col-12 col-lg-6 order-1 order-md-1 order-lg-2 align-self-start">
+                    <div className="rightside w-1/2 text-center self-start">
                         <div>
-                            <div className="row blockrow">
-                            <div className="col-12 col-sm-6">
-                                <div className="block">
-                                    <div className="img-block img-icon">
+                            <div className="flex flex-wrap items-center -mx-[15px] mt-10">
+                            <div className="w-1/2">
+                                <div className="text-center pb-5 text-[13px]">
+                                    <div className="h-[80px] img-icon">
                                         <img decoding="async" src="https://media.ruud.com/wp-content/uploads/sites/2/2022/09/icon_tested.png" alt="Earth-Friendly-Icon" />
                                     </div>
                                     <h4>TESTED, TRUSTED, TOUGH</h4>
                                     <p>We build quality into everything we make so we can be sure it’s tough enough to deliver the ultimate performance you can count on day after day, year after year</p>
                                 </div>
                             </div>
-                            <div className="col-12 col-sm-6">
+                            <div className="w-1/2">
                                 <div className="block">
                                     <div className="img-block img-icon">
                                         <img decoding="async" src="https://media.ruud.com/wp-content/uploads/sites/2/2022/09/icon_smart_home.png" alt="Constant-Protection-Icon" />
@@ -47,8 +49,8 @@ const Page = () => {
                                 </div>
                             </div>
                             </div>
-                            <div className="row">
-                            <div className="col-12 col-sm-6">
+                            <div className="flex flex-wrap -mx-[15px]">
+                            <div className="w-1/2">
                                 <div className="block">
                                     <div className="img-block img-icon">
                                         <img decoding="async" src="https://media.ruud.com/wp-content/uploads/sites/2/2022/09/icon_peaceofmind.png" alt="Built-In-EcoNet-Icon" />
@@ -57,7 +59,7 @@ const Page = () => {
                                     <p>Relax, you’re covered by some of the best warranties in the industry<sup>1</sup>—up to 10 Year Parts + 10 Year Conditional Unit Replacement<sup>2</sup></p>
                                 </div>
                             </div>
-                            <div className="col-12 col-sm-6">
+                            <div className="w-1/2">
                                 <div className="block">
                                     <div className="img-block img-icon">
                                         <img decoding="async" src="https://media.ruud.com/wp-content/uploads/sites/2/2022/09/icon_sustainability.png" alt="Easy-Installation-Icon" />
@@ -75,9 +77,9 @@ const Page = () => {
 
                 <div id="proterratabs" className="fullwidthrow cover lazy-background visible">
                 <div className="texture" style={{backgroundImage: 'url(https://media.ruud.com/wp-content/uploads/sites/2/2022/09/Pattern_BG.png)'}}></div>
-                <div className="container">
+                {/*<div className="container">
                     <div className="containerwrapper">
-                        <div className="row">
+                        <div className="flex flex-wrap -mx-[15px]">
                             <div className="col-12">
                             <div className="tabsection">
                                 <a href="#" className="submenu btn btn-primary">Choose Category</a>
@@ -201,7 +203,7 @@ const Page = () => {
                                             </div>
                                         </div>
                                         <div id="inner2" className="innertab">
-                                            <div className="row">
+                                            <div className="flex flex-wrap -mx-[15px]">
                                                 <div className="col-4">
                                                     <div id="baseimage">
                                                         <img fetchPriority="high" decoding="async" src="https://media.ruud.com/wp-content/uploads/sites/2/2022/09/RuUltra-VS-90Furnace-Str8on-EcoNet.png" width="253" height="495" alt="ruudhybridbaseimage" />
@@ -417,7 +419,7 @@ const Page = () => {
                                             </div>
                                         </div>
                                         <div id="inner2" className="innertab">
-                                            <div className="row">
+                                            <div className="flex flex-wrap -mx-[15px]">
                                                 <div className="col-4">
                                                     <div id="baseimage"><img decoding="async" src="https://media.ruud.com/wp-content/uploads/sites/2/2022/09/RuUltra-HiEffAC-Str8on-EcoNet.png" width="326" height="442.78" alt="ruudhybridbaseimage" /></div>
                                                 </div>
@@ -448,7 +450,7 @@ const Page = () => {
                                             </div>
                                         </div>
                                         <div id="inner3" className="innertab">
-                                            <div className="row">
+                                            <div className="flex flex-wrap -mx-[15px]">
                                                 <div className="col-6 col-md-4">
                                                     <a href="https://media.ruud.com/media/uploads/iat/sites/36/2022/06/RH-PIHP-DC_Plug-in-Heat-Pump-Dedicated-Circuit_0610.pdf" target="_blank" rel="noopener">
                                                         <img decoding="async" loading="lazy" src="https://media.ruud.com/media/uploads/iat/sites/36/2021/07/btn-specsheet.png" alt="" width="360" height="67" className="alignnone size-full wp-image-19592" srcSet="https://media.ruud.com/media/uploads/iat/sites/36/2021/07/btn-specsheet.png 360w, https://media.ruud.com/media/uploads/iat/sites/36/2021/07/btn-specsheet-300x56.png 300w" sizes="(max-width: 360px) 100vw, 360px" />
@@ -637,7 +639,7 @@ const Page = () => {
                                             </div>
                                         </div>
                                         <div id="inner2" className="innertab">
-                                            <div className="row">
+                                            <div className="flex flex-wrap -mx-[15px]">
                                                 <div className="col-4">
                                                     <div id="baseimage">
                                                         <img loading="lazy" decoding="async" src="https://media.ruud.com/wp-content/uploads/sites/2/2022/09/RuUltra-HiEffHeatPump-Str8on-EcoNet.png" width="326" height="443" alt="ruudhybridbaseimage" />
@@ -915,7 +917,7 @@ const Page = () => {
                                             </div>
                                         </div>
                                         <div id="inner2" className="innertab">
-                                            <div className="row">
+                                            <div className="flex flex-wrap -mx-[15px]">
                                                 <div className="col-4">
                                                     <div id="baseimage">
                                                         <img loading="lazy" decoding="async" src="https://media.ruud.com/wp-content/uploads/sites/2/2022/09/RuAirHandler-RHMV-RH2V-RH2T-RH1V-RH1T-RH1P-Str8on.png" width="211" height="494" alt="ruudhybridbaseimage" />
@@ -942,12 +944,12 @@ const Page = () => {
                                             </div>
                                         </div>
                                         <div id="inner3" className="innertab">
-                                            <div className="row">
+                                            <div className="flex flex-wrap -mx-[15px]">
                                                 <div className="col-6 col-md-4"><a href="https://media.ruud.com/media/uploads/iat/sites/36/2022/06/RH-PIHP-SC_Plus-without-Leakguard_0407.pdf" target="_blank" rel="noopener"><img decoding="async" loading="lazy" src="https://media.ruud.com/media/uploads/iat/sites/36/2021/07/btn-specsheet.png" alt="RH-PIHP-SC Plus without Leakguard" width="360" height="67" className="alignnone size-full wp-image-19592" srcSet="https://media.ruud.com/media/uploads/iat/sites/36/2021/07/btn-specsheet.png 360w, https://media.ruud.com/media/uploads/iat/sites/36/2021/07/btn-specsheet-300x56.png 300w" sizes="(max-width: 360px) 100vw, 360px" /></a></div>
                                                 <div className="col-6 col-md-4"><a href="https://media.ruud.com/media/uploads/iat/sites/36/2022/06/RH-PIHP-SC-SO_Premium-with-Leakguard_0407.pdf" target="_blank" rel="noopener"><img decoding="async" loading="lazy" src="https://media.ruud.com/media/uploads/iat/sites/36/2021/07/btn-specsheet.png" alt="RH-PIHP-SC-SO Premium with Leakguard" width="360" height="67" className="alignnone size-full wp-image-19592" srcSet="https://media.ruud.com/media/uploads/iat/sites/36/2021/07/btn-specsheet.png 360w, https://media.ruud.com/media/uploads/iat/sites/36/2021/07/btn-specsheet-300x56.png 300w" sizes="(max-width: 360px) 100vw, 360px" /></a></div>
                                                 <div className="col-6 col-md-4"><a href="https://media.ruud.com/media/uploads/iat/sites/36/2022/07/RH-PHP_ProTerra_Plugin_PlumberBrochure_072759.pdf" target="_blank" rel="noopener"><img decoding="async" loading="lazy" src="https://media.ruud.com/media/uploads/iat/sites/36/2021/07/btn-consumerliterature.png" alt="RH-PHP ProTerra Plugin Plumber Brochure" width="360" height="67" className="alignnone size-full wp-image-19589" srcSet="https://media.ruud.com/media/uploads/iat/sites/36/2021/07/btn-consumerliterature.png 360w, https://media.ruud.com/media/uploads/iat/sites/36/2021/07/btn-consumerliterature-300x56.png 300w" sizes="(max-width: 360px) 100vw, 360px" /></a></div>
                                             </div>
-                                            <div className="row">
+                                            <div className="flex flex-wrap -mx-[15px]">
                                                 <div className="col-6 col-md-4"><a href="https://media.ruud.com/media/uploads/iat/sites/36/2020/04/AP21681-UseAndCare.pdf" target="_blank" rel="noopener"><img decoding="async" loading="lazy" src="https://media.ruud.com/media/uploads/iat/sites/36/2021/07/btn-usecaremanual.png" alt="" width="360" height="67" className="alignnone size-full wp-image-19593" srcSet="https://media.ruud.com/media/uploads/iat/sites/36/2021/07/btn-usecaremanual.png 360w, https://media.ruud.com/media/uploads/iat/sites/36/2021/07/btn-usecaremanual-300x56.png 300w" sizes="(max-width: 360px) 100vw, 360px" /></a></div>
                                             </div>
                                         </div>
@@ -1045,7 +1047,7 @@ const Page = () => {
                                             </div>
                                         </div>
                                         <div id="inner2" className="innertab">
-                                            <div className="row">
+                                            <div className="flex flex-wrap -mx-[15px]">
                                                 <div className="col-4">
                                                     <div id="baseimage">
                                                         <img loading="lazy" decoding="async" src="https://media.ruud.com/wp-content/uploads/sites/2/2022/09/RuUltra-Pkg-Gas-Electric-2-5-Ton-RGEA16.png" width="383" height="291" alt="ruudhybridbaseimage" />
@@ -1070,12 +1072,12 @@ const Page = () => {
                                             </div>
                                         </div>
                                         <div id="inner3" className="innertab">
-                                            <div className="row">
+                                            <div className="flex flex-wrap -mx-[15px]">
                                                 <div className="col-6 col-md-4"><a href="https://media.ruud.com/media/uploads/iat/sites/36/2022/06/RH-PIHP-SC_Plus-without-Leakguard_0407.pdf" target="_blank" rel="noopener"><img decoding="async" loading="lazy" src="https://media.ruud.com/media/uploads/iat/sites/36/2021/07/btn-specsheet.png" alt="RH-PIHP-SC Plus without Leakguard" width="360" height="67" className="alignnone size-full wp-image-19592" srcSet="https://media.ruud.com/media/uploads/iat/sites/36/2021/07/btn-specsheet.png 360w, https://media.ruud.com/media/uploads/iat/sites/36/2021/07/btn-specsheet-300x56.png 300w" sizes="(max-width: 360px) 100vw, 360px" /></a></div>
                                                 <div className="col-6 col-md-4"><a href="https://media.ruud.com/media/uploads/iat/sites/36/2022/06/RH-PIHP-SC-SO_Premium-with-Leakguard_0407.pdf" target="_blank" rel="noopener"><img decoding="async" loading="lazy" src="https://media.ruud.com/media/uploads/iat/sites/36/2021/07/btn-specsheet.png" alt="RH-PIHP-SC-SO Premium with Leakguard" width="360" height="67" className="alignnone size-full wp-image-19592" srcSet="https://media.ruud.com/media/uploads/iat/sites/36/2021/07/btn-specsheet.png 360w, https://media.ruud.com/media/uploads/iat/sites/36/2021/07/btn-specsheet-300x56.png 300w" sizes="(max-width: 360px) 100vw, 360px" /></a></div>
                                                 <div className="col-6 col-md-4"><a href="https://media.ruud.com/media/uploads/iat/sites/36/2022/07/RH-PHP_ProTerra_Plugin_PlumberBrochure_072759.pdf" target="_blank" rel="noopener"><img decoding="async" loading="lazy" src="https://media.ruud.com/media/uploads/iat/sites/36/2021/07/btn-consumerliterature.png" alt="RH-PHP ProTerra Plugin Plumber Brochure" width="360" height="67" className="alignnone size-full wp-image-19589" srcSet="https://media.ruud.com/media/uploads/iat/sites/36/2021/07/btn-consumerliterature.png 360w, https://media.ruud.com/media/uploads/iat/sites/36/2021/07/btn-consumerliterature-300x56.png 300w" sizes="(max-width: 360px) 100vw, 360px" /></a></div>
                                             </div>
-                                            <div className="row">
+                                            <div className="flex flex-wrap -mx-[15px]">
                                                 <div className="col-6 col-md-4"><a href="https://media.ruud.com/media/uploads/iat/sites/36/2020/04/AP21681-UseAndCare.pdf" target="_blank" rel="noopener"><img decoding="async" loading="lazy" src="https://media.ruud.com/media/uploads/iat/sites/36/2021/07/btn-usecaremanual.png" alt="" width="360" height="67" className="alignnone size-full wp-image-19593" srcSet="https://media.ruud.com/media/uploads/iat/sites/36/2021/07/btn-usecaremanual.png 360w, https://media.ruud.com/media/uploads/iat/sites/36/2021/07/btn-usecaremanual-300x56.png 300w" sizes="(max-width: 360px) 100vw, 360px" /></a></div>
                                             </div>
                                         </div>
@@ -1088,13 +1090,13 @@ const Page = () => {
 
                     </div>
 
-                </div>
+                </div>*/}
 
                 </div>
                 <div id="docu-video">
                 <div className="container">
                     <div className="containerwrapper" style={{padding: '0 40px'}}>
-                        <div id="" className="row">
+                        <div id="" className="flex flex-wrap -mx-[15px]">
                             <div className="rightside col-12">
                             <div id="dv-block-right" className="lazy-background panel radiusallcorners matchcol imageoption cover visible">
                                 <div className="wrap">
@@ -1132,7 +1134,7 @@ const Page = () => {
                 <div className="container">
                     <div className="containerwrapper">
                         <div style="display:block; width:100%; clear:both; height:50px;"></div>
-                        <div className="row">
+                        <div className="flex flex-wrap -mx-[15px]">
                             <div id="" className="col-12">
                             <div style="text-align: center;">
                                 <h2 style="color:#fff; margin-bottom: 40px;">More Information</h2>
@@ -1166,7 +1168,7 @@ const Page = () => {
                             <div className="rightside col-12 col-lg-5 order-1 order-md-1 order-lg-2 ">
                             <div id="endeavor-broch" className="panel matchcol">
                                 <div className="imagewrapper freestanding">
-                                    <img decoding="async" loading="lazy" src="https://media.ruud.com/wp-content/uploads/sites/2/2022/10/endeavor_ruud_brochures_updated.png" alt="endeavor_brochures" width="793" height="736" />
+                                    <Image decoding="async" loading="lazy" src="https://media.ruud.com/wp-content/uploads/sites/2/2022/10/endeavor_ruud_brochures_updated.png" alt="endeavor_brochures" width="793" height="736" />
                                 </div>
 
                             </div>
@@ -1227,7 +1229,7 @@ const Page = () => {
                         <div className="col-12">
 
                             <div id="block-full" className="lazy-background panel radiusallcorners matchcol imageoption cover visible">
-                                <div className="row">
+                                <div className="flex flex-wrap -mx-[15px]">
                                 <div className="col-12 col-md-6 no_content">
                                     <div className="wrap"></div>
                                 </div>
@@ -1254,7 +1256,7 @@ const Page = () => {
                 <div id="divider"></div>
                 <div id="legalese" style={{padding: '40px 0px', fontSize: '11px'}}>
                 <div className="container">
-                    <div className="row">
+                    <div className="flex flex-wrap -mx-[15px]">
                         <div className="col-xs-12">
                             <sup>*</sup><em>Applies to select models only.</em> <sup>1</sup><em>Registration is required for the conditional parts and unit replacement warranty (if applicable); For complete details of the limited and conditional warranties, including applicable terms and conditions, contact your local Contractor or go to Ruud.com for a copy of the product warranty certificate.</em> <sup>2</sup><em>Specific warranty terms will vary by product.</em> <sup>3</sup><em>WiFi broadband internet connection required. Download the EcoNet<sup>®</sup> App from the App Store<sup>®</sup> or Google Play<sup>®</sup> to set up your EcoNet Smart Thermostat; Receipt of notifications depend on home WiFi setup. Amazon, Alexa and all related logos are trademarks of Amazon.com, Inc. or its affiliates.</em> <sup>4</sup><em>Based on Internal R&amp;D Testing, May 2022. Sound levels are also dependent on proper installation and location of outdoor product.</em> <sup>5</sup><em>Residential Building Electrification in CA: Consumer economics, greenhouse gases and grid impacts, April 2019.</em>
                         </div>
