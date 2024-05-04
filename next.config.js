@@ -22,6 +22,10 @@ module.exports = {
       {
         protocol: 'https',
         hostname: 'www.afmheatcool.com'
+      },
+      {
+        protocol: 'https',
+        hostname: 'media.ruud.com'
       }
     ],
   }
