@@ -8,6 +8,7 @@ import Announcement from '~/components/widgets/Announcement';
 import Footer2 from '~/components/widgets/Footer2';
 
 import { Roboto_Condensed as CustomFont } from 'next/font/google';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import '~/assets/styles/base.css';
 
 const customFont = CustomFont({ subsets: ['latin'], variable: '--font-custom' });
@@ -38,6 +39,7 @@ export default function RootLayout({ children }: LayoutProps) {
       </head>
       <body className="tracking-tight antialiased text-gray-900 dark:text-slate-300">
         <Providers>
+          <SpeedInsights />
           <Header />
           <main>{children}</main>
           <Footer2 />
