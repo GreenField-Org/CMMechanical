@@ -339,6 +339,16 @@ export const testimonialsHome: TestimonialsProps = {
   },
   testimonials: [
     {
+      name: 'Glenn Koblenzer',
+      job: 'Home Owner',
+      testimonial: 'Chris did a fantastic job installing our AC. He was super easy to work with. Highly recommended!!',
+      /*image: {
+        src: 'https://images.unsplash.com/photo-1619734086067-24bf8889ea7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
+        alt: 'Tayla Kirsten',
+      },*/
+      href: 'https://g.co/kgs/6qi6uQG',
+    },
+    {
       name: 'Shannon Bishop',
       job: 'Home Owner',
       testimonial: `In March of this year I needed a new furnace ASAP. I gathered multiple quotes, C&M was most affordable and helped me out right away. They are very responsive, reliable, on time, and professional. I was referred by a friend and very thankful I chose C&M. I highly recommend C&M! You won't be disappointed. Jim and Chris are great!!  Thank you C&M!!`,
