@@ -219,7 +219,7 @@ export const footerData: FooterProps = {
   footNote: (
     <div className="mr-4 text-sm dark:text-slate-400">
       Made by{' '}
-      <a className="text-blue-600 hover:underline dark:text-gray-200" href="https://onwidget.com/">
+      <a className="text-blue-600 hover:underline dark:text-gray-200" href="https://thegreenfield.dev/" target='_blank'>
         {' '}
         GreenField Dev
       </a>{' '}
@@ -262,7 +262,7 @@ export const footerData2: FooterProps = {
       Made by{' '}
       <a
         className="font-semibold text-slate-900 dark:text-gray-200 hover:text-blue-600 hover:underline dark:hover:text-blue-600"
-        href="https://greenervigil.github.io/next-portfolio/"
+        href="https://thegreenfield.dev/"
         target='_blank'
       >
         {' '}
