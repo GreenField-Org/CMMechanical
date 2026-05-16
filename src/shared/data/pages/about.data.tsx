@@ -41,7 +41,7 @@ export const hero2About: HeroProps = {
   title: 'Put your trust in us',
   subtitle: 
       <span>
-        C & M Mechanical Inc. has been a family owned business since 2007. We have over {new Date().getFullYear() - 2007} years of experience in the industry. We understand that not every job is the same and that each home or business requires a unique heating and cooling system. We also work hard to meet the individual needs of each of our customers.  Keeping you comfortable is our goal!
+        C & M Mechanical Inc. has been a family owned business since 2007. We have over {new Date().getFullYear() - 2004} years of experience in the industry. We understand that not every job is the same and that each home or business requires a unique heating and cooling system. We also work hard to meet the individual needs of each of our customers.  Keeping you comfortable is our goal!
       </span>,
   //tagline: 'About Us Page',
   callToAction: {
@@ -558,7 +558,7 @@ export const contactAbout: ContactProps = {
     tagline: 'Contact',
   },
   content:
-    'With over 15 years of experience, we are ready to assist you with any job, no matter how big or small. Please feel free to contact us through our online form, by phone, or by email..',
+    `With over ${new Date().getFullYear() - 2004} years of experience, we are ready to assist you with any job, no matter how big or small. Please feel free to contact us through our online form, by phone, or by email..`,
   items: [
     {
       title: 'Our Address',
