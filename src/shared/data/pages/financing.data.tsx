@@ -69,7 +69,7 @@ export const contactFinancing: ContactProps = {
       //tagline: 'Contact',
     },
    /* content:
-      'With over 15 years of experience, we are ready to assist you with any job, no matter how big or small. Please feel free to contact us through our online form, by phone, or by email..',
+      `With over ${new Date().getFullYear() - 2004} years of experience, we are ready to assist you with any job, no matter how big or small. Please feel free to contact us through our online form, by phone, or by email.`,
     items: [
       {
         title: 'Our Address',
