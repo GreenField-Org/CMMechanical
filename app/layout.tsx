@@ -5,6 +5,7 @@ import { SITE } from '~/config.js';
 import Providers from '~/components/atoms/Providers';
 import Header from '~/components/widgets/Header';
 import Announcement from '~/components/widgets/Announcement';
+import { Analytics } from '@vercel/analytics/react';
 import Footer2 from '~/components/widgets/Footer2';
 
 import { Roboto_Condensed as CustomFont } from 'next/font/google';
@@ -41,6 +42,7 @@ export default function RootLayout({ children }: LayoutProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body className="tracking-tight antialiased text-gray-900 dark:text-slate-300">
+        <Analytics />
         <Providers>
           <SpeedInsights />
           <Header />
