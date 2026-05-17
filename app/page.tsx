@@ -30,7 +30,8 @@ import {
 } from '~/shared/data/pages/home.data';
 
 export const metadata: Metadata = {
-  title: SITE.title,
+  title: 'HVAC Contractor Albany NY | Ductless Heat Pumps & Heating | C&M Mechanical',
+  description: 'C&M Mechanical is a Mitsubishi Diamond Dealer & NYSERDA-authorized HVAC contractor serving Albany, Loudonville, Delmar, Guilderland & the Capital Region. Call (518) 768-8800 for a free estimate.',
 };
 
 export default function Page() {

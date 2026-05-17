@@ -1,7 +1,8 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: `Mitsubishi Products`,
+    title: `Mitsubishi Ductless Mini Split Installation | Albany & Capital Region NY | C&M Mechanical`,
+    description: 'Certified Mitsubishi Diamond Dealer installing ductless mini split heat pumps in Albany, Loudonville, Delmar, Clifton Park & Guilderland NY. Energy-efficient, whisper-quiet comfort. Free estimates.',
     alternates: {
         canonical: '/products/mitsubishi',
     },
