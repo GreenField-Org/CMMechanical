@@ -187,12 +187,12 @@ export const contentHomeOne: ContentProps = {
   id: 'contentOne-on-home-one',
   hasBackground: true,
   header: {
-    title: 'Serices we provide',
+    title: 'Services we provide',
     //subtitle: '',
     //tagline: 'Content',
   },
   content:
-    'C&M Mechanical provides services for all tyoes of heating systems, including furnaces, boilers, and heat pumps.',
+    'C&M Mechanical provides services for all types of heating systems, including furnaces, boilers, and heat pumps.',
   items: [
     {
       title: 'Installation or repair of heating systems',
