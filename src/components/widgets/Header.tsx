@@ -138,8 +138,8 @@ const Header = () => {
                 <IconRss className="h-5 w-5" />
               </Link>
             )}
-            <Image src={'/diamonddealer-sm.png'} alt='diamond dealer' className='dark:bg-white' width={300} height={200} />
-            <Image src={'/ProPartner_Stacked.png'} alt='pro partner' className='dark:bg-white ml-2' width={30} height={50} />
+            <Image src={'/diamonddealer-sm.png'} alt='Mitsubishi Diamond Dealer certified contractor badge' className='dark:bg-white' width={300} height={200} />
+            <Image src={'/ProPartner_Stacked.png'} alt='Ruud Pro Partner certified contractor badge' className='dark:bg-white ml-2' width={30} height={50} />
             {/*actions && actions.length > 0 && (
               <div className="ml-4 flex w-max flex-wrap justify-end">
                 {actions.map((callToAction, index) => (

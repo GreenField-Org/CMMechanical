@@ -66,7 +66,7 @@ export const heroHome: HeroProps = {
   },
   image: {
     src: home,
-    alt: 'C & M Mechanical vehicles',
+    alt: 'C&M Mechanical HVAC service trucks — serving Albany and the Capital Region NY',
   },
 };
 
@@ -78,27 +78,27 @@ export const socialProofHome: SocialProofProps = {
     {
       link: '/products/nyserda',
       src: nyserda,
-      alt: 'New York State NYSERDA program',
+      alt: 'NYSERDA Clean Heat program logo — C&M Mechanical is an authorized NYSERDA heat pump installer',
     },
     {
       link: '/products/mitsubishi',
       src: mitsubishi,
-      alt: 'Mitsubishi Electric proucts',
+      alt: 'Mitsubishi Electric HVAC logo — ductless mini split systems by a certified Diamond Dealer',
     },
     {
       link: '/about',
       src: diamondContractor,
-      alt: 'Mitsuibishi Diamond Contractor',
+      alt: 'Mitsubishi Diamond Contractor certification — the highest level of Mitsubishi Electric installer certification',
     },
     {
       link: '/products/ruud',
       src: ruud,
-      alt: 'Ruud Products',
+      alt: 'Ruud HVAC logo — high-efficiency furnaces and air conditioning systems installed by C&M Mechanical',
     },
     {
       link: '/products/ruud',
       src: proPartner,
-      alt: 'Ruud Pro Partner',
+      alt: 'Ruud Pro Partner badge — C&M Mechanical is a certified Ruud Pro Partner in Albany NY',
     },
   ],
 };
@@ -225,7 +225,7 @@ export const contentHomeOne: ContentProps = {
   ],*/
   image: {
     src: heating,
-    alt: 'indoor heating system Image',
+    alt: 'Ruud high-efficiency furnace installation by C&M Mechanical in Albany NY home',
   },
   isReversed: false,
   isAfterContent: false,
@@ -256,7 +256,7 @@ export const contentHomeTwo: ContentProps = {
   ],
   image: {
     src: cooling,
-    alt: 'Cooling system Image',
+    alt: 'Central air conditioning system installed by C&M Mechanical in Capital Region NY',
   },
   //images: ['/cooling1.jpg', '/cooling2.jpg', '/cooling3.jpg', '/cooling5.jpg'],
   isReversed: true,
@@ -282,7 +282,7 @@ export const contentHomeThree: ContentProps = {
   ],
   image: {
     src: ductless,
-    alt: 'Ductless system Image',
+    alt: 'Mitsubishi ductless mini split system installed by C&M Mechanical — serving Loudonville, Delmar, Guilderland and Albany NY',
   },
   //images: ['/duct1.jpg', '/ductless2.jpg', '/ductless3.jpg', '/ductless4.jpg'],
   isReversed: false,

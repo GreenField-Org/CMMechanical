@@ -50,7 +50,7 @@ export const hero2About: HeroProps = {
   },
   image: {
     src: teamwork,
-    alt: 'C&M Mechanical Team putting in heating system',
+    alt: 'C&M Mechanical HVAC technicians installing a heating system in a Capital Region home',
   },
 };
 
