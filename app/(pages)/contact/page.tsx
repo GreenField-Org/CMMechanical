@@ -4,7 +4,8 @@ import Hero from '~/components/widgets/Hero';
 import { heroContact } from '~/shared/data/pages/contact.data';
 
 export const metadata: Metadata = {
-  title: 'Contact us',
+  title: 'Contact C&M Mechanical | HVAC Service Albany NY | (518) 768-8800',
+  description: 'Contact C&M Mechanical for HVAC service, free estimates, and heat pump installation in Selkirk, Albany, Loudonville, Delmar, Guilderland & the Capital Region. Call (518) 768-8800.',
   alternates: {
     canonical: '/contact',
   },

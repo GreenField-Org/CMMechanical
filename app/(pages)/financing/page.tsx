@@ -6,7 +6,8 @@ import Hero2 from "~/components/widgets/Hero2";
 import { contactFinancing, contentFinancing, hero2Financing } from "~/shared/data/pages/financing.data";
 
 export const metadata: Metadata = {
-    title: 'Financing Options',
+    title: 'HVAC Financing Options | Albany NY | C&M Mechanical',
+    description: 'Flexible financing for new HVAC systems, heat pumps, and ductless installations in the Albany Capital Region. C&M Mechanical helps you get comfortable now and pay over time.',
     alternates: {
         canonical: '/financing',
     },

@@ -20,12 +20,6 @@ export interface LayoutProps {
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://cmmechanicalhvac.com'),
-  title: {
-    template: `%s — ${SITE.name}`,
-    default: SITE.title,
-  },
-  description: SITE.description,
-  keywords: SITE.keywords,
   alternates: {
     canonical: "/",
   },

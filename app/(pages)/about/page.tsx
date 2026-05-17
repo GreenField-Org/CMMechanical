@@ -25,7 +25,8 @@ import {
 } from '~/shared/data/pages/about.data';
 
 export const metadata: Metadata = {
-  title: `About us`,
+  title: 'About C&M Mechanical | 22+ Year HVAC Experts | Capital Region NY',
+  description: `Family-owned since 2003, C&M Mechanical has over ${new Date().getFullYear() - 2004} years serving Albany, Delmar, Loudonville & the Capital Region. Mitsubishi Diamond Dealer. NYSERDA authorized. Learn our story.`,
   alternates: {
     canonical: '/about',
   },
