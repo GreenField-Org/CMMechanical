@@ -38,3 +38,6 @@ next-env.d.ts
 
 #husky
 ./_
+
+# Claude Code guide (local only)
+CLAUDE.md
