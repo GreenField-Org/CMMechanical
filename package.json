@@ -22,36 +22,36 @@
     "framer-motion": "^11.0.14",
     "gray-matter": "^4.0.3",
     "markdown-it": "^14.0.0",
-    "next": "^14.2.32",
+    "next": "^15.5.28",
     "next-themes": "^0.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sharp": "^0.33.2",
+    "sharp": "^0.35.5",
     "tailwind-merge": "^2.2.2"
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "^7.6.10",
+    "@storybook/addon-a11y": "^8.6.12",
     "@storybook/addon-essentials": "^8.6.12",
-    "@storybook/addon-interactions": "^7.6.10",
-    "@storybook/addon-links": "^7.6.10",
+    "@storybook/addon-interactions": "^8.6.12",
+    "@storybook/addon-links": "^8.6.12",
     "@storybook/addon-onboarding": "^8.6.12",
-    "@storybook/addon-themes": "^7.6.10",
-    "@storybook/addon-viewport": "^7.6.10",
+    "@storybook/addon-themes": "^8.6.12",
+    "@storybook/addon-viewport": "^8.6.12",
     "@storybook/blocks": "^8.6.12",
     "@storybook/nextjs": "^8.6.12",
     "@storybook/react": "^8.6.12",
     "@storybook/test": "^8.6.12",
     "@tailwindcss/typography": "^0.5.10",
     "@types/markdown-it": "^13.0.7",
-    "@types/node": "20.11.5",
+    "@types/node": "^24.0.0",
     "@types/react": "18.2.48",
     "@types/react-dom": "18.2.18",
     "autoprefixer": "^10.4.17",
     "eslint": "8.56.0",
-    "eslint-config-next": "^14.1.0",
+    "eslint-config-next": "^15.5.28",
     "eslint-plugin-storybook": "^0.6.15",
     "next-sitemap": "^4.2.3",
-    "postcss": "^8.4.33",
+    "postcss": "^8.5.28",
     "prettier": "3.2.4",
     "prettier-plugin-tailwindcss": "0.5.11",
     "storybook": "^8.6.12",
@@ -59,6 +59,13 @@
     "typescript": "^5.3.3"
   },
   "engines": {
-    "node": ">=18.17.0"
+    "node": ">=24.0.0"
+  },
+  "overrides": {
+    "postcss": "$postcss",
+    "sharp": "$sharp",
+    "uuid": "^11.1.1",
+    "webpack-dev-middleware": "^7.4.5",
+    "postcss-selector-parser": "^7.1.7"
   }
 }
