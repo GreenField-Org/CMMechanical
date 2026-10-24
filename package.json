@@ -22,11 +22,11 @@
     "framer-motion": "^11.0.14",
     "gray-matter": "^4.0.3",
     "markdown-it": "^14.0.0",
-    "next": "^14.2.32",
+    "next": "^15.5.28",
     "next-themes": "^0.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sharp": "^0.33.2",
+    "sharp": "^0.35.5",
     "tailwind-merge": "^2.2.2"
   },
   "devDependencies": {
@@ -48,10 +48,10 @@
     "@types/react-dom": "18.2.18",
     "autoprefixer": "^10.4.17",
     "eslint": "8.56.0",
-    "eslint-config-next": "^14.1.0",
+    "eslint-config-next": "^15.5.28",
     "eslint-plugin-storybook": "^0.6.15",
     "next-sitemap": "^4.2.3",
-    "postcss": "^8.4.33",
+    "postcss": "^8.5.28",
     "prettier": "3.2.4",
     "prettier-plugin-tailwindcss": "0.5.11",
     "storybook": "^8.6.12",
@@ -60,5 +60,12 @@
   },
   "engines": {
     "node": ">=24.0.0"
+  },
+  "overrides": {
+    "postcss": "$postcss",
+    "sharp": "$sharp",
+    "uuid": "^11.1.1",
+    "webpack-dev-middleware": "^7.4.5",
+    "postcss-selector-parser": "^7.1.7"
   }
 }

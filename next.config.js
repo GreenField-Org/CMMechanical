@@ -7,7 +7,6 @@ module.exports = {
   trailingSlash: SITE.trailingSlash,
   basePath: SITE.basePathname !== '/' ? SITE.basePathname : '',
 
-  swcMinify: true,
   poweredByHeader: false,
   images: {
     remotePatterns: [
